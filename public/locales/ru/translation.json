@@ -5,6 +5,15 @@
     "portfolio": "Портфолио (мои проекты)",
     "career": "Карьера",
     "comments": "Отзывы",
-    "contancts": "Контакты"
+    "contancts": "Контакты",
+    "name": "Максим Филанович",
+    "activity": "Front-End разработчик"
+  },
+  "about": {
+    "name": "Максим Филанович",
+    "activity": "Front-End разработчик",
+    "years": "лет",
+    "description": "",
+    "skills": "Ключевые навыки"
   }
 }

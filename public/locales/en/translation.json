@@ -5,6 +5,15 @@
     "portfolio": "Portfolio (my projects)",
     "career": "Career",
     "comments": "Reviews",
-    "contacts": "Contacts"
+    "contacts": "Contacts",
+    "name": "Maxim Filanovich",
+    "activity": "Front-End developer"
+  },
+  "about": {
+    "name": "Maxim Filanovich",
+    "activity": "Front-End developer",
+    "years": "years",
+    "description": "",
+    "skills": "Key skills"
   }
 }

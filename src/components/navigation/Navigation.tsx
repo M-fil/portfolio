@@ -14,6 +14,11 @@ const Navigation: React.FC = () => {
       <NavigationItem>{t('navigation.career')}</NavigationItem>
       <NavigationItem>{t('navigation.comments')}</NavigationItem>
       <NavigationItem>{t('navigation.contacts')}</NavigationItem>
+
+      <div className="navigation__person">
+        <div className="person__name">{t('navigation.name')}</div>
+        <div className="person__activity">{t('navigation.activity')}</div>
+      </div>
     </div>
   )
 }
