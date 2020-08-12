@@ -1,0 +1,10 @@
+{
+  "navigation": {
+    "main": "Main",
+    "about": "About me",
+    "portfolio": "Portfolio (my projects)",
+    "career": "Career",
+    "comments": "Reviews",
+    "contacts": "Contacts"
+  }
+}

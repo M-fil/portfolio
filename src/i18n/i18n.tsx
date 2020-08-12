@@ -13,8 +13,10 @@ i18n
     initImmediate: false,
     lng: locales.en,
     fallbackLng: locales.en,
-    keySeparator: false,
-
+    react: {
+      wait: true,
+      useSuspense: false,
+    },
     interpolation: {
       escapeValue: false,
     },
