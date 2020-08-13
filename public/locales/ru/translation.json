@@ -15,5 +15,8 @@
     "years": "лет",
     "description": "In consequat ad ad do labore velit mollit dolore pariatur esse.Consequat non fugiat qui exercitation consequat quis ex officia culpa.",
     "skills": "Ключевые навыки"
+  },
+  "portfolio": {
+    "more-button": "Подробнее"
   }
 }

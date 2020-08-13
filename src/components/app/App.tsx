@@ -10,6 +10,7 @@ import i18n from '../../i18n/i18n';
 import Navigation from '../navigation/Navigation';
 import About from '../about/About';
 import Main from '../main/Main';
+import Portfolio from '../portfolio/Portfolio';
 
 const App: React.FC = () => {
   return (
@@ -19,6 +20,7 @@ const App: React.FC = () => {
         <Switch>
           <Route component={Main} path="/" exact />
           <Route component={About} path="/about" />
+          <Route component={Portfolio} path="/portfolio" />
         </Switch>
       </BrowserRouter>
     </>

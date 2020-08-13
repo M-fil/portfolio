@@ -59,7 +59,7 @@ const About: React.StatelessComponent = () => {
         <Skill name={ENGLISH_LEVEL.text} percentage={ENGLISH_LEVEL.percentage} />
       </div>
     </div>
-  )
+  );
 }
 
 export default About

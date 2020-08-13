@@ -1,5 +1,14 @@
-import PERSON_IMAGE_1_URL from '../assets/images/person-1.png';
-import PERSON_IMAGE_2_URL from '../assets/images/person-2.png';
+import {
+  IProjectObject,
+} from '../interfaces/interfaces';
+
+import PERSON_IMAGE_1_URL from '../assets/images/person/person-1.png';
+import PERSON_IMAGE_2_URL from '../assets/images/person/person-2.png';
+import SCSS from '../assets/images/tools/scss.svg';
+import JS from '../assets/images/tools/js.svg';
+import REACT from '../assets/images/tools/react.svg';
+import REDUX from '../assets/images/tools/redux.svg';
+import TYPESCRIPT from '../assets/images/tools/typescript.svg';
 
 const urls: {
   [propName: string]: string,
@@ -7,6 +16,16 @@ const urls: {
   PERSON_IMAGE_1_URL,
   PERSON_IMAGE_2_URL,
 }
+
+const icons: {
+  [propName: string]: string,
+} = {
+  SCSS,
+  JS,
+  REACT,
+  REDUX,
+  TYPESCRIPT,
+};
 
 const personalData: {
   [propName: string]: string | number,
@@ -76,10 +95,26 @@ const skillChartConstants: {
   DEFAULT_INNER_COLOR: '#F0F0F0',
 };
 
+const projects: {
+  [propName: string]: IProjectObject,
+} = {
+  RS_LANG: {
+    name: 'RS Lang',
+    description: '',
+    links: {
+      github: 'https://github.com/M-fil/rslang',
+      demo: 'https://rslang-team18-m-fil.netlify.app/',
+    },
+    tools: ['JavaScript', 'SCSS'],
+  },
+};
+
 export {
   personalData,
   dateConstants,
   urls,
   skills,
   skillChartConstants,
+  projects,
+  icons,
 };
