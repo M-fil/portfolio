@@ -1,5 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { NavLink } from 'react-router-dom';
 
 import NavigationItem from './styled/NavigationItem';
 
@@ -8,12 +9,12 @@ const Navigation: React.FC = () => {
 
   return (
     <div className="navigation">
-      <NavigationItem>{t('navigation.main')}</NavigationItem>
-      <NavigationItem>{t('navigation.about')}</NavigationItem>
-      <NavigationItem>{t('navigation.portfolio')}</NavigationItem>
-      <NavigationItem>{t('navigation.career')}</NavigationItem>
-      <NavigationItem>{t('navigation.comments')}</NavigationItem>
-      <NavigationItem>{t('navigation.contacts')}</NavigationItem>
+      <NavLink to="/">{t('navigation.main')}</NavLink>
+      <NavLink to="/about">{t('navigation.about')}</NavLink>
+      <NavLink to="/portfolio">{t('navigation.portfolio')}</NavLink>
+      <NavLink to="/career">{t('navigation.career')}</NavLink>
+      <NavLink to="/comments">{t('navigation.comments')}</NavLink>
+      <NavLink to="/contacts">{t('navigation.contacts')}</NavLink>
 
       <div className="navigation__person">
         <div className="person__name">{t('navigation.name')}</div>
