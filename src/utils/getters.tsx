@@ -1,20 +1,31 @@
 import React from 'react';
 
-import { icons } from '../constants/constants';
+import { icons, colors } from '../constants/constants';
 import {
   ToolType,
   LinksKeyType,
 } from '../interfaces/interfaces';
 
-const getToolIconByName = (iconName: ToolType) => {
+const {
+  javascriptIconColor,
+  reactIconColor,
+  scssIconColor,
+  htmlIconColor,
+  githubIconColor,
+  demoIconColor,
+} = colors.portfolio;
+
+const getToolIconByName = (iconName: ToolType)=> {
   switch (iconName) {
+    case 'HTML':
+      return (<i style={{ color: htmlIconColor }} className="fab fa-html5" />)
     case 'SCSS':
-      return (<i className="fab fa-sass"></i>);
+      return (<i style={{ color: scssIconColor }} className="fab fa-sass" />);
     case 'JavaScript':
     default:
-      return (<i className="fab fa-js"></i>);
+      return (<i style={{ color: javascriptIconColor }} className="fab fa-js" />);
     case 'React':
-      return (<i className="fab fa-react"></i>);
+      return (<i style={{ color: reactIconColor }} className="fab fa-react" />);
     case 'Redux':
       return icons.REDUX;
     case 'TypeScript':
@@ -25,10 +36,10 @@ const getToolIconByName = (iconName: ToolType) => {
 const getLinkIconByName = (linkIconName: LinksKeyType) => {
   switch (linkIconName) {
     case 'github':
-      return (<i className="fab fa-github"></i>);
+      return (<i style={{ color: githubIconColor }} className="fab fa-github"></i>);
     case 'demo':
     default:
-      return (<i className="fas fa-external-link-alt"></i>);
+      return (<i style={{ color: demoIconColor }} className="fas fa-external-link-alt"></i>);
   }
 };
 

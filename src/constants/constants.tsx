@@ -13,7 +13,26 @@ const urls: {
   PERSON_IMAGE_1_URL,
   PERSON_IMAGE_2_URL,
   CV_LINK_URL: 'https://drive.google.com/file/d/1G0xogM0rIs7q5GnWM7rIlALGv7tVEfbe/view?usp=sharing',
-}
+  RS_LANG_PATH_TO_PROJECTS: 'https://raw.githubusercontent.com/M-fil/data-storage/master/my-portfolio/projects/',
+  PERSONAL_GITHUB_URL: 'https://api.github.com/users/M-fil',
+};
+
+const colors: {
+  [propName: string]: { [propName: string]: string };
+} = {
+  portfolio: {
+    javascriptIconColor: '#F7DF1E',
+    reactIconColor: '#6EDDFB',
+    scssIconColor: '#CD6799',
+    htmlIconColor: '#E44D26',
+    toolIconBackground: '#ffffff',
+    toolIconBorderColor: '#CCCCCC',
+    githubIconColor: '#24292E',
+    demoIconColor: '#1890FF',
+    linkIconBackground: '#ffffff',
+    arrowButtonColor: '#0091FF',
+  },
+};
 
 const icons: {
   [propName: string]: string,
@@ -27,6 +46,7 @@ const personalData: {
 } = {
   DATE_OF_BIRTH: '10-12-2001',
   FULL_NAME: 'Maxim Filanovich',
+  GITHUB_LOGIN: 'M-fil',
 };
 
 const dateConstants: {
@@ -95,12 +115,24 @@ const projects: {
 } = {
   RS_LANG: {
     name: 'RS Lang',
+    key: 'rslang',
     description: '',
     links: {
       github: 'https://github.com/M-fil/rslang',
       demo: 'https://rslang-team18-m-fil.netlify.app/',
     },
-    tools: ['JavaScript', 'SCSS'],
+    tools: ['JavaScript', 'SCSS', 'HTML'],
+    images: [
+      `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_1.png`,
+      `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_2.png`,
+      `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_3.png`,
+      `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_4.png`,
+      `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_5.png`,
+      `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_6.png`,
+      `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_7.png`,
+      `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_8.png`,
+    ],
+    isMoreThanOneCollaborator: true,
   },
 };
 
@@ -112,4 +144,5 @@ export {
   skillChartConstants,
   projects,
   icons,
+  colors,
 };

@@ -50,7 +50,7 @@ const Portfolio: React.FC = () => {
   return (
     <div onClick={onVisibleHandler}>
       <ProjectModal
-        title={clickedProjectObject?.name || ''}
+        project={clickedProjectObject}
         isVisible={isModalVisible}
         onCancel={onCloseModal}
       />

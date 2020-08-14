@@ -18,6 +18,12 @@
     "cv-download-text": "Download resume (CV)"
   },
   "portfolio": {
-    "more-button": "More"
+    "more-button": "More",
+    "description-text": "Description",
+    "projects": {
+      "rslang": {
+        "description": "The goal of the project was to create a web-app for learning English which will be similar to the site Lingualeo. It should have included 6 mini-games, 1 main game, Vocabulary, Statistics, and Settings. To achieve such a goal we put together a team of 6 people (including me). I was a team leader of the project. We use Trello to track project Progress, Git for organizing teammate code and conduct a code review, ChartJS library for graphs on the Statistics page, etc. The project was developed for 1 month and the goal was achieved. The result of it you can see here." 
+      }
+    }
   }
 }
