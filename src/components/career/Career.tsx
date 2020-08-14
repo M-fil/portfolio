@@ -9,7 +9,11 @@ const Career: React.FC = () => {
 
   return (
     <CareerStyle>
-      <Steps direction="vertical" current={5} status="wait">
+      <Steps
+        direction="vertical"
+        current={5}
+        status="wait"
+      >
         <Steps.Step
           title={t(`career.steps.php.title`)}
           subTitle={t(`career.steps.php.period`)}

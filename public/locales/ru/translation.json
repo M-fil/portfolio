@@ -64,5 +64,23 @@
         "period": "Август-..."
       }
     }
+  },
+  "comments": {
+    "person-1": {
+      "author": "Maxim Sheko",
+      "comment": "Qui magna magna mollit cupidatat Lorem eiusmod occaecat dolor magna minim amet excepteur quis."
+    },
+    "person-2": {
+      "author": "Maxim Sheko",
+      "comment": "Qui magna magna mollit cupidatat Lorem eiusmod occaecat dolor magna minim amet excepteur quis."
+    },
+    "person-3": {
+      "author": "Maxim Sheko",
+      "comment": "Qui magna magna mollit cupidatat Lorem eiusmod occaecat dolor magna minim amet excepteur quis."
+    },
+    "person-4": {
+      "author": "Maxim Sheko",
+      "comment": "Qui magna magna mollit cupidatat Lorem eiusmod occaecat dolor magna minim amet excepteur quis."
+    }
   }
 }

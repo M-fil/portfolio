@@ -1,6 +1,4 @@
-import React, {
-  useEffect,
-} from 'react';
+import React from 'react';
 import {
   BrowserRouter,
   Switch,
@@ -14,19 +12,27 @@ import About from '../about/About';
 import Main from '../main/Main';
 import Portfolio from '../portfolio/Portfolio';
 import Career from '../career/Career';
+import Comments from '../comments/Comments';
+
+import AppStyle from './styled/AppStyle';
 
 const App: React.FC = () => {
   return (
     <>
-      <BrowserRouter>
-        <Navigation />
-        <Switch>
-          <Route component={Main} path="/" exact />
-          <Route component={About} path="/about" />
-          <Route component={Portfolio} path="/portfolio" />
-          <Route component={Career} path="/career" />
-        </Switch>
-      </BrowserRouter>
+      <AppStyle>
+        <BrowserRouter>
+          <Navigation />
+          <div id="main-content">
+            <Switch>
+              <Route component={Main} path="/" exact />
+              <Route component={About} path="/about" />
+              <Route component={Portfolio} path="/portfolio" />
+              <Route component={Career} path="/career" />
+              <Route component={Comments} path="/comments" />
+            </Switch>
+          </div>
+        </BrowserRouter>
+      </AppStyle>
     </>
   )
 }

@@ -4,7 +4,7 @@
     "about": "About me",
     "portfolio": "Portfolio (my projects)",
     "career": "Career",
-    "comments": "Reviews",
+    "comments": "Comments",
     "contacts": "Contacts",
     "name": "Maxim Filanovich",
     "activity": "Front-End developer"
@@ -63,6 +63,24 @@
         "description": "In this course, I continue to study the most used library in Front-End development - React.",
         "period": "August-..."
       }
+    }
+  },
+  "comments": {
+    "person-1": {
+      "author": "Maxim Sheko",
+      "comment": "Qui magna magna mollit cupidatat Lorem eiusmod occaecat dolor magna minim amet excepteur quis."
+    },
+    "person-2": {
+      "author": "Maxim Sheko",
+      "comment": "Qui magna magna mollit cupidatat Lorem eiusmod occaecat dolor magna minim amet excepteur quis."
+    },
+    "person-3": {
+      "author": "Maxim Sheko",
+      "comment": "Qui magna magna mollit cupidatat Lorem eiusmod occaecat dolor magna minim amet excepteur quis."
+    },
+    "person-4": {
+      "author": "Maxim Sheko",
+      "comment": "Qui magna magna mollit cupidatat Lorem eiusmod occaecat dolor magna minim amet excepteur quis."
     }
   }
 }

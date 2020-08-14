@@ -10,11 +10,9 @@ interface ISwiper {
 };
 
 const Slider: React.FC<ISwiper> = ({ project }) => {
-  const sliderRef = useRef(null);
   return (
     <SliderStyle>
       <Carousel
-        ref={sliderRef}
         autoplay
         infinite
         arrows
