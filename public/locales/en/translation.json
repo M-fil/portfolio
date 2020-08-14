@@ -25,5 +25,44 @@
         "description": "The goal of the project was to create a web-app for learning English which will be similar to the site Lingualeo. It should have included 6 mini-games, 1 main game, Vocabulary, Statistics, and Settings. To achieve such a goal we put together a team of 6 people (including me). I was a team leader of the project. We use Trello to track project Progress, Git for organizing teammate code and conduct a code review, ChartJS library for graphs on the Statistics page, etc. The project was developed for 1 month and the goal was achieved. The result of it you can see here." 
       }
     }
+  },
+  "career": {
+    "steps": {
+      "php": {
+        "title": "Independently studied PHP",
+        "description": "I Didn't like it - I gave it up",
+        "period": "July-August 2019 (1.5 months)"
+      },
+      "js-self-education": {
+        "title": "Started doing JS",
+        "description": "I studied JavaScript on my own and also worked with such frameworks of this language as React and Redux. Wrote a ToDo app on React and Redux.",
+        "period": "September-February (6 months)"
+      },
+      "rs-js-single-projects": {
+        "title": "Signed up for {rolling-scopes-link} JavaScript courses from EPAM",
+        "description": "During this period, I developed 6 projects (5 written in JavaScript, 1 in React) and shot 1 video on YouTube",
+        "period": "February-May (5 months)"
+      },
+      "rs-js-team-projects": {
+        "title": "Was the team leader of the RS Lang project",
+        "description": "During the development of the project, I got skills in project management, as I was a team leader of the development team of 5 people. The developed project is similar to the well-known application for learning English {lingualeo-link}. Our team project is called RS Lang. The app has 7 games, saves long - term and short-term statistics, and has a dictionary for saving English words. This RS Lang project is the most difficult task that I have ever encountered in application development and that I and my team have successfully managed.",
+        "period": "May-July (1 month)"
+      },
+      "rs-js-course-finish": {
+        "title": "Was the team leader of the RS Lang project",
+        "description": "During the development of the project, I got skills in project management, as I was a team leader of the development team of 5 people. The developed project is similar to the well-known application for learning English {lingualeo-link}. Our team project is called RS Lang. The app has 7 games, saves long - term and short-term statistics, and has a dictionary for saving English words. This RS Lang project is the most difficult task that I have ever encountered in application development and that I and my team have successfully managed.",
+        "period": "May-July (1 month)"
+      },
+      "epam-fail": {
+        "title": "Was the team leader of the RS Lang project",
+        "description": "During the development of the project, I got skills in project management, as I was a team leader of the development team of 5 people. The developed project is similar to the well-known application for learning English {lingualeo-link}. Our team project is called RS Lang. The app has 7 games, saves long - term and short-term statistics, and has a dictionary for saving English words. This RS Lang project is the most difficult task that I have ever encountered in application development and that I and my team have successfully managed.",
+        "period": "May-July (1 month)"
+      },
+      "rs-react": {
+        "title": "Signed up for the {rolling-scopes-link} React course from EPAM",
+        "description": "In this course, I continue to study the most used library in Front-End development - React.",
+        "period": "August-..."
+      }
+    }
   }
 }

@@ -13,6 +13,7 @@ import Navigation from '../navigation/Navigation';
 import About from '../about/About';
 import Main from '../main/Main';
 import Portfolio from '../portfolio/Portfolio';
+import Career from '../career/Career';
 
 const App: React.FC = () => {
   return (
@@ -23,6 +24,7 @@ const App: React.FC = () => {
           <Route component={Main} path="/" exact />
           <Route component={About} path="/about" />
           <Route component={Portfolio} path="/portfolio" />
+          <Route component={Career} path="/career" />
         </Switch>
       </BrowserRouter>
     </>

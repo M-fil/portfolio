@@ -1,6 +1,8 @@
 export type ToolType = 'JavaScript' | 'React' | 'Redux' | 'TypeScript' | 'SCSS' | 'HTML';
 export type LinksKeyType = 'github' | 'demo';
-export type ActionTypesType = 'loading' | 'error' | 'success'; 
+export type ActionTypesType = 'loading' | 'error' | 'success';
+export type StepKeyType = 'php' |  'js-self-education' | 'rs-js-single-projects' 
+  | 'rs-js-team-projects' | 'rs-js-course-finish' | 'epam-fail' | 'rs-react';
 
 enum Options {
   GITHUB = 'github',
