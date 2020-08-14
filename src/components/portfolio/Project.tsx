@@ -1,9 +1,15 @@
-import React from 'react';
+import React, {
+  useState,
+  MouseEvent,
+} from 'react';
 import { Card, Badge } from 'antd';
 import { useTranslation } from 'react-i18next';
 import { createFromIconfontCN } from '@ant-design/icons';
+import {
+  getLinkIconByName,
+  getToolIconByName,
+} from '../../utils/getters';
 
-import { icons } from '../../constants/constants';
 import {
   IProjectObject,
   ToolType,
@@ -19,45 +25,21 @@ const IconFont = createFromIconfontCN({
 
 interface IProject {
   project: IProjectObject;
+  projectId: string;
 };
 
 const Project: React.FC<IProject> = ({
-  project,
+  project, projectId,
 }) => {
   const [t] = useTranslation();
 
-  const getToolIconByName = (iconName: ToolType) => {
-    switch (iconName) {
-      case 'SCSS':
-        return (<i className="fab fa-sass"></i>);
-      case 'JavaScript':
-      default:
-        return (<i className="fab fa-js"></i>);
-      case 'React':
-        return (<i className="fab fa-react"></i>);
-      case 'Redux':
-        return icons.REDUX;
-      case 'TypeScript':
-        return icons.TYPESCRIPT;
-    }
-  };
-
-  const getLinkIconByName = (linkIconName: LinksKeyType) => {
-    switch (linkIconName) {
-      case 'github':
-        return (<i className="fab fa-github"></i>);
-      case 'demo':
-      default:
-        return (<i className="fas fa-external-link-alt"></i>);
-    }
-  }
-  
   return (
   <ProjectStyle>
     <Card
         title={project.name}
+        data-project-id={projectId}
         extra={
-          <a href="/">
+          <a className="project__more-button" href="/">
             {t('portfolio.more-button')}
             <IconFont type="icon-tuichu" />
           </a>
@@ -68,7 +50,7 @@ const Project: React.FC<IProject> = ({
         </div>
         <div className="project__links">
           {Object.entries(project.links).map((link) => (
-            <Badge title={link[0]}>
+            <Badge key={link[1]} title={link[0]}>
               <a href={link[1]} target="_blank">
                 { getLinkIconByName(link[0] as LinksKeyType)}
               </a>

@@ -4,9 +4,6 @@ import {
 
 import PERSON_IMAGE_1_URL from '../assets/images/person/person-1.png';
 import PERSON_IMAGE_2_URL from '../assets/images/person/person-2.png';
-import SCSS from '../assets/images/tools/scss.svg';
-import JS from '../assets/images/tools/js.svg';
-import REACT from '../assets/images/tools/react.svg';
 import REDUX from '../assets/images/tools/redux.svg';
 import TYPESCRIPT from '../assets/images/tools/typescript.svg';
 
@@ -15,14 +12,12 @@ const urls: {
 } = {
   PERSON_IMAGE_1_URL,
   PERSON_IMAGE_2_URL,
+  CV_LINK_URL: 'https://drive.google.com/file/d/1G0xogM0rIs7q5GnWM7rIlALGv7tVEfbe/view?usp=sharing',
 }
 
 const icons: {
   [propName: string]: string,
 } = {
-  SCSS,
-  JS,
-  REACT,
   REDUX,
   TYPESCRIPT,
 };

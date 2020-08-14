@@ -2,7 +2,7 @@ import React from 'react';
 import { useTranslation } from 'react-i18next';
 
 import { calculateAge } from '../../utils/calculations';
-import { skills } from '../../constants/constants';
+import { skills, urls } from '../../constants/constants';
 import SkillChart from './SkillChart';
 
 const {
@@ -47,6 +47,9 @@ const About: React.StatelessComponent = () => {
         </div>
       </div>
       <div className="about__description">{t('about.description')}</div>
+      <a href={urls.CV_LINK_URL} target="_blank">
+        {t('about.cv-download-text')};
+      </a>
       <div className="about__skills">
         <Skill name={JAVASCRIPT.text} percentage={JAVASCRIPT.percentage} />
         <Skill name={HTML.text} percentage={HTML.percentage} />
