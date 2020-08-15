@@ -89,5 +89,10 @@
   "footer": {
     "offer": "Do you want the similar web-page for you?",
     "button-confirm-text": "Yes!"
+  },
+  "pop-up-offer": {
+    "title": "Do you Want a similar web page?",
+    "description": "Write to me and I will make you your personal page!",
+    "button-confirm-text": "Write"
   }
 }

@@ -1,9 +1,9 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Progress, Tooltip } from 'antd';
 
 import { calculateAge } from '../../utils/calculations';
 import { skills, urls } from '../../constants/constants';
-import SkillChart from './SkillChart';
 
 const {
   JAVASCRIPT,
@@ -30,7 +30,9 @@ const Skill: React.FC<ISkill> = ({
       <div className="skill__name">
         {name}
       </div>
-      <SkillChart percentage={percentage} />
+      <Tooltip title={`${percentage}%`}>
+        <Progress type="circle" percent={percentage} width={80} />
+      </Tooltip>
     </div>
   );
 } 
