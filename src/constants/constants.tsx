@@ -50,6 +50,9 @@ const colors: {
     textColor: '#748898',
     pieChartColor: '#1D242E',
     trailColor: '#B9BABE',
+  },
+  scrollBar: {
+    color: '#707070',
   }
 };
 
@@ -140,7 +143,7 @@ const projects: {
       github: 'https://github.com/M-fil/rslang',
       demo: 'https://rslang-team18-m-fil.netlify.app/',
     },
-    tools: ['JavaScript', 'SCSS', 'HTML'],
+    tools: ['HTML', 'SCSS', 'JavaScript'],
     images: [
       `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_1.png`,
       `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_2.png`,

@@ -8,6 +8,7 @@ import {
 } from '../../interfaces/interfaces';
 import ProjectStyle from './styled/ProjectStyle';
 import { LinksBadges, ToolsBadges } from './Badges';
+import Slider from './Slider';
 
 const IconFont = createFromIconfontCN({
   scriptUrl: [
@@ -18,7 +19,7 @@ const IconFont = createFromIconfontCN({
 interface IProject {
   project: IProjectObject;
   projectId: string;
-};
+}
 
 const Project: React.FC<IProject> = ({
   project, projectId,
@@ -26,16 +27,23 @@ const Project: React.FC<IProject> = ({
   const [t] = useTranslation();
 
   return (
-  <ProjectStyle>
-    <Card
+    <ProjectStyle>
+      <Card
         title={project.name}
+        cover={(
+          <Slider
+            project={project}
+            arrows={false}
+            autoplay
+          />
+        )}
         data-project-id={projectId}
-        extra={
+        extra={(
           <a className="project__more-button" href="/">
             {t('portfolio.more-button')}
             <IconFont type="icon-tuichu" />
           </a>
-        }
+        )}
       >
         <div className="project__description">
           {project.description}
@@ -44,7 +52,7 @@ const Project: React.FC<IProject> = ({
         <ToolsBadges project={project} />
       </Card>
     </ProjectStyle>
-  )
-}
+  );
+};
 
 export default Project;

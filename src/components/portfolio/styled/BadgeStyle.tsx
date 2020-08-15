@@ -17,9 +17,25 @@ const BadgeStyle = styled('div')<IBadgeStyle>`
     overflow: hidden;
   }
 
-  & .teammate__image {
-    width: 30px;
-    height: 30px;
+  & .project__links {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  & .project__link {
+    font-size: 1.5rem;
+    flex-grow: 1;
+  }
+
+  & i {
+    margin-left: 10px;
+  }
+
+  .project__teammates {
+    margin: 20px 0;
   }
 `;
 

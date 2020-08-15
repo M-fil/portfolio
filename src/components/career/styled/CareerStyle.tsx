@@ -5,9 +5,7 @@ const CareerStyle = styled('div')`
   flex-direction: column;
   align-items: center;
 
-  & .ant-steps {
-    width: 50%;
-  }
+  padding-bottom: 100px;
 `;
 
 export default CareerStyle;

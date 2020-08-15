@@ -41,6 +41,8 @@ const AppStyle = styled('div')<ISideBlockStyles>`
   #side-sections {
     display: flex;
     flex-grow: 1;
+    max-height: 100vh;
+    overflow: hidden;
   }
 
   #left-side, #right-side {
@@ -67,7 +69,18 @@ const AppStyle = styled('div')<ISideBlockStyles>`
 
   #main-content {
     flex-grow: 1;
-    width: 100%
+    width: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+    width: 5px;
+    }
+    
+    &::-webkit-scrollbar-thumb {
+      background: ${colors.scrollBar.color};
+      border-radius: 10px;
+    }
   }
 
   #person-image {
@@ -80,6 +93,14 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     margin: 0 auto;
     width: 450px;
     height: 500px;
+  }
+
+  .projects__list > *:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  .projects__list {
+    padding-bottom: 50px;
   }
 `;
 
