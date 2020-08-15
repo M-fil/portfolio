@@ -32,6 +32,18 @@ const colors: {
     linkIconBackground: '#ffffff',
     arrowButtonColor: '#0091FF',
   },
+  navigation: {
+    textColor: '#EBEBEB',
+    activityColor: '#254054',
+  },
+  mainPage: {
+    darkSideBackground: '#1D242E',
+    lightSideBackground: '#EBEBEB',
+  },
+  footer: {
+    backgroundColor: '#EBEBEB',
+    topBorderColor: '#1D242E',
+  }
 };
 
 const icons: {

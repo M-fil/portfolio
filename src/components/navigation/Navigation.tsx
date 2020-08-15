@@ -3,14 +3,14 @@ import { useTranslation } from 'react-i18next';
 import { NavLink } from 'react-router-dom';
 import { Menu } from 'antd';
 
-import NavigationItem from './styled/NavigationItem';
+import NavigationStyle from './styled/NavigationStyle';
 
 const Navigation: React.FC = () => {
   const [t] = useTranslation();
 
   return (
-    <div className="navigation">
-      <Menu>
+    <NavigationStyle>
+      <Menu className="navigation__menu">
         <Menu.Item>
           <NavLink to="/">{t('navigation.main')}</NavLink>
         </Menu.Item>
@@ -32,10 +32,10 @@ const Navigation: React.FC = () => {
       </Menu>
 
       <div className="navigation__person">
-        <div className="person__name">{t('navigation.name')}</div>
-        <div className="person__activity">{t('navigation.activity')}</div>
+        <h2 className="person__name">{t('navigation.name')}</h2>
+        <h4 className="person__activity">{t('navigation.activity')}</h4>
       </div>
-    </div>
+    </NavigationStyle>
   )
 }
 

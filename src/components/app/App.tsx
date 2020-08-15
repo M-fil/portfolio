@@ -22,18 +22,26 @@ const App: React.FC = () => (
   <>
     <AppStyle>
       <BrowserRouter>
-        <Navigation />
-        <div id="main-content">
-          <Switch>
-            <Route component={Main} path="/" exact />
-            <Route component={About} path="/about" />
-            <Route component={Portfolio} path="/portfolio" />
-            <Route component={Career} path="/career" />
-            <Route component={Comments} path="/comments" />
-            <Route component={Contacts} path="/contacts" />
-          </Switch>
-        </div>
-        <Footer />
+        <main id="main">
+          <div id="side-sections">
+            <section id="left-side">
+              <Navigation />
+            </section>
+            <section id="right-side">
+              <div id="main-content">
+                <Switch>
+                  <Route component={Main} path="/" exact />
+                  <Route component={About} path="/about" />
+                  <Route component={Portfolio} path="/portfolio" />
+                  <Route component={Career} path="/career" />
+                  <Route component={Comments} path="/comments" />
+                  <Route component={Contacts} path="/contacts" />
+                </Switch>
+              </div>
+            </section>
+          </div>
+          <Footer />
+        </main>
       </BrowserRouter>
     </AppStyle>
   </>

@@ -13,7 +13,6 @@ const Slider: React.FC<ISwiper> = ({ project }) => {
   return (
     <SliderStyle>
       <Carousel
-        autoplay
         infinite
         arrows
         prevArrow={<CaretLeftOutlined />}
