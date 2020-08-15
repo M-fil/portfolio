@@ -44,6 +44,7 @@ const colors: {
   footer: {
     backgroundColor: '#EBEBEB',
     topBorderColor: '#1D242E',
+    textColor: '#EBEBEB',
   }
 };
 

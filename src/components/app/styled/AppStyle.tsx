@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import { colors } from '../../../constants/constants';
+import { ISideBlockStyles } from '../../../interfaces/interfaces';
 
 const {
   darkSideBackground,
   lightSideBackground,
 } = colors.mainPage;
 
-const AppStyle = styled('div')`
+const AppStyle = styled('div')<ISideBlockStyles>`
   @font-face { 
     font-family: 'Justicman'; 
     src: url('../../../fonst/Justicman.ttf')  format('truetype'),
@@ -30,6 +31,8 @@ const AppStyle = styled('div')`
   }
 
   #main {
+    position: relative;
+  
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -48,20 +51,34 @@ const AppStyle = styled('div')`
 
   #right-side {
     background: ${lightSideBackground};
-    width: 50vw;
-    flex-basis: 50%;
+    width: ${(props) => props.rightBlockWidth};
+    flex-grow: 1;
   }
 
   #left-side {
+    position: relative;
     background: ${darkSideBackground};
-    flex-grow: 1;
     overflow: hidden;
-    padding: 30px 0 30px 30px;
+    padding: 30px 150px 30px 30px;
+    flex-grow: 1;
+    width: calc(${(props) => props.leftBlockWidth});
   }
 
   #main-content {
     flex-grow: 1;
     width: 100%
+  }
+
+  #person-image {
+    position: absolute;
+    left: ${(props) => props.personImageLeft};
+    right: 0;
+    bottom: 0;
+    z-index: 1000;
+
+    margin: 0 auto;
+    width: 450px;
+    height: 500px;
   }
 `;
 

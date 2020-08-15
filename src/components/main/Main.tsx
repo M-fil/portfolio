@@ -13,11 +13,7 @@ const {
 
 const Main: React.FC = () => (
   <MainStyle>
-    <img
-      id="person-image"
-      src={PERSON_IMAGE_1_URL}
-      alt={FULL_NAME as string}
-    />
+
   </MainStyle>
 );
 

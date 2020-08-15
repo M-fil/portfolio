@@ -1,12 +1,36 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 import { Menu } from 'antd';
 
 import NavigationStyle from './styled/NavigationStyle';
+import { ISideBlockStyles } from '../../interfaces/interfaces';
 
-const Navigation: React.FC = () => {
+interface INavigation<T> {
+  setStyles: (prop: T) => void;
+};
+
+const Navigation: React.FC<INavigation<ISideBlockStyles>> = ({
+  setStyles,
+}) => {
   const [t] = useTranslation();
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.pathname !== '/') {
+      setStyles({
+        rightBlockWidth: '70%',
+        leftBlockWidth: '30%',
+        personImageLeft: '-40%',
+      });
+    } else {
+      setStyles({
+        rightBlockWidth: '50%',
+        leftBlockWidth: '50%',
+        personImageLeft: 0,
+      });
+    }
+  }, [location]);
 
   return (
     <NavigationStyle>

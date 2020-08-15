@@ -2,21 +2,16 @@ import styled from 'styled-components';
 import { colors } from '../../../constants/constants';
 
 const FooterStyle = styled('div')`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-
   display: flex;
-  justify-content: flex-end;
   align-items: center;
-  padding: 10px 20px;
   background: transparent;
   z-index: 500;
+  padding-top: 10px;
 
   & .footer__content {
     display: flex;
     align-items: center;
+    color: ${colors.footer.textColor};
 
     & > *:not(:last-child) {
       margin-right: 10px;
