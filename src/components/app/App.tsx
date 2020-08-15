@@ -18,28 +18,25 @@ import Footer from '../footer/Footer';
 
 import AppStyle from './styled/AppStyle';
 
-const App: React.FC = () => {
-  return (
-    <>
-      <AppStyle>
-        <BrowserRouter>
-          <Navigation />
-          <div id="main-content">
-            <Switch>
-              <Route component={Main} path="/" exact />
-              <Route component={About} path="/about" />
-              <Route component={Portfolio} path="/portfolio" />
-              <Route component={Career} path="/career" />
-              <Route component={Comments}  path="/comments" />
-              <Route component={Contacts}  path="/contacts" />
-            </Switch>
-          </div>
-          <Footer />
-        </BrowserRouter>
-      </AppStyle>
-    </>
-  )
-}
+const App: React.FC = () => (
+  <>
+    <AppStyle>
+      <BrowserRouter>
+        <Navigation />
+        <div id="main-content">
+          <Switch>
+            <Route component={Main} path="/" exact />
+            <Route component={About} path="/about" />
+            <Route component={Portfolio} path="/portfolio" />
+            <Route component={Career} path="/career" />
+            <Route component={Comments} path="/comments" />
+            <Route component={Contacts} path="/contacts" />
+          </Switch>
+        </div>
+        <Footer />
+      </BrowserRouter>
+    </AppStyle>
+  </>
+);
 
 export default App;
-

@@ -28,5 +28,4 @@
         "@typescript-eslint/interface-name-prefix" : "off",
         "react/jsx-props-no-spreading" : "off"
       }
-    }
 }
