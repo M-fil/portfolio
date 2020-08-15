@@ -39,6 +39,7 @@ const colors: {
   mainPage: {
     darkSideBackground: '#1D242E',
     lightSideBackground: '#EBEBEB',
+    textColor: '#EBEBEB',
   },
   footer: {
     backgroundColor: '#EBEBEB',
