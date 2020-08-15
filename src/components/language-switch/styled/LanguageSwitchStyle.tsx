@@ -4,7 +4,7 @@ import { colors } from '../../../constants/constants';
 const LanguageSwitchStyle = styled('div')`
   position: absolute;
   right: 50px;
-  top: 30px;
+  top: 10px;
 
   display: flex;
   flex-direction: column;

@@ -45,6 +45,11 @@ const colors: {
     backgroundColor: '#EBEBEB',
     topBorderColor: '#1D242E',
     textColor: '#EBEBEB',
+  },
+  about: {
+    textColor: '#748898',
+    pieChartColor: '#1D242E',
+    trailColor: '#B9BABE',
   }
 };
 
