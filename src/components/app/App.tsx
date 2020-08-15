@@ -14,6 +14,7 @@ import Portfolio from '../portfolio/Portfolio';
 import Career from '../career/Career';
 import Comments from '../comments/Comments';
 import Contacts from '../contacts/Contacts';
+import Footer from '../footer/Footer';
 
 import AppStyle from './styled/AppStyle';
 
@@ -33,6 +34,7 @@ const App: React.FC = () => {
               <Route component={Contacts}  path="/contacts" />
             </Switch>
           </div>
+          <Footer />
         </BrowserRouter>
       </AppStyle>
     </>

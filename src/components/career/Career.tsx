@@ -36,7 +36,7 @@ const Career: React.FC = () => {
           description={t(`career.steps.rs-js-team-projects.description`)}
         />
         <Steps.Step
-          title={t(`career.steps.epam-fail`)}
+          title={t(`career.steps.epam-fail.title`)}
           subTitle={t(`career.steps.epam-fail.period`)}
           description={t(`career.steps.epam-fail.description`)}
           status="error"

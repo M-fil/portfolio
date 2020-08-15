@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import useDefaultState from '../custom-hooks/useDefaultState';
 
 const useCallbackEffect = (
   defaultState: any,
@@ -7,14 +6,12 @@ const useCallbackEffect = (
   asyncCallbackArgs?: any[],
 ) => {
   const [data, setData] = useState(defaultState);
-  const dispatchAction = useDefaultState();
 
   useEffect(() => {
     let didCancel = false;
   
     const fetchData = async () => {
       try {
-        dispatchAction('loading');
         const data = await asyncCallback.apply(null, asyncCallbackArgs || [])
         if (!didCancel) {
           setData(data);

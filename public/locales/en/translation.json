@@ -85,5 +85,9 @@
   },
   "contacts": {
     "title": "You can find and contact me in any way below"
+  },
+  "footer": {
+    "offer": "Do you want the similar web-page for you?",
+    "button-confirm-text": "Yes!"
   }
 }
