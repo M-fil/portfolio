@@ -13,6 +13,7 @@ import Main from '../main/Main';
 import Portfolio from '../portfolio/Portfolio';
 import Career from '../career/Career';
 import Comments from '../comments/Comments';
+import Contacts from '../contacts/Contacts';
 
 import AppStyle from './styled/AppStyle';
 
@@ -28,7 +29,8 @@ const App: React.FC = () => {
               <Route component={About} path="/about" />
               <Route component={Portfolio} path="/portfolio" />
               <Route component={Career} path="/career" />
-              <Route component={Comments} path="/comments" />
+              <Route component={Comments}  path="/comments" />
+              <Route component={Contacts}  path="/contacts" />
             </Switch>
           </div>
         </BrowserRouter>

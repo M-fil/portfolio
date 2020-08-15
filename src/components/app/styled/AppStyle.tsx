@@ -1,9 +1,4 @@
 import styled from 'styled-components';
-import { colors } from '../../../constants/constants';
-
-const {
-  arrowButtonColor,
-} = colors.portfolio;
 
 const AppStyle = styled('div')`
   html {
@@ -14,11 +9,6 @@ const AppStyle = styled('div')`
   body {
     padding: 0;
     margin: 0;
-  }
-
-  svg {
-    font-size: 1.5rem;
-    color: ${arrowButtonColor};
   }
 
   #main-content {
