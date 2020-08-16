@@ -46,7 +46,6 @@ const ProjectModal: React.FC<IProjectModal> = ({
                 description={(
                   <div className="project-modal__description">
                     {t(`portfolio.projects.${project.key}.description`) as string}
-                    }
                   </div>
                 )}
               />

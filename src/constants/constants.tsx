@@ -6,6 +6,8 @@ import PERSON_IMAGE_1_URL from '../assets/images/person/person-1.png';
 import PERSON_IMAGE_2_URL from '../assets/images/person/person-2.png';
 import REDUX from '../assets/images/tools/redux.svg';
 import TYPESCRIPT from '../assets/images/tools/typescript.svg';
+import RS_LOGO from '../assets/images/steps/rs-logo.png';
+import EPAM_LOGO from '../assets/images/steps/epam-logo.png';
 
 const urls: {
   [propName: string]: string,
@@ -15,6 +17,8 @@ const urls: {
   CV_LINK_URL: 'https://drive.google.com/file/d/1G0xogM0rIs7q5GnWM7rIlALGv7tVEfbe/view?usp=sharing',
   RS_LANG_PATH_TO_PROJECTS: 'https://raw.githubusercontent.com/M-fil/data-storage/master/my-portfolio/projects/',
   PERSONAL_GITHUB_URL: 'https://api.github.com/users/M-fil',
+  RS_LOGO,
+  EPAM_LOGO,
 };
 
 const colors: {
@@ -25,6 +29,7 @@ const colors: {
     reactIconColor: '#6EDDFB',
     scssIconColor: '#CD6799',
     htmlIconColor: '#E44D26',
+    phpIconColor: '#7478AE',
     toolIconBackground: '#ffffff',
     toolIconBorderColor: '#CCCCCC',
     githubIconColor: '#24292E',
@@ -53,6 +58,9 @@ const colors: {
   },
   scrollBar: {
     color: '#707070',
+  },
+  career: {
+    failColor: '#FF0000',
   }
 };
 

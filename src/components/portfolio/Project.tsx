@@ -35,6 +35,7 @@ const Project: React.FC<IProject> = ({
             project={project}
             arrows={false}
             autoplay
+            autoplaySpeed={2000}
           />
         )}
         data-project-id={projectId}

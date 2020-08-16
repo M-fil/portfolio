@@ -44,13 +44,13 @@ const App: React.FC = () => {
                 alt={personalData.FULL_NAME as string}
               />
             </div>
-            <LanguageSwitch />
             <div id="side-sections">
               <section id="left-side">
                 <Navigation setStyles={setSideBlockStyles} />
                 <Footer />
               </section>
               <section id="right-side">
+                <LanguageSwitch />
                 <div id="main-content">
                   <RouteSwitch>
                     <Route component={Main} path="/" exact />

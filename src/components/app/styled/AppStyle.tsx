@@ -55,7 +55,7 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     background: ${lightSideBackground};
     width: ${(props) => props.rightBlockWidth};
     flex-grow: 1;
-    padding: 130px 15px 10px 200px;
+    padding: 15px 15px 10px 200px;
   }
 
   #left-side {
