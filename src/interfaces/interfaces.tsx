@@ -26,6 +26,7 @@ export interface IProjectObject {
   tools: ToolType[];
   images: string[];
   isMoreThanOneCollaborator: boolean;
+  video?: string;
 }
 
 export interface IDefaultState {

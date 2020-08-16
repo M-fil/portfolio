@@ -163,6 +163,7 @@ const projects: {
       `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_8.png`,
     ],
     isMoreThanOneCollaborator: true,
+    video: 'https://www.youtube.com/embed/XDqg_2ExX4E',
   },
 };
 

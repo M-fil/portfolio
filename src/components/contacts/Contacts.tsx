@@ -15,15 +15,16 @@ const Contacts: React.FC = () => {
       <div className="contacts__title">
         <Title level={2}>
           {t('contacts.title')}
+          <i className="far fa-comment contacts__title-icon" />
         </Title>
-        <i className="far fa-comment contacts__title-icon" />
       </div>
-      <Avatar.Group>
+      <Avatar.Group className="constacts__links">
         {Object.entries(contactsLinks).map((contact) => (
           <Tooltip key={contact[0]} title={contact[1].name} placement="top">
             <a href={contact[1].link} target="_blank">
               <Avatar
                 size={150}
+                className="contacts__link"
                 icon={<i className={contact[1].iconClassName} />}
                 style={{ background: contact[1].color }}
               />

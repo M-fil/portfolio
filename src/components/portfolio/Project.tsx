@@ -9,6 +9,8 @@ import {
 import ProjectStyle from './styled/ProjectStyle';
 import { LinksBadges, ToolsBadges } from './Badges';
 import Slider from './Slider';
+import Video from './Video';
+import { projects } from '../../constants/constants';
 
 const IconFont = createFromIconfontCN({
   scriptUrl: [
@@ -35,7 +37,14 @@ const Project: React.FC<IProject> = ({
             project={project}
             arrows={false}
             autoplay
-            autoplaySpeed={2000}
+            autoplaySpeed={5000}
+            extraElementAsSlide={(
+              <Video
+                width="100%"
+                height="350"
+                src={projects.RS_LANG.video || ''}
+              />
+            )}
           />
         )}
         data-project-id={projectId}

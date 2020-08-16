@@ -7,12 +7,14 @@ import SliderStyle from './styled/SliderStyle';
 
 interface ISwiper {
   project: IProjectObject;
+  extraElementAsSlide?: any;
   arrows?: boolean;
   [propName: string]: any;
 }
 
 const Slider: React.FC<ISwiper> = ({
   project,
+  extraElementAsSlide,
   arrows = true,
   ...sliderProps
 }) => (
@@ -24,6 +26,7 @@ const Slider: React.FC<ISwiper> = ({
       nextArrow={<CaretRightOutlined />}
       {...sliderProps}
     >
+      {extraElementAsSlide}
       {project.images.map((image) => <img key={image} src={image} alt={image} />)}
     </Carousel>
   </SliderStyle>
