@@ -1,10 +1,12 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { Typography, Avatar, Tooltip } from 'antd';
+import { Typography, Avatar } from 'antd';
 
 import ContactsStyle from './styled/ContactsStyle';
 import { contactsLinks } from '../../constants/constants';
+import Contact from './Contact';
 
+const Slide = require('react-reveal/Slide');
 const { Title } = Typography;
 
 const Contacts: React.FC = () => {
@@ -20,16 +22,7 @@ const Contacts: React.FC = () => {
       </div>
       <Avatar.Group className="constacts__links">
         {Object.entries(contactsLinks).map((contact) => (
-          <Tooltip key={contact[0]} title={contact[1].name} placement="top">
-            <a href={contact[1].link} target="_blank">
-              <Avatar
-                size={150}
-                className="contacts__link"
-                icon={<i className={contact[1].iconClassName} />}
-                style={{ background: contact[1].color }}
-              />
-            </a>
-          </Tooltip>
+          <Contact key={contact[0]} contact={contact[1]} />
         ))}
       </Avatar.Group>
     </ContactsStyle>

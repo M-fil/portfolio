@@ -57,26 +57,6 @@ const Portfolio: React.FC = () => {
           />
         ))}
       </div>
-      <Project
-        index={1}
-        project={projects.RS_LANG}
-        projectId="projects.RS_LANG"
-      />
-      <Project
-        index={2}
-        project={projects.RS_LANG}
-        projectId="projects.RSfd_LANG"
-      />
-      <Project
-        index={3}
-        project={projects.RS_LANG}
-        projectId="prsdojects.RS_LANG"
-      />
-      <Project
-        index={4}
-        project={projects.RS_LANG}
-        projectId="projectfdsfs.RS_LANG"
-      />
     </PortfolioStyle>
   );
 };

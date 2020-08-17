@@ -43,3 +43,10 @@ export interface ICommentAuthor {
   image: string;
   personalPage: string;
 };
+
+export interface IContactLink {
+  link: string;
+  name: string;
+  iconClassName: string;
+  color: string;
+};

@@ -2,6 +2,7 @@ import {
   IProjectObject,
   ICommentAuthor,
   ToolType,
+  IContactLink,
 } from '../interfaces/interfaces';
 
 import PERSON_IMAGE_1_URL from '../assets/images/person/person-1.png';
@@ -99,6 +100,12 @@ const dateConstants: {
   AVERARGE_DAYS_PER_YEAR: 365.25,
 };
 
+const numberConstants: {
+  [propName: string]: number;
+} = {
+  BOOL_ARRAY_LENGTH_FOR_CONTACST_ANIMATION: 4,
+};
+
 const skills: {
   [propName: string]: {
     text: ToolType,
@@ -180,12 +187,7 @@ const projects: {
 };
 
 const contactsLinks: {
-  [propName: string]: {
-    link: string;
-    name: string;
-    iconClassName: string;
-    color: string;
-  }
+  [propName: string]: IContactLink;
 } = {
   vk: {
     link: 'https://vk.com/m__fil',
@@ -257,4 +259,5 @@ export {
   colors,
   contactsLinks,
   commentsAuthorsLinks,
+  numberConstants,
 };

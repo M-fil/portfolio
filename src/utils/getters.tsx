@@ -1,6 +1,11 @@
 import React from 'react';
 
-import { icons, colors, contactsLinks } from '../constants/constants';
+import {
+  icons,
+  colors,
+  contactsLinks,
+  numberConstants,
+} from '../constants/constants';
 import {
   ToolType,
   LinksKeyType,
@@ -23,6 +28,10 @@ const {
 const {
   youtube,
 } = contactsLinks;
+
+const {
+  BOOL_ARRAY_LENGTH_FOR_CONTACST_ANIMATION,
+} = numberConstants;
 
 const getToolIconByName = (iconName: ToolType) => {
   switch (iconName) {
@@ -84,8 +93,26 @@ const getIconColorByName = (iconName: ToolType): string => {
   }
 };
 
+const getRandomInteger = (min: number, max: number): number => {
+  const rand = min + Math.random() * (max + 1 - min);
+  return Math.floor(rand);
+};
+
+const getBoolArrayWithOneTrueValue = (
+  arrayLength: number = BOOL_ARRAY_LENGTH_FOR_CONTACST_ANIMATION,
+): boolean[] => {
+  const randomInteger: number = getRandomInteger(0, arrayLength - 1);
+  const boolArray: boolean[] = Array.from({
+    length: arrayLength,
+  }).map((_, index) => (index === randomInteger));
+
+  return boolArray;
+};
+
 export {
   getToolIconByName,
   getLinkIconByName,
   getIconColorByName,
+  getRandomInteger,
+  getBoolArrayWithOneTrueValue,
 };

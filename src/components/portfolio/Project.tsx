@@ -9,8 +9,6 @@ import {
 import ProjectStyle from './styled/ProjectStyle';
 import { LinksBadges, ToolsBadges } from './Badges';
 import Slider from './Slider';
-import Video from './Video';
-import { projects } from '../../constants/constants';
 
 const Fade = require('react-reveal/Fade');
 

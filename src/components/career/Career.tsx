@@ -6,6 +6,9 @@ import CareerStyle from './styled/CareerStyle';
 import { urls, icons } from '../../constants/constants';
 import MultipleIcons from './MultipleIcons';
 
+const Slide = require('react-reveal/Slide');
+const withReveal = require('react-reveal/withReveal');
+
 const Career: React.FC = () => {
   const [t] = useTranslation();
 
@@ -95,4 +98,4 @@ const Career: React.FC = () => {
   );
 };
 
-export default Career;
+export default withReveal(Career, <Slide left />);
