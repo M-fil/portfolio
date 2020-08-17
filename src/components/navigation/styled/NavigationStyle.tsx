@@ -42,6 +42,14 @@ const NavigationStyle = styled.div`
     }
   }
 
+  & .ant-menu-item {
+    height: fit-content;
+    text-overflow: inherit;
+    word-break: break-all;
+    overflow: inherit;
+    white-space: pre-wrap;
+  }
+
   & .person__name {
     font-size: 3rem;
     color: ${colors.navigation.textColor};

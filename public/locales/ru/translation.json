@@ -5,7 +5,7 @@
     "portfolio": "Портфолио (мои проекты)",
     "career": "Карьера",
     "comments": "Отзывы",
-    "contancts": "Контакты",
+    "contacts": "Контакты",
     "name": "Максим Филанович",
     "activity": "Front-End разработчик"
   },
@@ -39,51 +39,33 @@
       "js-self-education": {
         "title": "Начал заниматься JS",
         "description": "Самостоятльно изучал JavaScript и также поработал с такими фреймворками этого языка, как React и Redux. Написал ToDo-приложение на React и Redux.",
-        "period": "Сентябрь-Феварль (6 месяцев)"
+        "period": "Сентябрь 2019-Феварль 2020 (6 месяцев)"
       },
       "rs-js-single-projects": {
         "title": "Записался на курсы {rolling-scopes-link} по JavaScript от компании EPAM",
         "description": "За этот период разработал 6 проектов (5 написаны на JavaScript, 1 - на React) и снял 1 видео на YouTube",
-        "period": "Феварль-Май (5 месяцев)"
+        "period": "Феварль-Май 2020 (5 месяцев)"
       },
       "rs-js-team-projects": {
         "title": "Был тимлидом проекта RS Lang",
         "description": "За время разработки проекта получил навыки в управлении проектами, так как являлся тимлидом команды разработчиков из 5 человек. Разработанный проект похож на всеми известное приложение по изучению английского языка {lingualeo-link}. Наш же командный проект называется RS Lang. В приложении есть 7 игр, сохраняется долгосрочная и краткосрочная статистика, а также имеется словарь для сохранения английских слов. Данный проект RS Lang является самой тяжелой задачей, с которой я когда-либо встречался в разработке приложений и с которым я и моя команда успешно справились.",
-        "period": "Май-Июль (1 месяц)"
+        "period": "Май-Июль 2020 (1 месяц)"
       },
       "rs-js-course-finish": {
         "title": "Был тимлидом проекта RS Lang",
         "description": "За время разработки проекта получил навыки в управлении проектами, так как являлся тимлидом команды разработчиков из 5 человек. Разработанный проект похож на всеми известное приложение по изучению английского языка {lingualeo-link}. Наш же командный проект называется RS Lang. В приложении есть 7 игр, сохраняется долгосрочная и краткосрочная статистика, а также имеется словарь для сохранения английских слов. Данный проект RS Lang является самой тяжелой задачей, с которой я когда-либо встречался в разработке приложений и с которым я и моя команда успешно справились.",
-        "period": "Май-Июль (1 месяц)"
+        "period": "Май-Июль 2020 (1 месяц)"
       },
       "epam-fail": {
         "title": "Был тимлидом проекта RS Lang",
         "description": "За время разработки проекта получил навыки в управлении проектами, так как являлся тимлидом команды разработчиков из 5 человек. Разработанный проект похож на всеми известное приложение по изучению английского языка {lingualeo-link}. Наш же командный проект называется RS Lang. В приложении есть 7 игр, сохраняется долгосрочная и краткосрочная статистика, а также имеется словарь для сохранения английских слов. Данный проект RS Lang является самой тяжелой задачей, с которой я когда-либо встречался в разработке приложений и с которым я и моя команда успешно справились.",
-        "period": "Май-Июль (1 месяц)"
+        "period": "Май-Июль 2020 (1 месяц)"
       },
       "rs-react": {
         "title": "Записался на курсы {rolling-scopes-link} по React от компании EPAM",
         "description": "На этом курсе продложаю изучать самую используемую библиотеку во Front-End разработке - React.",
-        "period": "Август-Сейчас"
+        "period": "Август-Сейчас 2020"
       }
-    }
-  },
-  "comments": {
-    "person-1": {
-      "author": "Maxim Sheko",
-      "comment": "Qui magna magna mollit cupidatat Lorem eiusmod occaecat dolor magna minim amet excepteur quis."
-    },
-    "person-2": {
-      "author": "Maxim Sheko",
-      "comment": "Qui magna magna mollit cupidatat Lorem eiusmod occaecat dolor magna minim amet excepteur quis."
-    },
-    "person-3": {
-      "author": "Maxim Sheko",
-      "comment": "Qui magna magna mollit cupidatat Lorem eiusmod occaecat dolor magna minim amet excepteur quis."
-    },
-    "person-4": {
-      "author": "Maxim Sheko",
-      "comment": "Qui magna magna mollit cupidatat Lorem eiusmod occaecat dolor magna minim amet excepteur quis."
     }
   },
   "contacts": {
@@ -97,5 +79,29 @@
     "title": "Хочешь себе похожую веб-страницу?",
     "description": "Напиши мне и я тебе сделаю твою персональную страничку!",
     "button-confirm-text": "Написать"
+  },
+  "comments": {
+    "commentators": {
+      "person1": {
+        "name": "Maxim Sheko",
+        "text": "Irure do qui enim labore ex dolor cupidatat aliqua qui labore ullamco. Ex excepteur sint dolore pariatur quis amet veniam dolor quis eiusmod proident elit. Eiusmod excepteur duis sunt officia mollit do minim consequat ipsum consectetur aliquip. Ipsum culpa ullamco amet dolore consequat. Et est qui ut sint occaecat mollit qui in tempor commodo ipsum voluptate et tempor. Sunt duis laborum esse ad dolore.",
+        "date": "17.08.2020 11:25"
+      },
+      "person2": {
+        "name": "Maxim Sheko",
+        "text": "Irure do qui enim labore ex dolor cupidatat aliqua qui labore ullamco. Ex excepteur sint dolore pariatur quis amet veniam dolor quis eiusmod proident elit. Eiusmod excepteur duis sunt officia mollit do minim consequat ipsum consectetur aliquip. Ipsum culpa ullamco amet dolore consequat. Et est qui ut sint occaecat mollit qui in tempor commodo ipsum voluptate et tempor. Sunt duis laborum esse ad dolore.",
+        "date": "17.08.2020 11:25"
+      },
+      "person3": {
+        "name": "Maxim Sheko",
+        "text": "Irure do qui enim labore ex dolor cupidatat aliqua qui labore ullamco. Ex excepteur sint dolore pariatur quis amet veniam dolor quis eiusmod proident elit. Eiusmod excepteur duis sunt officia mollit do minim consequat ipsum consectetur aliquip. Ipsum culpa ullamco amet dolore consequat. Et est qui ut sint occaecat mollit qui in tempor commodo ipsum voluptate et tempor. Sunt duis laborum esse ad dolore.",
+        "date": "17.08.2020 11:25"
+      },
+      "person4": {
+        "name": "Maxim Sheko",
+        "text": "Irure do qui enim labore ex dolor cupidatat aliqua qui labore ullamco. Ex excepteur sint dolore pariatur quis amet veniam dolor quis eiusmod proident elit. Eiusmod excepteur duis sunt officia mollit do minim consequat ipsum consectetur aliquip. Ipsum culpa ullamco amet dolore consequat. Et est qui ut sint occaecat mollit qui in tempor commodo ipsum voluptate et tempor. Sunt duis laborum esse ad dolore.",
+        "date": "17.08.2020 11:25"
+      }
+    }
   }
 }

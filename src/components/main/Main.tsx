@@ -1,20 +1,19 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 
 import { personalData, urls } from '../../constants/constants';
 import MainStyle from './styled/MainStyle';
 
-const {
-  FULL_NAME,
-} = personalData;
+const Main: React.FC = () => {
+  const [t] = useTranslation();
 
-const {
-  PERSON_IMAGE_1_URL,
-} = urls;
-
-const Main: React.FC = () => (
-  <MainStyle>
-
-  </MainStyle>
-);
+  return (
+    <MainStyle>
+      <h1 className="main-page__title">
+        {t('navigation.name')}
+      </h1>
+    </MainStyle>
+  );
+};
 
 export default Main;

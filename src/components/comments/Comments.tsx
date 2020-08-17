@@ -1,48 +1,47 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
-import {
-  Carousel,
-  Comment,
-} from 'antd';
-import { CaretRightOutlined, CaretLeftOutlined } from '@ant-design/icons';
+import { Comment, Avatar, Rate } from 'antd';
+
 import CommentsStyle from './styled/CommentsStyle';
+import { commentsAuthorsLinks } from '../../constants/constants';
+import { ICommentAuthor } from '../../interfaces/interfaces';
 
 const CommentItem: React.FC<{
   personKey: string;
+  author: ICommentAuthor;
 }> = ({
-  personKey,
+  personKey, author,
 }) => {
   const [t] = useTranslation();
 
   return (
     <Comment
-      author={t(`comments.${personKey}.author`)}
-      content={t(`comments.${personKey}.comment`)}
-      avatar={`https://avatars0.githubusercontent.com/u/8600988?s=400&u=0ab0529ad7e6b7013dbeee0c78ba77b71a3eff74&v=4`}
+      className="comment"
+      author={t(`comments.commentators.${personKey}.name`)}
+      datetime={(
+        <span className="comment__rate-container">
+          <span className="comment__content">
+            {t(`comments.commentators.${personKey}.date`)}
+          </span>
+          <Rate className="comments__rate" value={5} disabled />
+        </span>
+      )}
+      content={t(`comments.commentators.${personKey}.text`)}
+      avatar={(
+        <a href={author.personalPage} target="_blank">
+          <Avatar className="comment__avatar" size="large" src={author.image} />
+        </a>
+      )}
     />
   );
 };
 
-const Comments: React.FC = () => {
-  const ref = useRef(null);
-  console.log('ref', (ref.current! as { [prop: string]: any }));
-  return (
-    <CommentsStyle>
-      <Carousel
-        ref={ref}
-        className="comments__slider"
-        autoplay
-        infinite
-        arrows
-        dotPosition="left"
-      >
-        <CommentItem personKey="person-1" />
-        <CommentItem personKey="person-2" />
-        <CommentItem personKey="person-3" />
-        <CommentItem personKey="person-4" />
-      </Carousel>
-    </CommentsStyle>
-  )
-}
+const Comments: React.FC = () => (
+  <CommentsStyle>
+    {Object.entries(commentsAuthorsLinks).map((author) => (
+      <CommentItem key={author[0]} personKey={author[0]} author={author[1]} />
+    ))}
+  </CommentsStyle>
+);
 
 export default Comments;

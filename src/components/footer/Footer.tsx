@@ -19,20 +19,20 @@ const Footer: React.FC = () => {
   return (
     <FooterStyle>
       <div className="footer__content">
-        <div className="footer__offer-questoin">
-          {t('footer.offer')}
-        </div>
         <Button
           type="primary"
-          icon={<i className="far fa-grin footer__icon"></i>}
+          icon={<i className="far fa-grin footer__icon" />}
           onClick={openNotification}
           disabled={isConfimButtonDisabled}
         >
           {t('footer.button-confirm-text')}
         </Button>
+        <div className="footer__offer-questoin">
+          {t('footer.offer')}
+        </div>
       </div>
     </FooterStyle>
-  )
-}
+  );
+};
 
 export default Footer;

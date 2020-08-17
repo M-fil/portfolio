@@ -4,9 +4,10 @@ import { colors } from '../../../constants/constants';
 const FooterStyle = styled('div')`
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   background: transparent;
   z-index: 500;
-  padding-top: 10px;
+  padding-top: 20px;
 
   & .footer__content {
     display: flex;

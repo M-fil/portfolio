@@ -47,7 +47,6 @@ const App: React.FC = () => {
             <div id="side-sections">
               <section id="left-side">
                 <Navigation setStyles={setSideBlockStyles} />
-                <Footer />
               </section>
               <section id="right-side">
                 <LanguageSwitch />
@@ -61,6 +60,7 @@ const App: React.FC = () => {
                     <Route component={Contacts} path="/contacts" />
                   </RouteSwitch>
                 </div>
+                <Footer />
               </section>
             </div>
           </main>

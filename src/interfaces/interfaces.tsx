@@ -42,3 +42,8 @@ export interface ISideBlockStyles {
   leftBlockWidth: string;
   personImageLeft: string | number;
 }
+
+export interface ICommentAuthor {
+  image: string;
+  personalPage: string;
+};

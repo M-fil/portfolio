@@ -1,5 +1,6 @@
 import {
   IProjectObject,
+  ICommentAuthor,
 } from '../interfaces/interfaces';
 
 import PERSON_IMAGE_1_URL from '../assets/images/person/person-1.png';
@@ -51,7 +52,7 @@ const colors: {
   footer: {
     backgroundColor: '#EBEBEB',
     topBorderColor: '#1D242E',
-    textColor: '#EBEBEB',
+    textColor: '#1D242E',
   },
   about: {
     textColor: '#748898',
@@ -63,7 +64,7 @@ const colors: {
   },
   career: {
     failColor: '#FF0000',
-  }
+  },
 };
 
 const icons: {
@@ -216,6 +217,27 @@ const contactsLinks: {
   },
 };
 
+const commentsAuthorsLinks: {
+  [propName: string]: ICommentAuthor;
+} = {
+  person1: {
+    image: 'https://avatars0.githubusercontent.com/u/8600988?s=400&u=0ab0529ad7e6b7013dbeee0c78ba77b71a3eff74&v=4',
+    personalPage: 'https://github.com/ShekoMaxim',
+  },
+  person2: {
+    image: 'https://avatars0.githubusercontent.com/u/8600988?s=400&u=0ab0529ad7e6b7013dbeee0c78ba77b71a3eff74&v=4',
+    personalPage: 'https://github.com/ShekoMaxim',
+  },
+  person3: {
+    image: 'https://avatars0.githubusercontent.com/u/8600988?s=400&u=0ab0529ad7e6b7013dbeee0c78ba77b71a3eff74&v=4',
+    personalPage: 'https://github.com/ShekoMaxim',
+  },
+  person4: {
+    image: 'https://avatars0.githubusercontent.com/u/8600988?s=400&u=0ab0529ad7e6b7013dbeee0c78ba77b71a3eff74&v=4',
+    personalPage: 'https://github.com/ShekoMaxim',
+  },
+};
+
 export {
   personalData,
   dateConstants,
@@ -226,4 +248,5 @@ export {
   icons,
   colors,
   contactsLinks,
+  commentsAuthorsLinks,
 };

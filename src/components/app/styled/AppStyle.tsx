@@ -62,7 +62,7 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     position: relative;
     background: ${darkSideBackground};
     overflow: hidden;
-    padding: 30px 150px 30px 30px;
+    padding: 20px 30px;
     flex-grow: 1;
     width: calc(${(props) => props.leftBlockWidth});
   }

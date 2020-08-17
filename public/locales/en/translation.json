@@ -68,24 +68,6 @@
       }
     }
   },
-  "comments": {
-    "person-1": {
-      "author": "Maxim Sheko",
-      "comment": "Qui magna magna mollit cupidatat Lorem eiusmod occaecat dolor magna minim amet excepteur quis."
-    },
-    "person-2": {
-      "author": "Maxim Sheko",
-      "comment": "Qui magna magna mollit cupidatat Lorem eiusmod occaecat dolor magna minim amet excepteur quis."
-    },
-    "person-3": {
-      "author": "Maxim Sheko",
-      "comment": "Qui magna magna mollit cupidatat Lorem eiusmod occaecat dolor magna minim amet excepteur quis."
-    },
-    "person-4": {
-      "author": "Maxim Sheko",
-      "comment": "Qui magna magna mollit cupidatat Lorem eiusmod occaecat dolor magna minim amet excepteur quis."
-    }
-  },
   "contacts": {
     "title": "You can find and contact me in any way below"
   },
@@ -97,5 +79,29 @@
     "title": "Do you Want a similar web page?",
     "description": "Write to me and I will make you your personal page!",
     "button-confirm-text": "Write"
+  },
+  "comments": {
+    "commentators": {
+      "person1": {
+        "name": "Maxim Sheko",
+        "text": "Irure do qui enim labore ex dolor cupidatat aliqua qui labore ullamco. Ex excepteur sint dolore pariatur quis amet veniam dolor quis eiusmod proident elit. Eiusmod excepteur duis sunt officia mollit do minim consequat ipsum consectetur aliquip. Ipsum culpa ullamco amet dolore consequat. Et est qui ut sint occaecat mollit qui in tempor commodo ipsum voluptate et tempor. Sunt duis laborum esse ad dolore.",
+        "date": "17.08.2020 11:25"
+      },
+      "person2": {
+        "name": "Maxim Sheko",
+        "text": "Irure do qui enim labore ex dolor cupidatat aliqua qui labore ullamco. Ex excepteur sint dolore pariatur quis amet veniam dolor quis eiusmod proident elit. Eiusmod excepteur duis sunt officia mollit do minim consequat ipsum consectetur aliquip. Ipsum culpa ullamco amet dolore consequat. Et est qui ut sint occaecat mollit qui in tempor commodo ipsum voluptate et tempor. Sunt duis laborum esse ad dolore.",
+        "date": "17.08.2020 11:25"
+      },
+      "person3": {
+        "name": "Maxim Sheko",
+        "text": "Irure do qui enim labore ex dolor cupidatat aliqua qui labore ullamco. Ex excepteur sint dolore pariatur quis amet veniam dolor quis eiusmod proident elit. Eiusmod excepteur duis sunt officia mollit do minim consequat ipsum consectetur aliquip. Ipsum culpa ullamco amet dolore consequat. Et est qui ut sint occaecat mollit qui in tempor commodo ipsum voluptate et tempor. Sunt duis laborum esse ad dolore.",
+        "date": "17.08.2020 11:25"
+      },
+      "person4": {
+        "name": "Maxim Sheko",
+        "text": "Irure do qui enim labore ex dolor cupidatat aliqua qui labore ullamco. Ex excepteur sint dolore pariatur quis amet veniam dolor quis eiusmod proident elit. Eiusmod excepteur duis sunt officia mollit do minim consequat ipsum consectetur aliquip. Ipsum culpa ullamco amet dolore consequat. Et est qui ut sint occaecat mollit qui in tempor commodo ipsum voluptate et tempor. Sunt duis laborum esse ad dolore.",
+        "date": "17.08.2020 11:25"
+      }
+    }
   }
 }

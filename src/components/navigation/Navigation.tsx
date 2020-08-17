@@ -8,7 +8,7 @@ import { ISideBlockStyles } from '../../interfaces/interfaces';
 
 interface INavigation<T> {
   setStyles: (prop: T) => void;
-};
+}
 
 const Navigation: React.FC<INavigation<ISideBlockStyles>> = ({
   setStyles,
@@ -60,7 +60,7 @@ const Navigation: React.FC<INavigation<ISideBlockStyles>> = ({
         <h4 className="person__activity">{t('navigation.activity')}</h4>
       </div>
     </NavigationStyle>
-  )
-}
+  );
+};
 
 export default Navigation;
