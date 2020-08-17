@@ -5,7 +5,9 @@
     "portfolio": "Portfolio (my projects)",
     "career": "Career",
     "comments": "Comments",
-    "contacts": "Contacts",
+    "contacts": "Contacts"
+  },
+  "main": {
     "name": "Maxim Filanovich",
     "activity": "Front-End developer"
   },

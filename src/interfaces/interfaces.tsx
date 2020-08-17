@@ -36,7 +36,6 @@ export interface IDefaultState {
 export interface ISideBlockStyles {
   rightBlockWidth: string;
   leftBlockWidth: string;
-  personImageLeft: string | number;
 }
 
 export interface ICommentAuthor {

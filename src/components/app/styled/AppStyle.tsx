@@ -42,7 +42,6 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     transition: 0.6s ease-in;
     position: relative;
     background: ${darkSideBackground};
-    overflow: hidden;
     padding: 20px 30px;
     flex-grow: 1;
     width: calc(${(props) => props.leftBlockWidth});
@@ -71,14 +70,13 @@ const AppStyle = styled('div')<ISideBlockStyles>`
   #person-image {
     transition: 0.6s ease-in;
     position: absolute;
-    left: ${(props) => props.personImageLeft};
-    right: 0;
+    right: -225px;
     bottom: 0;
     z-index: 1000;
 
     margin: 0 auto;
-    width: 450px;
-    height: 500px;
+    width: 550px;
+    height: 600px;
   }
 `;
 

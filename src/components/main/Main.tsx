@@ -11,8 +11,11 @@ const Main: React.FC = () => {
     <MainStyle>
       <Fade right>
         <h1 className="main-page__title">
-          {t('navigation.name')}
+          {t('main.name')}
         </h1>
+        <h4 className="main-page__activity">
+          {t('main.activity')}
+        </h4>
       </Fade>
     </MainStyle>
   );

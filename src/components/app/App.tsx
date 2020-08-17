@@ -24,7 +24,6 @@ const App: React.FC = () => {
   const [sideBlockStyles, setSideBlockStyles] = useState<ISideBlockStyles>({
     rightBlockWidth: '50%',
     leftBlockWidth: '50%',
-    personImageLeft: 0,
   });
 
   return (
@@ -33,19 +32,18 @@ const App: React.FC = () => {
       <AppStyle
         rightBlockWidth={sideBlockStyles.rightBlockWidth}
         leftBlockWidth={sideBlockStyles.leftBlockWidth}
-        personImageLeft={sideBlockStyles.personImageLeft}
       >
         <BrowserRouter>
           <main id="main">
-            <div className="person-image-container">
-              <img
-                id="person-image"
-                src={urls.PERSON_IMAGE_1_URL}
-                alt={personalData.FULL_NAME as string}
-              />
-            </div>
             <div id="side-sections">
               <section id="left-side">
+                <div className="person-image-container">
+                  <img
+                    id="person-image"
+                    src={urls.PERSON_IMAGE_1_URL}
+                    alt={personalData.FULL_NAME as string}
+                  />
+                </div>
                 <Navigation setStyles={setSideBlockStyles} />
               </section>
               <section id="right-side">

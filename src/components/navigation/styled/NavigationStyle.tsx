@@ -21,6 +21,7 @@ const NavigationStyle = styled.div`
   }
 
   & .ant-menu-item {
+    transition: 0.6s ease-in;
     background-color: transparent !important;
   }
 
@@ -31,6 +32,7 @@ const NavigationStyle = styled.div`
     &::before {
       content: '';
 
+      transition: 0.6s ease-in;
       position: absolute;
       left: 0;
       top: 0;

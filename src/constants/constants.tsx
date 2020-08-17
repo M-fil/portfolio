@@ -56,6 +56,8 @@ const colors: {
     darkSideBackground: '#1D242E',
     lightSideBackground: '#EBEBEB',
     textColor: '#EBEBEB',
+    activityColor: '#254054',
+    nameColor: '#254054',
   },
   footer: {
     backgroundColor: '#EBEBEB',

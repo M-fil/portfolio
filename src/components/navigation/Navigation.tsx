@@ -24,13 +24,11 @@ const Navigation: React.FC<INavigation<ISideBlockStyles>> = ({
       setStyles({
         rightBlockWidth: '70%',
         leftBlockWidth: '30%',
-        personImageLeft: '-40%',
       });
     } else {
       setStyles({
         rightBlockWidth: '50%',
         leftBlockWidth: '50%',
-        personImageLeft: 0,
       });
     }
   }, [location]);
@@ -57,11 +55,6 @@ const Navigation: React.FC<INavigation<ISideBlockStyles>> = ({
           <NavLink to="/contacts">{t('navigation.contacts')}</NavLink>
         </Menu.Item>
       </Menu>
-
-      <div className="navigation__person">
-        <h2 className="person__name">{t('navigation.name')}</h2>
-        <h4 className="person__activity">{t('navigation.activity')}</h4>
-      </div>
     </NavigationStyle>
   );
 };
