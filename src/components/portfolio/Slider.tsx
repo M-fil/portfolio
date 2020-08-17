@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 
 import { CaretRightOutlined, CaretLeftOutlined } from '@ant-design/icons';
 import { Carousel } from 'antd';
@@ -22,8 +22,8 @@ const Slider: React.FC<ISwiper> = ({
     <Carousel
       infinite
       arrows={arrows}
-      prevArrow={<CaretLeftOutlined />}
       nextArrow={<CaretRightOutlined />}
+      prevArrow={<CaretLeftOutlined />}
       {...sliderProps}
     >
       {extraElementAsSlide}

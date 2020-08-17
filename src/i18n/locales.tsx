@@ -1,4 +1,4 @@
-interface ILocales {
+export interface ILocales {
   en: 'EN',
   ru: 'RU',
 };

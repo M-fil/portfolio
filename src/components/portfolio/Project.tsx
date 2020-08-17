@@ -36,15 +36,8 @@ const Project: React.FC<IProject> = ({
           <Slider
             project={project}
             arrows={false}
+            pauseOnHover
             autoplay
-            autoplaySpeed={5000}
-            extraElementAsSlide={(
-              <Video
-                width="100%"
-                height="350"
-                src={projects.RS_LANG.video || ''}
-              />
-            )}
           />
         )}
         data-project-id={projectId}

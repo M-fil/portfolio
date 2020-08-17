@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { icons, colors } from '../constants/constants';
+import { icons, colors, contactsLinks } from '../constants/constants';
 import {
   ToolType,
   LinksKeyType,
@@ -15,10 +15,14 @@ const {
   demoIconColor,
 } = colors.portfolio;
 
-const getToolIconByName = (iconName: ToolType)=> {
+const {
+  youtube,
+} = contactsLinks;
+
+const getToolIconByName = (iconName: ToolType) => {
   switch (iconName) {
     case 'HTML':
-      return (<i style={{ color: htmlIconColor }} className="fab fa-html5" />)
+      return (<i style={{ color: htmlIconColor }} className="fab fa-html5" />);
     case 'SCSS':
       return (<i style={{ color: scssIconColor }} className="fab fa-sass" />);
     case 'JavaScript':
@@ -36,14 +40,16 @@ const getToolIconByName = (iconName: ToolType)=> {
 const getLinkIconByName = (linkIconName: LinksKeyType) => {
   switch (linkIconName) {
     case 'github':
-      return (<i style={{ color: githubIconColor }} className="fab fa-github"></i>);
+      return (<i style={{ color: githubIconColor }} className="fab fa-github" />);
+    case 'youtube':
+      return (<i style={{ color: youtube.color }} className="fab fa-youtube" />);
     case 'demo':
     default:
-      return (<i style={{ color: demoIconColor }} className="fas fa-external-link-alt"></i>);
+      return (<i style={{ color: demoIconColor }} className="fas fa-external-link-alt" />);
   }
 };
 
 export {
   getToolIconByName,
   getLinkIconByName,
-}
+};

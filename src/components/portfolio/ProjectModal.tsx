@@ -34,16 +34,7 @@ const ProjectModal: React.FC<IProjectModal> = ({
           style={{ top: 20 }}
         >
           <ProjectModalStyle>
-            <Slider
-              project={project}
-              extraElementAsSlide={(
-                <Video
-                  width="100%"
-                  height="350"
-                  src={projects.RS_LANG.video || ''}
-                />
-              )}
-            />
+            <Slider project={project} />
             <LinksBadges project={project} />
             <ToolsBadges project={project} />
             <TeammatesBadges project={project} />

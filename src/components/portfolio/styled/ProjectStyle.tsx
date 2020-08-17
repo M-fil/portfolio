@@ -23,6 +23,10 @@ const ProjectStyle = styled.div`
       margin-left: 5px;
     }
   }
+
+  & .ant-card-body {
+    padding-top: 0;
+  }
 `;
 
 export default ProjectStyle;

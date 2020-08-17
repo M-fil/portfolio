@@ -58,11 +58,16 @@ const CareerStyle = styled('div')`
   }
 
   & .ant-steps-item-title {
+    display: flex;
+    flex-direction: column;
+
     font-size: 1.7rem;
   }
 
   & .ant-steps-item-subtitle {
     font-size: 1.4rem;
+    margin-left: 0;
+    text-decoration: underline;
   }
 
   & .ant-steps-item-description {

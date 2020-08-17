@@ -1,4 +1,5 @@
 import React, {
+  ChangeEvent,
   useEffect, useState,
 } from 'react';
 import { Switch } from 'antd';
@@ -7,19 +8,20 @@ import locales from '../../i18n/locales';
 import LanguageSwitchStyle from './styled/LanguageSwitchStyle';
 import i18n from '../../i18n/i18n';
 import { SwitchChangeEventHandler } from 'antd/lib/switch';
+import { LanguageType } from '../../interfaces/interfaces';
 
 const LanguageSwitch: React.FC = () => {
-  const localStorageLanguage = localStorage.getItem('language');
-  const [language, setLanguage] = useState<string>(
+  const localStorageLanguage = localStorage.getItem('language') as LanguageType;
+  const [language, setLanguage] = useState<LanguageType | string>(
     localStorageLanguage?.length ? localStorageLanguage : i18n.language,
   );
 
-  const onSwitchChange = (checked: boolean, event: SwitchChangeEventHandler) => {
-    console.log(checked);
+  const onSwitchChange = () => {
+    const targetLanguage = language === locales.ru ? locales.en : locales.ru;
 
-    localStorage.setItem('language', 'targetValue');
-    setLanguage(locales.ru);
-    i18n.changeLanguage(locales.ru);
+    localStorage.setItem('language', targetLanguage);
+    setLanguage(targetLanguage);
+    i18n.changeLanguage(targetLanguage);
   };
 
   useEffect(() => {
@@ -27,11 +29,11 @@ const LanguageSwitch: React.FC = () => {
   }, [language]);
 
   return (
-    <LanguageSwitchStyle>
+    <LanguageSwitchStyle language={language}>
       <Switch
-        checkedChildren={locales.ru}
-        unCheckedChildren={locales.en}
+        checked={language === locales.ru}
         defaultChecked
+        onChange={onSwitchChange}
       />
     </LanguageSwitchStyle>
   );

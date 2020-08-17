@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { useTranslation } from 'react-i18next';
 import {
   Carousel,
@@ -24,15 +24,17 @@ const CommentItem: React.FC<{
 };
 
 const Comments: React.FC = () => {
+  const ref = useRef(null);
+  console.log('ref', (ref.current! as { [prop: string]: any }));
   return (
     <CommentsStyle>
       <Carousel
+        ref={ref}
         className="comments__slider"
         autoplay
         infinite
         arrows
-        prevArrow={<CaretLeftOutlined />}
-        nextArrow={<CaretRightOutlined />}
+        dotPosition="left"
       >
         <CommentItem personKey="person-1" />
         <CommentItem personKey="person-2" />

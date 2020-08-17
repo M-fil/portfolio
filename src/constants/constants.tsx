@@ -19,6 +19,8 @@ const urls: {
   PERSONAL_GITHUB_URL: 'https://api.github.com/users/M-fil',
   RS_LOGO,
   EPAM_LOGO,
+  RUSSIA_FLAG: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg',
+  ENGLAND_FLAG: 'https://images-na.ssl-images-amazon.com/images/I/2102hNwuHyL._AC_.jpg',
 };
 
 const colors: {
@@ -150,6 +152,7 @@ const projects: {
     links: {
       github: 'https://github.com/M-fil/rslang',
       demo: 'https://rslang-team18-m-fil.netlify.app/',
+      youtube: 'https://youtu.be/XDqg_2ExX4E',
     },
     tools: ['HTML', 'SCSS', 'JavaScript'],
     images: [
