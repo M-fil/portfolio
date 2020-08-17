@@ -50,7 +50,7 @@ const App: React.FC = () => {
                 <LanguageSwitch />
                 <div id="main-content">
                   <RouteSwitch>
-                    <Route component={Main} path="/" exact />
+                    <Route exact component={Main} path="/" />
                     <Route component={About} path="/about" />
                     <Route component={Portfolio} path="/portfolio" />
                     <Route component={Career} path="/career" />

@@ -2,6 +2,7 @@ import React, {
   useEffect, useState,
 } from 'react';
 import { Switch } from 'antd';
+import { useTranslation } from 'react-i18next';
 
 import locales from '../../i18n/locales';
 import LanguageSwitchStyle from './styled/LanguageSwitchStyle';
@@ -16,6 +17,7 @@ const LanguageSwitch: React.FC = () => {
   const [language, setLanguage] = useState<LanguageType | string>(
     localStorageLanguage?.length ? localStorageLanguage : i18n.language,
   );
+  const [t] = useTranslation();
 
   const onSwitchChange = () => {
     const targetLanguage = language === locales.ru ? locales.en : locales.ru;
@@ -28,6 +30,10 @@ const LanguageSwitch: React.FC = () => {
   useEffect(() => {
     i18n.changeLanguage(language);
   }, [language]);
+
+  useEffect(() => {
+    document.title = t('main.name');
+  });
 
   return (
     <LanguageSwitchStyle language={language}>

@@ -27,12 +27,12 @@ const NavigationStyle = styled.div`
 
   & .ant-menu-item-selected {
     position: relative;
+    background-color: transparent !important;
     transform: translateX(20px);
 
     &::before {
       content: '';
 
-      transition: 0.6s ease-in;
       position: absolute;
       left: 0;
       top: 0;

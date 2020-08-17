@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Menu } from 'antd';
@@ -17,9 +17,11 @@ const Navigation: React.FC<INavigation<ISideBlockStyles>> = ({
   setStyles,
 }) => {
   const [t] = useTranslation();
+  const [selectedKey, setSelectedKey] = useState<string>('');
   const location = useLocation();
 
   useEffect(() => {
+    setSelectedKey(location.pathname === '/' ? '/' : location.pathname.slice(1))
     if (location.pathname !== '/') {
       setStyles({
         rightBlockWidth: '70%',
@@ -35,24 +37,36 @@ const Navigation: React.FC<INavigation<ISideBlockStyles>> = ({
 
   return (
     <NavigationStyle>
-      <Menu className="navigation__menu">
-        <Menu.Item>
-          <NavLink to="/">{t('navigation.main')}</NavLink>
+      <Menu className="navigation__menu" selectedKeys={[selectedKey]}>
+        <Menu.Item key="/">
+          <NavLink to="/" exact>
+            {t('navigation.main')}
+          </NavLink>
         </Menu.Item>
-        <Menu.Item>
-          <NavLink to="/about">{t('navigation.about')}</NavLink>
+        <Menu.Item key="about">
+          <NavLink to="/about">
+            {t('navigation.about')}
+          </NavLink>
         </Menu.Item>
-        <Menu.Item>
-          <NavLink to="/portfolio">{t('navigation.portfolio')}</NavLink>
+        <Menu.Item key="portfolio">
+          <NavLink to="/portfolio">
+            {t('navigation.portfolio')}
+          </NavLink>
         </Menu.Item>
-        <Menu.Item>
-          <NavLink to="/career">{t('navigation.career')}</NavLink>
+        <Menu.Item key="career">
+          <NavLink to="/career">
+            {t('navigation.career')}
+          </NavLink>
         </Menu.Item>
-        <Menu.Item>
-          <NavLink to="/comments">{t('navigation.comments')}</NavLink>
+        <Menu.Item key="comments">
+          <NavLink to="/comments">
+            {t('navigation.comments')}
+          </NavLink>
         </Menu.Item>
-        <Menu.Item>
-          <NavLink to="/contacts">{t('navigation.contacts')}</NavLink>
+        <Menu.Item key="contacts">
+          <NavLink to="/contacts">
+            {t('navigation.contacts')}
+          </NavLink>
         </Menu.Item>
       </Menu>
     </NavigationStyle>

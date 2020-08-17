@@ -30,7 +30,7 @@ const Project: React.FC<IProject> = ({
   const [t] = useTranslation();
 
   return (
-    <Fade left={index % 2} right={!(index % 2)} duration={700}>
+    <Fade left={index % 2 === 0} right={index % 2 !== 0} duration={700}>
       <ProjectStyle>
         <Card
           title={project.name}
