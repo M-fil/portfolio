@@ -48,14 +48,35 @@ const Portfolio: React.FC = () => {
           isVisible={isModalVisible}
           onCancel={onCloseModal}
         />
-        {Object.entries(projects).map((project) => (
+        {Object.entries(projects).map((project, index) => (
           <Project
             key={project[0]}
+            index={index}
             project={project[1]}
             projectId={project[0]}
           />
         ))}
       </div>
+      <Project
+        index={1}
+        project={projects.RS_LANG}
+        projectId="projects.RS_LANG"
+      />
+      <Project
+        index={2}
+        project={projects.RS_LANG}
+        projectId="projects.RSfd_LANG"
+      />
+      <Project
+        index={3}
+        project={projects.RS_LANG}
+        projectId="prsdojects.RS_LANG"
+      />
+      <Project
+        index={4}
+        project={projects.RS_LANG}
+        projectId="projectfdsfs.RS_LANG"
+      />
     </PortfolioStyle>
   );
 };

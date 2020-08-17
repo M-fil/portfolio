@@ -12,6 +12,8 @@ import Slider from './Slider';
 import Video from './Video';
 import { projects } from '../../constants/constants';
 
+const Fade = require('react-reveal/Fade');
+
 const IconFont = createFromIconfontCN({
   scriptUrl: [
     '//at.alicdn.com/t/font_8d5l8fzk5b87iudi.js',
@@ -21,40 +23,43 @@ const IconFont = createFromIconfontCN({
 interface IProject {
   project: IProjectObject;
   projectId: string;
+  index: number;
 }
 
 const Project: React.FC<IProject> = ({
-  project, projectId,
+  project, projectId, index
 }) => {
   const [t] = useTranslation();
 
   return (
-    <ProjectStyle>
-      <Card
-        title={project.name}
-        cover={(
-          <Slider
-            project={project}
-            arrows={false}
-            pauseOnHover
-            autoplay
-          />
+    <Fade left={index % 2} right={!(index % 2)} duration={700}>
+      <ProjectStyle>
+        <Card
+          title={project.name}
+          cover={(
+            <Slider
+              project={project}
+              arrows={false}
+              pauseOnHover
+              autoplay
+            />
         )}
-        data-project-id={projectId}
-        extra={(
-          <a className="project__more-button" href="/">
-            {t('portfolio.more-button')}
-            <IconFont type="icon-tuichu" />
-          </a>
+          data-project-id={projectId}
+          extra={(
+            <a className="project__more-button" href="/">
+              {t('portfolio.more-button')}
+              <IconFont type="icon-tuichu" />
+            </a>
         )}
-      >
-        <div className="project__description">
-          {project.description}
-        </div>
-        <LinksBadges project={project} />
-        <ToolsBadges project={project} />
-      </Card>
-    </ProjectStyle>
+        >
+          <div className="project__description">
+            {project.description}
+          </div>
+          <LinksBadges project={project} />
+          <ToolsBadges project={project} />
+        </Card>
+      </ProjectStyle>
+    </Fade>
   );
 };
 
