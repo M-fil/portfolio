@@ -8,6 +8,8 @@ const {
 } = colors.mainPage;
 
 const AppStyle = styled('div')<ISideBlockStyles>`
+  transition: 3s ease-in;
+
   #main {
     position: relative;
   
@@ -37,6 +39,7 @@ const AppStyle = styled('div')<ISideBlockStyles>`
   }
 
   #left-side {
+    transition: 0.6s ease-in;
     position: relative;
     background: ${darkSideBackground};
     overflow: hidden;
@@ -66,6 +69,7 @@ const AppStyle = styled('div')<ISideBlockStyles>`
   }
 
   #person-image {
+    transition: 0.6s ease-in;
     position: absolute;
     left: ${(props) => props.personImageLeft};
     right: 0;

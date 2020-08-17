@@ -14,7 +14,6 @@ const Contact: React.FC<IContact> = ({
   contact,
 }) => {
   const boolArray: boolean[] = getBoolArrayWithOneTrueValue();
-  console.log(boolArray, contact.name);
   return (
     <Fade
       left={boolArray[0]}
@@ -22,16 +21,16 @@ const Contact: React.FC<IContact> = ({
       top={boolArray[2]}
       bottom={boolArray[3]}
     >
-  <Tooltip title={contact.name} placement="top">
-    <a href={contact.link} target="_blank">
-      <Avatar
-        size={150}
-        className="contacts__link"
-        icon={<i className={contact.iconClassName} />}
-        style={{ background: contact.color }}
-      />
-    </a>
-  </Tooltip>
+      <Tooltip title={contact.name} placement="top">
+        <a href={contact.link} target="_blank">
+          <Avatar
+            size={150}
+            className="contacts__link"
+            icon={<i className={contact.iconClassName} />}
+            style={{ background: contact.color }}
+          />
+        </a>
+      </Tooltip>
     </Fade>
   );
 };

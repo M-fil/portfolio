@@ -17,10 +17,11 @@ const MultipleIcons: React.FC<IMultipleIcons> = ({
       switch (icon.element) {
         case 'i':
         default:
-          return (<i className={icon.className} />);
+          return (<i key={icon.src} className={icon.className} />);
         case 'img':
           return (
             <img
+              key={icon.src}
               className={icon.className}
               src={icon.src}
               alt={icon.src}

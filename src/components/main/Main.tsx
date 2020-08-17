@@ -9,7 +9,7 @@ const Main: React.FC = () => {
 
   return (
     <MainStyle>
-      <Fade right mountOnEnter unmountOnExit>
+      <Fade right>
         <h1 className="main-page__title">
           {t('navigation.name')}
         </h1>
