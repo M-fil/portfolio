@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const ProjectModalStyle = styled('div')`
-  & .project-modal__title {
+  & .project-modal__subtitle {
     font-size: 2rem;
   }
 

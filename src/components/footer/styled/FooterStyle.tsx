@@ -9,6 +9,8 @@ const FooterStyle = styled('div')`
   z-index: 500;
   padding-top: 20px;
 
+  font-size: 1.2rem;
+
   & .footer__content {
     display: flex;
     align-items: center;

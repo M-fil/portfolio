@@ -70,9 +70,9 @@ const ToolsBadges: React.FC<IBadge> = ({
                 src={isNoIconInDB ? getToolIconByName(badge) as string : ''}
                 icon={!isNoIconInDB && getToolIconByName(badge)}
                 style={{
-                    background: toolIconBackground,
-                    border: `2px solid ${toolIconBorderColor}`,
-                  }}
+                  background: toolIconBackground,
+                  border: `2px solid ${toolIconBorderColor}`,
+                }}
               />
             </Tooltip>
           );
@@ -88,8 +88,12 @@ const TeammatesBadges: React.FC<IBadge> = ({
   const allCollaborators = useCallbackEffect(
     [], getAllProjectCollaborators, ['rslang'],
   )?.data as ITeammate[];
-  const personalGithub = allCollaborators && allCollaborators.find((person: ITeammate) => person.login === personalData.GITHUB_LOGIN) as ITeammate;
-  const resultCollabs = project.isMoreThanOneCollaborator ? allCollaborators : [personalGithub];
+  const personalGithub = allCollaborators && allCollaborators.find(
+    (person: ITeammate) => person.login === personalData.GITHUB_LOGIN,
+  ) as ITeammate;
+  const resultCollabs = project.isMoreThanOneCollaborator
+    ? allCollaborators
+    : [personalGithub];
 
   return (
     <BadgeStyle childrenCount={resultCollabs?.length || 0}>

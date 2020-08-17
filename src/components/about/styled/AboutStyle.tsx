@@ -10,6 +10,10 @@ const AboutStyle = styled('div')`
     text-align: left;
     font-size: 2.5rem;
     margin: 0;
+
+    & > *:not(:last-child) {
+      margin-right: 20px;
+    }
   }
 
   & .about__short-info {
@@ -21,6 +25,8 @@ const AboutStyle = styled('div')`
   & .about__description {
     text-align: left;
     font-size: 1.3rem;
+
+    margin-bottom: 20px;
   }
 
   & .about__skills {
@@ -28,7 +34,7 @@ const AboutStyle = styled('div')`
     justify-content: space-between;
     flex-wrap: wrap;
 
-    flex-basis: 40%
+    padding-right: 30px;
   }
 
   & .about__skill {
@@ -38,24 +44,32 @@ const AboutStyle = styled('div')`
     color: ${about.textColor};
 
     margin: 5px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     flex-basis: 40%;
   }
 
   & .skill__name {
-    margin-left: 10px;
-  }
-
-  & .about__download-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
+  
+    margin-left: 10px;
 
-    margin: 20px 0;
+    & i {
+      font-size: 3rem;
+    }
   }
 
   & .about__download-button {
     font-size: 1.5rem;
+  }
+
+  & .skill__icon {
+    margin-left: 5px;
+  }
+
+  & .skill__icon-image {
+    width: 40px;
+    height: 40px;
   }
 `;
 

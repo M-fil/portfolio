@@ -1,6 +1,7 @@
 import {
   IProjectObject,
   ICommentAuthor,
+  ToolType,
 } from '../interfaces/interfaces';
 
 import PERSON_IMAGE_1_URL from '../assets/images/person/person-1.png';
@@ -9,6 +10,7 @@ import REDUX from '../assets/images/tools/redux.svg';
 import TYPESCRIPT from '../assets/images/tools/typescript.svg';
 import RS_LOGO from '../assets/images/steps/rs-logo.png';
 import EPAM_LOGO from '../assets/images/steps/epam-logo.png';
+import REACT_TESTING_LIBRARY from '../assets/images/tools/react-testing-library.png';
 
 const urls: {
   [propName: string]: string,
@@ -31,14 +33,19 @@ const colors: {
     javascriptIconColor: '#F7DF1E',
     reactIconColor: '#6EDDFB',
     scssIconColor: '#CD6799',
+    cssIconColor: '#264DE4',
     htmlIconColor: '#E44D26',
     phpIconColor: '#7478AE',
+    languageIconColor: '#4C6EF5',
     toolIconBackground: '#ffffff',
     toolIconBorderColor: '#CCCCCC',
     githubIconColor: '#24292E',
     demoIconColor: '#1890FF',
     linkIconBackground: '#ffffff',
     arrowButtonColor: '#0091FF',
+    reactTestingLibraryIconColor: '#F7630C',
+    reduxIconColor: '#7348B7',
+    typescriptIconColor: '#007ACC',
   },
   navigation: {
     textColor: '#EBEBEB',
@@ -72,6 +79,7 @@ const icons: {
 } = {
   REDUX,
   TYPESCRIPT,
+  REACT_TESTING_LIBRARY,
 };
 
 const personalData: {
@@ -93,33 +101,33 @@ const dateConstants: {
 
 const skills: {
   [propName: string]: {
-    text: string,
+    text: ToolType,
     percentage: number,
   },
 } = {
   JAVASCRIPT: {
     text: 'JavaScript',
-    percentage: 50,
+    percentage: 90,
   },
   HTML: {
     text: 'HTML',
-    percentage: 50,
+    percentage: 90,
   },
   CSS: {
     text: 'CSS',
-    percentage: 50,
+    percentage: 90,
   },
   SCSS: {
     text: 'SCSS',
-    percentage: 50,
+    percentage: 90,
   },
   REACT: {
     text: 'React',
-    percentage: 50,
+    percentage: 75,
   },
   REDUX: {
     text: 'Redux',
-    percentage: 50,
+    percentage: 60,
   },
   TYPESCRIPT: {
     text: 'TypeScript',
@@ -127,10 +135,10 @@ const skills: {
   },
   TESTING_LIBRARIES: {
     text: 'React Testing Library & Jest',
-    percentage: 50,
+    percentage: 40,
   },
   ENGLISH_LEVEL: {
-    text: 'B1 (Intermediate)',
+    text: 'English: B1 (Intermediate)',
     percentage: 50,
   },
 };

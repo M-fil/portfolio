@@ -19,7 +19,7 @@ import LanguageSwitch from '../language-switch/LanguageSwitch';
 import AppStyle from './styled/AppStyle';
 import { ISideBlockStyles } from '../../interfaces/interfaces';
 import { personalData, urls } from '../../constants/constants';
-import MainStyle from '../main/styled/MainStyle';
+import GlobalStyles from '../../styles/GlobalStyles';
 
 const App: React.FC = () => {
   const [sideBlockStyles, setSideBlockStyles] = useState<ISideBlockStyles>({
@@ -30,6 +30,7 @@ const App: React.FC = () => {
 
   return (
     <>
+      <GlobalStyles />
       <AppStyle
         rightBlockWidth={sideBlockStyles.rightBlockWidth}
         leftBlockWidth={sideBlockStyles.leftBlockWidth}

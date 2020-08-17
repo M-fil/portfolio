@@ -8,28 +8,6 @@ const {
 } = colors.mainPage;
 
 const AppStyle = styled('div')<ISideBlockStyles>`
-  @font-face { 
-    font-family: 'Justicman'; 
-    src: url('../../../fonst/Justicman.ttf')  format('truetype'),
-    font-weight: 400; 
-    font-style: normal; 
-  }
-
-  html {
-    font-size: 10px;
-    line-height: 10px;
-  }
-
-  body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Justicman';
-  }
-
-  button, input, textarea {
-    font-family: 'Justicman';
-  }
-
   #main {
     position: relative;
   
@@ -93,14 +71,6 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     margin: 0 auto;
     width: 450px;
     height: 500px;
-  }
-
-  .projects__list > *:not(:last-child) {
-    margin-bottom: 40px;
-  }
-
-  .projects__list {
-    padding-bottom: 50px;
   }
 `;
 

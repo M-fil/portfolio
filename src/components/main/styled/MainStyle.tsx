@@ -4,8 +4,9 @@ import { colors } from '../../../constants/constants';
 const MainStyle = styled('div')`
   & .main-page__title {
     font-size: 6rem;
+    line-height: 7rem;
     color: ${colors.mainPage.darkSideBackground};
-    word-break: break-all;
+    word-break: word-break;
   }
 `;
 

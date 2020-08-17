@@ -6,8 +6,6 @@ import { IProjectObject } from '../../interfaces/interfaces';
 import Slider from './Slider';
 import { LinksBadges, ToolsBadges, TeammatesBadges } from './Badges';
 import ProjectModalStyle from './styled/ProjectModalStyle';
-import Video from './Video';
-import { projects } from '../../constants/constants';
 
 interface IProjectModal {
   project: IProjectObject | null;
@@ -41,7 +39,7 @@ const ProjectModal: React.FC<IProjectModal> = ({
             <List>
               <List.Item.Meta
                 title={(
-                  <h3 className="project-modal__title">
+                  <h3 className="project-modal__subtitle">
                     {t('portfolio.description-text')}
                   </h3>
                 )}

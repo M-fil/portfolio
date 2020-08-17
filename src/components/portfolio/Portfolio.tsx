@@ -6,6 +6,7 @@ import React, {
 
 import Project from './Project';
 import ProjectModal from './ProjectModal';
+import PortfolioStyle from './styled/PortfolioStyle';
 import { projects } from '../../constants/constants';
 import { IProjectObject } from '../../interfaces/interfaces';
 
@@ -40,20 +41,22 @@ const Portfolio: React.FC = () => {
   };
 
   return (
-    <div className="projects__list" onClick={onVisibleHandler}>
-      <ProjectModal
-        project={clickedProjectObject}
-        isVisible={isModalVisible}
-        onCancel={onCloseModal}
-      />
-      {Object.entries(projects).map((project) => (
-        <Project
-          key={project[0]}
-          project={project[1]}
-          projectId={project[0]}
+    <PortfolioStyle>
+      <div className="projects__list" onClick={onVisibleHandler}>
+        <ProjectModal
+          project={clickedProjectObject}
+          isVisible={isModalVisible}
+          onCancel={onCloseModal}
         />
-      ))}
-    </div>
+        {Object.entries(projects).map((project) => (
+          <Project
+            key={project[0]}
+            project={project[1]}
+            projectId={project[0]}
+          />
+        ))}
+      </div>
+    </PortfolioStyle>
   );
 };
 

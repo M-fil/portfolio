@@ -13,6 +13,11 @@ const {
   htmlIconColor,
   githubIconColor,
   demoIconColor,
+  cssIconColor,
+  languageIconColor,
+  reactTestingLibraryIconColor,
+  reduxIconColor,
+  typescriptIconColor,
 } = colors.portfolio;
 
 const {
@@ -30,6 +35,12 @@ const getToolIconByName = (iconName: ToolType) => {
       return (<i style={{ color: javascriptIconColor }} className="fab fa-js" />);
     case 'React':
       return (<i style={{ color: reactIconColor }} className="fab fa-react" />);
+    case 'CSS':
+      return (<i style={{ color: cssIconColor }} className="fab fa-css3-alt" />);
+    case 'English: B1 (Intermediate)':
+      return (<i style={{ color: languageIconColor }} className="fas fa-globe-americas" />);
+    case 'React Testing Library & Jest':
+      return icons.REACT_TESTING_LIBRARY;
     case 'Redux':
       return icons.REDUX;
     case 'TypeScript':
@@ -49,7 +60,32 @@ const getLinkIconByName = (linkIconName: LinksKeyType) => {
   }
 };
 
+const getIconColorByName = (iconName: ToolType): string => {
+  switch (iconName) {
+    case 'HTML':
+      return htmlIconColor;
+    case 'SCSS':
+      return scssIconColor;
+    case 'JavaScript':
+    default:
+      return javascriptIconColor;
+    case 'React':
+      return reactIconColor;
+    case 'CSS':
+      return cssIconColor;
+    case 'English: B1 (Intermediate)':
+      return languageIconColor;
+    case 'React Testing Library & Jest':
+      return reactTestingLibraryIconColor;
+    case 'Redux':
+      return reduxIconColor;
+    case 'TypeScript':
+      return typescriptIconColor;
+  }
+};
+
 export {
   getToolIconByName,
   getLinkIconByName,
+  getIconColorByName,
 };

@@ -49,18 +49,19 @@ const useNotification: IUseNotificatoin = (
           {buttonText}
         </Button>
       </OfferPopUpStyle>),
+      className: 'offer-pop-up',
       duration: null,
       onClose: () => {
         setIsConfimButtonDisabled(false);
-      }
+      },
     });
-  }
+  };
 
   return {
     openNotification,
     isConfimButtonDisabled,
     setIsConfimButtonDisabled,
-  }
+  };
 };
 
 export default useNotification;
