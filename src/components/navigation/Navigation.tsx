@@ -6,6 +6,9 @@ import { Menu } from 'antd';
 import NavigationStyle from './styled/NavigationStyle';
 import { ISideBlockStyles } from '../../interfaces/interfaces';
 
+const Fade = require('react-reveal/Fade');
+const withReveal = require('react-reveal/withReveal');
+
 interface INavigation<T> {
   setStyles: (prop: T) => void;
 }
@@ -63,4 +66,4 @@ const Navigation: React.FC<INavigation<ISideBlockStyles>> = ({
   );
 };
 
-export default Navigation;
+export default withReveal(Navigation, <Fade left />);

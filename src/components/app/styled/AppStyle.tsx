@@ -43,6 +43,10 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     padding: 20px 30px;
     flex-grow: 1;
     width: calc(${(props) => props.leftBlockWidth});
+
+    & .react-reveal {
+      flex-grow: 1;
+    }
   }
 
   #main-content {

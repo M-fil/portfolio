@@ -4,7 +4,6 @@ import {
   Switch as RouteSwitch,
   Route,
 } from 'react-router-dom';
-import { useLocation } from "react-router-dom";
 
 import Navigation from '../navigation/Navigation';
 import About from '../about/About';

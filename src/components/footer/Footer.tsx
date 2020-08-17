@@ -5,6 +5,9 @@ import { Button } from 'antd';
 import FooterStyle from './styled/FooterStyle';
 import useNotification from '../../custom-hooks/useNotification';
 
+const Fade = require('react-reveal/Fade');
+const withReveal = require('react-reveal/withReveal');
+
 const Footer: React.FC = () => {
   const [t] = useTranslation();
   const {
@@ -35,4 +38,4 @@ const Footer: React.FC = () => {
   );
 };
 
-export default Footer;
+export default withReveal(Footer, <Fade right />);

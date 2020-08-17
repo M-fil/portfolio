@@ -1,5 +1,4 @@
 import React, {
-  ChangeEvent,
   useEffect, useState,
 } from 'react';
 import { Switch } from 'antd';
@@ -7,8 +6,10 @@ import { Switch } from 'antd';
 import locales from '../../i18n/locales';
 import LanguageSwitchStyle from './styled/LanguageSwitchStyle';
 import i18n from '../../i18n/i18n';
-import { SwitchChangeEventHandler } from 'antd/lib/switch';
 import { LanguageType } from '../../interfaces/interfaces';
+
+const Fade = require('react-reveal/Fade');
+const withReveal = require('react-reveal/withReveal');
 
 const LanguageSwitch: React.FC = () => {
   const localStorageLanguage = localStorage.getItem('language') as LanguageType;
@@ -39,4 +40,4 @@ const LanguageSwitch: React.FC = () => {
   );
 };
 
-export default LanguageSwitch;
+export default withReveal(LanguageSwitch, <Fade right />);

@@ -6,7 +6,7 @@ const MainStyle = styled('div')`
     font-size: 6rem;
     line-height: 7rem;
     color: ${colors.mainPage.darkSideBackground};
-    word-break: word-break;
+    word-break: word-break !important;
   }
 `;
 
