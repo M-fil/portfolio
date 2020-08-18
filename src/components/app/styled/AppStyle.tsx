@@ -45,7 +45,7 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     background: ${lightSideBackground};
     width: ${(props) => props.rightBlockWidth};
     flex-grow: 1;
-    padding: 15px 15px 10px 200px;
+    padding: 15px 15px 10px 170px;
 
     @media ${mediaLaptop} {
       padding-left: 100px;
@@ -61,12 +61,14 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     transition: 0.6s ease-in;
     left: 0;
 
-    &.closed {
-      transition: 0.6s ease-in;
-      left: -80%;
+    @media ${mediaTablet} {
+      &.closed {
+        transition: 0.6s ease-in;
+        left: -80%;
 
-      & #person-image {
-        visibility: hidden;
+        & #person-image {
+          visibility: hidden;
+        }
       }
     }
   }
@@ -132,6 +134,7 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     @media ${mediaTablet} {
       width: 350px;
       height: 400px;
+      right: -25%;
     }
 
     @media ${mediaMobile} {

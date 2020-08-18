@@ -64,7 +64,6 @@ const FooterStyle = styled('div')`
   }
 
   .footer__confirm-button {
-    padding: 0;
     font-size: 1.2rem;
     height: fit-content;
 

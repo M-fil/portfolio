@@ -156,9 +156,17 @@ const AboutStyle = styled('div')`
     font-size: 1.5rem;
     height: fit-content;
 
+    span {
+      word-break: break-all;
+    }
+
     @media ${mediaLaptop} {
       margin-right: 0;
       font-size: 1.8rem;
+    }
+
+    @media ${mediaTablet} {
+      font-size: 1.2rem;
     }
   }
 
