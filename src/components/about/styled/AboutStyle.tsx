@@ -84,6 +84,10 @@ const AboutStyle = styled('div')`
     @media ${mediaTablet} {
       padding-left: 20px;
     }
+
+    @media ${mediaMobile} {
+      padding-left: 0;
+    }
   }
 
   .about__skill {
@@ -98,6 +102,10 @@ const AboutStyle = styled('div')`
 
     @media ${mediaTablet} {
       font-size: 1.5rem;
+    }
+
+    @media ${mediaMobile} {
+      font-size: 1rem;
     }
   }
 
@@ -114,6 +122,11 @@ const AboutStyle = styled('div')`
       width: 100px !important;
       height: 100px !important;
     }
+
+    @media ${mediaMobile} {
+      width: 90px !important;
+      height: 90px !important;
+    }
   }
 
   .ant-progress-text {
@@ -121,6 +134,10 @@ const AboutStyle = styled('div')`
 
     @media ${mediaTablet} {
       font-size: 1.5rem;
+    }
+
+    @media ${mediaMobile} {
+      font-size: 1.3rem;
     }
   }
 

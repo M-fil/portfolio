@@ -16,6 +16,10 @@ const MainStyle = styled('div')`
       padding-left: 50px;
     }
 
+    @media ${mediaMobile} {
+      padding-left: 5px;
+    }
+
   .main-page__title {
     font-size: 6rem;
     line-height: 7rem;
@@ -53,6 +57,11 @@ const MainStyle = styled('div')`
     @media ${mediaTablet} {
       font-size: 2rem;
       line-height: 3rem;
+    }
+
+    @media ${mediaMobile} {
+      font-size: 1.5rem;
+      line-height: 2rem;
     }
   }
 `;

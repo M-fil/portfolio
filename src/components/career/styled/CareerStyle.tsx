@@ -23,6 +23,10 @@ const CareerStyle = styled('div')`
   padding-bottom: 100px;
   padding-left: 40px;
 
+  @media ${mediaTablet} {
+    padding-left: 20px;
+  }
+
   & i {
     transform: scale(2);
 
