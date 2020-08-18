@@ -1,9 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, MouseEvent } from 'react';
 import {
   BrowserRouter,
   Switch as RouteSwitch,
   Route,
 } from 'react-router-dom';
+import { Button, Menu } from 'antd';
+import {
+  MenuUnfoldOutlined,
+  MenuFoldOutlined,
+} from '@ant-design/icons';
+
 
 import Navigation from '../navigation/Navigation';
 import About from '../about/About';
@@ -25,6 +31,11 @@ const App: React.FC = () => {
     rightBlockWidth: '50%',
     leftBlockWidth: '50%',
   });
+  const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);
+
+  const toggleMenu = (event: MouseEvent<HTMLButtonElement>) => {
+    setIsMenuOpened(!isMenuOpened);
+  };
 
   return (
     <>
@@ -35,16 +46,26 @@ const App: React.FC = () => {
       >
         <BrowserRouter>
           <main id="main">
+            <div id="overlay" className={isMenuOpened ? ' visible' : ''} />
             <div id="side-sections">
-              <section id="left-side">
-                <div className="person-image-container">
-                  <img
-                    id="person-image"
-                    src={urls.PERSON_IMAGE_1_URL}
-                    alt={personalData.FULL_NAME as string}
-                  />
-                </div>
-                <Navigation setStyles={setSideBlockStyles} />
+              <section
+                id="left-side"
+                className={`left-side${isMenuOpened ? '' : ' closed'}`}
+              >
+                <Button
+                  className="open-menu-button"
+                  icon={isMenuOpened ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+                  onClick={toggleMenu}
+                />
+                <img
+                  id="person-image"
+                  src={urls.PERSON_IMAGE_1_URL}
+                  alt={personalData.FULL_NAME as string}
+                />
+                <Navigation
+                  setStyles={setSideBlockStyles}
+                  setIsMenuOpened={setIsMenuOpened}
+                />
               </section>
               <section id="right-side">
                 <LanguageSwitch />

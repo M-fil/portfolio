@@ -30,15 +30,32 @@ const FooterStyle = styled('div')`
       @media ${mediaLaptop} {
         margin-right: 0;
       }
+
+      @media ${mediaTablet} {
+        margin-left: 10px;
+      }
     }
 
     @media ${mediaLaptop} {
       flex-direction: column-reverse;
     }
+
+    @media ${mediaTablet} {
+      flex-direction: row-reverse;
+      justify-content: flex-start;
+  
+      width: 100%;
+    }
   }
 
   & .footer__icon {
     margin-right: 5px;
+  }
+
+  .footer__offer-questoin {
+    @media ${mediaTablet} {
+      font-size: 1.2rem;
+    }
   }
 
   .footer__confirm-button {
@@ -48,6 +65,11 @@ const FooterStyle = styled('div')`
 
     @media ${mediaLaptop} {
       width: 100%;
+    }
+
+    @media ${mediaTablet} {
+      width: auto;
+      padding: 0 10px;
     }
   }
 `;

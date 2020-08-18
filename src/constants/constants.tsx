@@ -60,6 +60,7 @@ const colors: {
     textColor: '#EBEBEB',
     activityColor: '#254054',
     nameColor: '#254054',
+    overlayBackground: 'rgba(19, 19, 19, 0.3)',
   },
   footer: {
     backgroundColor: '#EBEBEB',

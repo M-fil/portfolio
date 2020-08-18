@@ -10,6 +10,10 @@ const {
 } = mediaQueries;
 
 const MainStyle = styled('div')`
+    @media ${mediaTablet} {
+      padding-left: 50px;
+    }
+
   .main-page__title {
     font-size: 6rem;
     line-height: 7rem;
@@ -19,6 +23,11 @@ const MainStyle = styled('div')`
     @media ${mediaLaptop} {
       font-size: 3rem;
       line-height: 4rem;
+    }
+
+    @media ${mediaTablet} {
+      font-size: 6rem;
+      line-height: 7rem;
     }
   }
 
@@ -32,6 +41,11 @@ const MainStyle = styled('div')`
     @media ${mediaLaptop} {
       font-size: 2rem;
       line-height: 3rem;
+    }
+
+    @media ${mediaTablet} {
+      font-size: 3rem;
+      line-height: 4rem;
     }
   }
 `;

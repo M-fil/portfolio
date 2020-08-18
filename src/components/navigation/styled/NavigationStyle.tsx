@@ -1,5 +1,13 @@
 import styled from 'styled-components';
-import { colors } from '../../../constants/constants';
+import { colors, mediaQueries } from '../../../constants/constants';
+
+const {
+  labptopL,
+  mediaLaptop,
+  mediaTablet,
+  mediaMobile,
+  mediaMobileSmall,
+} = mediaQueries;
 
 const NavigationStyle = styled.div`
   display: flex;
@@ -7,7 +15,7 @@ const NavigationStyle = styled.div`
   flex-grow: 1;
   height: 100%;
 
-  & .navigation__menu {
+  .navigation__menu {
     font-family: 'Justicman';
     background: transparent;
     font-size: 2rem;
@@ -20,12 +28,12 @@ const NavigationStyle = styled.div`
     }
   }
 
-  & .ant-menu-item {
+  .ant-menu-item {
     transition: 0.6s ease-in;
     background-color: transparent !important;
   }
 
-  & .ant-menu-item-selected {
+  .ant-menu-item-selected {
     position: relative;
     background-color: transparent !important;
     transform: translateX(20px);
@@ -44,7 +52,7 @@ const NavigationStyle = styled.div`
     }
   }
 
-  & .ant-menu-item {
+  .ant-menu-item {
     height: fit-content;
     text-overflow: inherit;
     word-break: break-all;
@@ -52,13 +60,13 @@ const NavigationStyle = styled.div`
     white-space: pre-wrap;
   }
 
-  & .person__name {
+  .person__name {
     font-size: 3rem;
     color: ${colors.navigation.textColor};
     margin-bottom: 0;
   }
 
-  & .person__activity {
+  .person__activity {
     font-size: 1.5rem;
     color: ${colors.navigation.activityColor};
   }

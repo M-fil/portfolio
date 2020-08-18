@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, MouseEvent } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Menu } from 'antd';
-
 import NavigationStyle from './styled/NavigationStyle';
 import { ISideBlockStyles } from '../../interfaces/interfaces';
 
@@ -11,17 +10,21 @@ const withReveal = require('react-reveal/withReveal');
 
 interface INavigation<T> {
   setStyles: (prop: T) => void;
+  setIsMenuOpened: (prop: boolean) => void;
 }
 
 const Navigation: React.FC<INavigation<ISideBlockStyles>> = ({
   setStyles,
+  setIsMenuOpened,
 }) => {
   const [t] = useTranslation();
   const [selectedKey, setSelectedKey] = useState<string>('');
   const location = useLocation();
 
   useEffect(() => {
-    setSelectedKey(location.pathname === '/' ? '/' : location.pathname.slice(1))
+    setSelectedKey(location.pathname === '/' ? '/' : location.pathname.slice(1));
+    setIsMenuOpened(false);
+
     if (location.pathname !== '/') {
       setStyles({
         rightBlockWidth: '70%',
@@ -37,7 +40,10 @@ const Navigation: React.FC<INavigation<ISideBlockStyles>> = ({
 
   return (
     <NavigationStyle>
-      <Menu className="navigation__menu" selectedKeys={[selectedKey]}>
+      <Menu
+        className="navigation__menu"
+        selectedKeys={[selectedKey]}
+      >
         <Menu.Item key="/">
           <NavLink to="/" exact>
             {t('navigation.main')}
