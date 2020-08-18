@@ -250,6 +250,20 @@ const commentsAuthorsLinks: {
   },
 };
 
+const screenResolutions: {
+  labptopL: string;
+  mediaLaptop: string;
+  mediaTablet: string;
+  mediaMobile: string;
+  mediaMobileSmall: string;
+} = {
+  labptopL: '1440px',
+  mediaLaptop: '1024px',
+  mediaTablet: '768px',
+  mediaMobile: '425px',
+  mediaMobileSmall: '320px',
+};
+
 export {
   personalData,
   dateConstants,
@@ -262,4 +276,5 @@ export {
   contactsLinks,
   commentsAuthorsLinks,
   numberConstants,
+  screenResolutions,
 };
