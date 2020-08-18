@@ -37,6 +37,10 @@ const App: React.FC = () => {
     setIsMenuOpened(!isMenuOpened);
   };
 
+  const closeMenu = (event: MouseEvent<HTMLDivElement>) => {
+    setIsMenuOpened(false);
+  }
+
   return (
     <>
       <GlobalStyles />
@@ -46,7 +50,11 @@ const App: React.FC = () => {
       >
         <BrowserRouter>
           <main id="main">
-            <div id="overlay" className={isMenuOpened ? ' visible' : ''} />
+            <div
+              id="overlay"
+              className={isMenuOpened ? ' visible' : ''}
+              onClick={closeMenu}
+            />
             <div id="side-sections">
               <section
                 id="left-side"

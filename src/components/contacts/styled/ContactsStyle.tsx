@@ -37,6 +37,31 @@ const ContactsStyle = styled('div')`
 
       width: 100%;
       padding: 0 20px;
+
+      &::after {
+        display: none;
+      }
+
+      @media ${mediaTablet} {
+        padding: 0;
+      }
+    }
+
+    @media ${mediaTablet} {
+      justify-content: space-between;
+
+      &::after {
+        width: 130px;
+        height: 130px;
+      }
+    }
+
+    &::after {
+      content: "";
+
+      display: block;
+      width: 150px;
+      height: 150px;
     }
   }
 
@@ -50,6 +75,12 @@ const ContactsStyle = styled('div')`
     @media ${mediaLaptop} {
       width: 200px !important;
       height: 200px !important;
+    }
+
+    @media ${mediaTablet} {
+      width: 130px !important;
+      height: 130px !important;
+      margin-bottom: 20px;
     }
   }
 `;

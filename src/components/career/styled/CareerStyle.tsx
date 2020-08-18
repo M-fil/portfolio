@@ -70,12 +70,20 @@ const CareerStyle = styled('div')`
     flex-direction: column;
 
     font-size: 1.7rem;
+
+    @media ${mediaTablet} {
+      font-size: 1.4rem;
+    }
   }
 
   & .ant-steps-item-subtitle {
     font-size: 1.4rem;
     margin-left: 0;
     text-decoration: underline;
+
+    @media ${mediaTablet} {
+      font-size: 1rem;
+    }
   }
 
   & .ant-steps-item-description {
@@ -83,6 +91,10 @@ const CareerStyle = styled('div')`
 
     @media ${mediaLaptop} {
       font-size: 1.2rem;
+    }
+
+    @media ${mediaTablet} {
+      font-size: 1rem;
     }
   }
 

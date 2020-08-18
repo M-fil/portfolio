@@ -52,7 +52,8 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     }
 
     @media ${mediaTablet} {
-      padding: 20px;
+      padding: 0;
+      padding-top: 20px;
     }
   }
 
@@ -62,7 +63,7 @@ const AppStyle = styled('div')<ISideBlockStyles>`
 
     &.closed {
       transition: 0.6s ease-in;
-      left: -50%;
+      left: -80%;
 
       & #person-image {
         visibility: hidden;
@@ -81,11 +82,12 @@ const AppStyle = styled('div')<ISideBlockStyles>`
 
     & .react-reveal {
       flex-grow: 1;
+      word-break: break-word !important;
     }
 
     @media ${mediaTablet} {
       position: absolute;
-      width: 50%;
+      width: 80%;
       height: 100%;
       z-index: 1000;
     }
@@ -97,8 +99,12 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     overflow-y: auto;
     overflow-x: hidden;
 
+    @media ${mediaTablet} {
+      padding: 20px;
+    }
+
     &::-webkit-scrollbar {
-    width: 5px;
+      width: 5px;
     }
     
     &::-webkit-scrollbar-thumb {
@@ -126,6 +132,13 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     @media ${mediaTablet} {
       width: 350px;
       height: 400px;
+    }
+
+    @media ${mediaMobile} {
+      right: -25%;
+
+      width: 250px;
+      height: 300px;
     }
   }
 
@@ -156,7 +169,7 @@ const AppStyle = styled('div')<ISideBlockStyles>`
   #overlay {
     transition: 0.6s ease-in;
 
-    position: absolute;
+    position: fixed;
     left: 0;
     right: 0;
     bottom: 0;

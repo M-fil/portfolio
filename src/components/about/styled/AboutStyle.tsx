@@ -47,6 +47,10 @@ const AboutStyle = styled('div')`
     @media ${mediaLaptop} {
       font-size: 2rem;
     }
+
+    @media ${mediaTablet} {
+      font-size: 1.5rem;
+    }
   }
 
   .about__description {
@@ -57,6 +61,10 @@ const AboutStyle = styled('div')`
 
     @media ${mediaLaptop} {
       font-size: 1.5rem;
+    }
+
+    @media ${mediaTablet} {
+      font-size: 1.1rem;
     }
   }
 
@@ -72,6 +80,10 @@ const AboutStyle = styled('div')`
       justify-content: center;
       padding-left: 15%;
     }
+
+    @media ${mediaTablet} {
+      padding-left: 20px;
+    }
   }
 
   .about__skill {
@@ -83,6 +95,10 @@ const AboutStyle = styled('div')`
     margin: 5px;
     margin-bottom: 30px;
     flex-basis: 40%;
+
+    @media ${mediaTablet} {
+      font-size: 1.5rem;
+    }
   }
 
   .ant-progress-inner {
@@ -93,10 +109,19 @@ const AboutStyle = styled('div')`
       width: 150px !important;
       height: 150px !important;
     }
+
+    @media ${mediaTablet} {
+      width: 100px !important;
+      height: 100px !important;
+    }
   }
 
   .ant-progress-text {
     font-size: 2rem;
+
+    @media ${mediaTablet} {
+      font-size: 1.5rem;
+    }
   }
 
   .skill__name {

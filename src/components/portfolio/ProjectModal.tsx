@@ -28,7 +28,6 @@ const ProjectModal: React.FC<IProjectModal> = ({
           closeIcon={<i className="fas fa-times" />}
           footer={null}
           onCancel={onCancel}
-          width="60vw"
           style={{ top: 20 }}
         >
           <ProjectModalStyle>

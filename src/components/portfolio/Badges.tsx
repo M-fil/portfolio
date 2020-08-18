@@ -64,8 +64,7 @@ const ToolsBadges: React.FC<IBadge> = ({
           return (
             <Tooltip key={badge} title={badge} placement="top">
               <Avatar
-                size={60}
-                className="project__teammate project__badge"
+                className="project__tool project__badge"
                 alt={badge}
                 src={isNoIconInDB ? getToolIconByName(badge) as string : ''}
                 icon={!isNoIconInDB && getToolIconByName(badge)}
@@ -105,7 +104,6 @@ const TeammatesBadges: React.FC<IBadge> = ({
             <Tooltip key={teammate.id} title={teammate.login} placement="top">
               <a href={teammate.html_url} target="_blank">
                 <Avatar
-                  size={80}
                   className="project__teammate project__badge"
                   src={teammate.avatar_url}
                   alt={teammate.login}

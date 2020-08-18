@@ -10,6 +10,8 @@ const {
 } = mediaQueries;
 
 const MainStyle = styled('div')`
+    word-break: break-word !important;
+
     @media ${mediaTablet} {
       padding-left: 50px;
     }
@@ -26,8 +28,13 @@ const MainStyle = styled('div')`
     }
 
     @media ${mediaTablet} {
-      font-size: 6rem;
-      line-height: 7rem;
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+
+    @media ${mediaMobile} {
+      font-size: 3rem;
+      line-height: 4rem;
     }
   }
 
@@ -44,8 +51,8 @@ const MainStyle = styled('div')`
     }
 
     @media ${mediaTablet} {
-      font-size: 3rem;
-      line-height: 4rem;
+      font-size: 2rem;
+      line-height: 3rem;
     }
   }
 `;

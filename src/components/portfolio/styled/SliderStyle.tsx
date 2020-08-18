@@ -1,5 +1,13 @@
 import styled from 'styled-components';
-import { colors } from '../../../constants/constants';
+import { colors, mediaQueries } from '../../../constants/constants';
+
+const {
+  labptopL,
+  mediaLaptop,
+  mediaTablet,
+  mediaMobile,
+  mediaMobileSmall,
+} = mediaQueries;
 
 const {
   arrowButtonColor,
@@ -15,6 +23,10 @@ const SliderStyle = styled('div')`
   & svg {
     font-size: 1.5rem;
     color: ${arrowButtonColor};
+
+    @media ${mediaTablet} {
+      font-size: 1.2rem;
+    }
   }
 
   & .slick-dots {

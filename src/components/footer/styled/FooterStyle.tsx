@@ -19,6 +19,11 @@ const FooterStyle = styled('div')`
 
   font-size: 1.2rem;
 
+  @media ${mediaTablet} {
+    border-top: 2px solid ${colors.mainPage.darkSideBackground};
+    padding: 10px;
+  }
+
   & .footer__content {
     display: flex;
     align-items: center;
@@ -54,7 +59,7 @@ const FooterStyle = styled('div')`
 
   .footer__offer-questoin {
     @media ${mediaTablet} {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 

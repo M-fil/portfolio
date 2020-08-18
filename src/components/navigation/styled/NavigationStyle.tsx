@@ -23,6 +23,11 @@ const NavigationStyle = styled.div`
     flex-grow: 1;
     border: none;
 
+    @media ${mediaTablet} {
+      font-size: 1.5rem;
+      line-height: 2rem;
+    }
+
     & a {
       color: ${colors.navigation.textColor};
     }
@@ -58,17 +63,6 @@ const NavigationStyle = styled.div`
     word-break: break-all;
     overflow: inherit;
     white-space: pre-wrap;
-  }
-
-  .person__name {
-    font-size: 3rem;
-    color: ${colors.navigation.textColor};
-    margin-bottom: 0;
-  }
-
-  .person__activity {
-    font-size: 1.5rem;
-    color: ${colors.navigation.activityColor};
   }
 `;
 
