@@ -19,8 +19,8 @@ const Skill: React.FC<ISkill> = ({
       <Tooltip title={`${percentage}%`}>
         <Progress
           type="circle"
+          className="skill__pie-chart"
           percent={percentage}
-          width={100}
           strokeColor={getIconColorByName(name)}
           strokeWidth={10}
         />

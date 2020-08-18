@@ -3,6 +3,8 @@ import {
   ICommentAuthor,
   ToolType,
   IContactLink,
+  IScreenResolution,
+  IPieChartStyle,
 } from '../interfaces/interfaces';
 
 import PERSON_IMAGE_1_URL from '../assets/images/person/person-1.png';
@@ -250,18 +252,22 @@ const commentsAuthorsLinks: {
   },
 };
 
-const screenResolutions: {
-  labptopL: string;
-  mediaLaptop: string;
-  mediaTablet: string;
-  mediaMobile: string;
-  mediaMobileSmall: string;
-} = {
+const screenResolutions: IScreenResolution = {
   labptopL: '1440px',
   mediaLaptop: '1024px',
   mediaTablet: '768px',
   mediaMobile: '425px',
   mediaMobileSmall: '320px',
+};
+
+const mediaQueries: {
+  [propName: string]: string;
+} = {
+  labptopL: `(max-width: ${screenResolutions.labptopL})`,
+  mediaLaptop: `(max-width: ${screenResolutions.mediaLaptop})`,
+  mediaTablet: `(max-width: ${screenResolutions.mediaTablet})`,
+  mediaMobile: `(max-width: ${screenResolutions.mediaMobile})`,
+  mediaMobileSmall: `(max-width: ${screenResolutions.mediaMobileSmall})`,
 };
 
 export {
@@ -277,4 +283,5 @@ export {
   commentsAuthorsLinks,
   numberConstants,
   screenResolutions,
+  mediaQueries,
 };

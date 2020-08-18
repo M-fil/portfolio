@@ -49,3 +49,16 @@ export interface IContactLink {
   iconClassName: string;
   color: string;
 };
+
+export interface IScreenResolution {
+  labptopL: string;
+  mediaLaptop: string;
+  mediaTablet: string;
+  mediaMobile: string;
+  mediaMobileSmall: string;
+};
+
+export interface IPieChartStyle {
+  width: number,
+  strokeWidth: number,
+};

@@ -1,5 +1,13 @@
 import styled from 'styled-components';
-import { colors } from '../../../constants/constants';
+import { colors, mediaQueries } from '../../../constants/constants';
+
+const {
+  labptopL,
+  mediaLaptop,
+  mediaTablet,
+  mediaMobile,
+  mediaMobileSmall,
+} = mediaQueries;
 
 const FooterStyle = styled('div')`
   display: flex;
@@ -18,11 +26,29 @@ const FooterStyle = styled('div')`
 
     & > *:not(:last-child) {
       margin-right: 10px;
+
+      @media ${mediaLaptop} {
+        margin-right: 0;
+      }
+    }
+
+    @media ${mediaLaptop} {
+      flex-direction: column-reverse;
     }
   }
 
   & .footer__icon {
     margin-right: 5px;
+  }
+
+  .footer__confirm-button {
+    padding: 0;
+    font-size: 1.2rem;
+    height: fit-content;
+
+    @media ${mediaLaptop} {
+      width: 100%;
+    }
   }
 `;
 

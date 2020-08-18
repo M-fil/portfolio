@@ -1,11 +1,19 @@
 import styled from 'styled-components';
-import { colors } from '../../../constants/constants';
+import { colors, mediaQueries } from '../../../constants/constants';
 
 const {
   javascriptIconColor,
   reactIconColor,
   phpIconColor,
 } = colors.portfolio;
+
+const {
+  labptopL,
+  mediaLaptop,
+  mediaTablet,
+  mediaMobile,
+  mediaMobileSmall,
+} = mediaQueries;
 
 const CareerStyle = styled('div')`
   display: flex;
@@ -72,6 +80,10 @@ const CareerStyle = styled('div')`
 
   & .ant-steps-item-description {
     font-size: 1.1rem;
+
+    @media ${mediaLaptop} {
+      font-size: 1.2rem;
+    }
   }
 
   & .fa-times-circle {

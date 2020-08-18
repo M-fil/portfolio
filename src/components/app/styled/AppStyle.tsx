@@ -1,6 +1,15 @@
 import styled from 'styled-components';
-import { colors } from '../../../constants/constants';
+
+import { colors, mediaQueries } from '../../../constants/constants';
 import { ISideBlockStyles } from '../../../interfaces/interfaces';
+
+const {
+  labptopL,
+  mediaLaptop,
+  mediaTablet,
+  mediaMobile,
+  mediaMobileSmall,
+} = mediaQueries;
 
 const {
   darkSideBackground,
@@ -36,6 +45,10 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     width: ${(props) => props.rightBlockWidth};
     flex-grow: 1;
     padding: 15px 15px 10px 200px;
+
+    @media ${mediaLaptop} {
+      padding-left: 100px;
+    }
   }
 
   #left-side {
@@ -70,13 +83,18 @@ const AppStyle = styled('div')<ISideBlockStyles>`
   #person-image {
     transition: 0.6s ease-in;
     position: absolute;
-    right: -225px;
+    right: -40%;
     bottom: 0;
     z-index: 1000;
 
     margin: 0 auto;
     width: 550px;
     height: 600px;
+
+    @media ${mediaLaptop} {
+      width: 450px;
+      height: 500px;
+    }
   }
 `;
 

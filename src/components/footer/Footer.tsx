@@ -24,6 +24,7 @@ const Footer: React.FC = () => {
       <div className="footer__content">
         <Button
           type="primary"
+          className="footer__confirm-button"
           icon={<i className="far fa-grin footer__icon" />}
           onClick={openNotification}
           disabled={isConfimButtonDisabled}
