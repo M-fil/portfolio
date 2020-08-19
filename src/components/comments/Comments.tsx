@@ -3,7 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Comment, Avatar, Rate } from 'antd';
 
 import CommentsStyle from './styled/CommentsStyle';
-import { commentsAuthorsLinks } from '../../constants/constants';
+import { commentsAuthorsData } from '../../constants/constants';
 import { ICommentAuthor } from '../../interfaces/interfaces';
 
 const Slide = require('react-reveal/Slide');
@@ -43,7 +43,7 @@ const CommentItem: React.FC<{
 
 const Comments: React.FC = () => (
   <CommentsStyle>
-    {Object.entries(commentsAuthorsLinks).map((author, index) => (
+    {Object.entries(commentsAuthorsData).map((author, index) => (
       <CommentItem
         key={author[0]}
         personKey={author[0]}

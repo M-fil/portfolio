@@ -108,25 +108,25 @@
   },
   "comments": {
     "commentators": {
-      "person1": {
-        "name": "Maxim Sheko",
-        "text": "Irure do qui enim labore ex dolor cupidatat aliqua qui labore ullamco. Ex excepteur sint dolore pariatur quis amet veniam dolor quis eiusmod proident elit. Eiusmod excepteur duis sunt officia mollit do minim consequat ipsum consectetur aliquip. Ipsum culpa ullamco amet dolore consequat. Et est qui ut sint occaecat mollit qui in tempor commodo ipsum voluptate et tempor. Sunt duis laborum esse ad dolore.",
-        "date": "17.08.2020 11:25"
+      "ekaterina_latushkina": {
+        "name": "Екатерина Латушкина",
+        "text": "С Максимом я познакомилась недавно, когда мы вместе, участь в Roling Scopes School, начали выполнять командный таск по JavaScript. Именно тогда мне посчастливилось работать с ним. Уже в самом начале выполнения задания было понятно, что это именно тот человек, который поможет каждому с его ошибками и багами, который сможет возложить на себя роль TeamLead и справится с ней.\nОн организовывал еженедельные митинги, где каждый участник команды рассказывал о проблемах возникших за неделю, о планировании своей работы на следующую неделю и о своем прогрессе, координировал команду и прислушивался к каждой идее, которые в будущем мы воплощали в проекте. Наверное, благодаря ему наша команда и проект смогли войти в топ 5 среди всех проектов школы. \nПо окончанию курсов он вошел в топ 10 и я гордилась, что работала целый месяц с этим человеком. Я многому научилась у него и до сих пор обращаюсь за помощью к нему, зная что его знания и опыт помогут мне хоть немного стать таким же крутым frontend программистом как и он.",
+        "date": "18.08.2020 10:59"
       },
-      "person2": {
-        "name": "Maxim Sheko",
-        "text": "Irure do qui enim labore ex dolor cupidatat aliqua qui labore ullamco. Ex excepteur sint dolore pariatur quis amet veniam dolor quis eiusmod proident elit. Eiusmod excepteur duis sunt officia mollit do minim consequat ipsum consectetur aliquip. Ipsum culpa ullamco amet dolore consequat. Et est qui ut sint occaecat mollit qui in tempor commodo ipsum voluptate et tempor. Sunt duis laborum esse ad dolore.",
-        "date": "17.08.2020 11:25"
+      "kirill_zdanov": {
+        "name": "Кирилл Жданов",
+        "text": "Максим это человек с сильной мотивацией в разработке,иногда может ей заражать других) Если стоит задача,то он старается выполнить её как можно быстрее(иногда создаётся ощущение что 24/7 что-то для проекта делает). Старается писать код качественно,придерживается стандартов. В целом оцениваю как командного разработчика с огромной мотивацией и отличными навыками в написании JS кода.",
+        "date": "19.08.2020 08:49"
       },
-      "person3": {
-        "name": "Maxim Sheko",
-        "text": "Irure do qui enim labore ex dolor cupidatat aliqua qui labore ullamco. Ex excepteur sint dolore pariatur quis amet veniam dolor quis eiusmod proident elit. Eiusmod excepteur duis sunt officia mollit do minim consequat ipsum consectetur aliquip. Ipsum culpa ullamco amet dolore consequat. Et est qui ut sint occaecat mollit qui in tempor commodo ipsum voluptate et tempor. Sunt duis laborum esse ad dolore.",
-        "date": "17.08.2020 11:25"
+      "alexander_treska": {
+        "name": "Александр Треска",
+        "text": "Максим - человек, настроенный достигнуть высоких результатов в области front-end разработки. Никакие сложности : в коде, в жизни, по здоровью - не мешают ему двигаться к своим целям. Он максимально грамотно располагает своим временем, поэтому буквально за небольшие сроки он смог развить как личные, так и рабочие навыки!",
+        "date": "18.08.2020 20:09"
       },
-      "person4": {
-        "name": "Maxim Sheko",
-        "text": "Irure do qui enim labore ex dolor cupidatat aliqua qui labore ullamco. Ex excepteur sint dolore pariatur quis amet veniam dolor quis eiusmod proident elit. Eiusmod excepteur duis sunt officia mollit do minim consequat ipsum consectetur aliquip. Ipsum culpa ullamco amet dolore consequat. Et est qui ut sint occaecat mollit qui in tempor commodo ipsum voluptate et tempor. Sunt duis laborum esse ad dolore.",
-        "date": "17.08.2020 11:25"
+      "anton_andreev": {
+        "name": "Антон Андреев",
+        "text": "Максим очень ответственный и инитиациативный разработчик,готовый помочь всегда и везде. Я восхищён качеством его frontend-разработки и трудолюбием, с которым он подходит к той или иной задаче.",
+        "date": "18.08.2020 10:44"
       }
     }
   }

@@ -40,10 +40,6 @@ const GlobalStyles = createGlobalStyle`
     }
   }
 
-  .ant-modal-header {
-    padding-bottom: 0;
-  }
-
   .offer-pop-up {
     width: 100%;
     padding: 20px 30px;

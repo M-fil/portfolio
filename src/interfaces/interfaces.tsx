@@ -40,6 +40,7 @@ export interface ISideBlockStyles {
 export interface ICommentAuthor {
   image: string;
   personalPage: string;
+  rating: number;
 }
 
 export interface IContactLink {

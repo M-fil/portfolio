@@ -70,6 +70,10 @@ const CommentsStyle = styled('div')`
       font-size: 1rem;
     }
   }
+
+  .ant-comment-content-detail {
+    white-space: pre-line;
+  }
 `;
 
 export default CommentsStyle;

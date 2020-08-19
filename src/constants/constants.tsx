@@ -359,24 +359,28 @@ const contactsLinks: {
   },
 };
 
-const commentsAuthorsLinks: {
+const commentsAuthorsData: {
   [propName: string]: ICommentAuthor;
 } = {
-  person1: {
-    image: 'https://avatars0.githubusercontent.com/u/8600988?s=400&u=0ab0529ad7e6b7013dbeee0c78ba77b71a3eff74&v=4',
-    personalPage: 'https://github.com/ShekoMaxim',
+  ekaterina_latushkina: {
+    image: 'https://avatars3.githubusercontent.com/u/59828320?s=400&u=62c306ebf8b5e25095f9b15cb1138e2c76e6816c&v=4',
+    personalPage: 'https://github.com/kate-latushkina',
+    rating: 5,
   },
-  person2: {
-    image: 'https://avatars0.githubusercontent.com/u/8600988?s=400&u=0ab0529ad7e6b7013dbeee0c78ba77b71a3eff74&v=4',
-    personalPage: 'https://github.com/ShekoMaxim',
+  kirill_zdanov: {
+    image: 'https://avatars1.githubusercontent.com/u/25373900?s=400&u=cb269c77132a0c8d07d3daed13dc1ae3d916fe4d&v=4',
+    personalPage: 'https://github.com/KirillZhdanov',
+    rating: 5,
   },
-  person3: {
-    image: 'https://avatars0.githubusercontent.com/u/8600988?s=400&u=0ab0529ad7e6b7013dbeee0c78ba77b71a3eff74&v=4',
-    personalPage: 'https://github.com/ShekoMaxim',
+  alexander_treska: {
+    image: 'https://sun9-76.userapi.com/c856020/v856020650/fa149/yjwYxPDb5G8.jpg',
+    personalPage: 'https://vk.com/id375319232',
+    rating: 5,
   },
-  person4: {
-    image: 'https://avatars0.githubusercontent.com/u/8600988?s=400&u=0ab0529ad7e6b7013dbeee0c78ba77b71a3eff74&v=4',
-    personalPage: 'https://github.com/ShekoMaxim',
+  anton_andreev: {
+    image: 'https://avatars1.githubusercontent.com/u/36535854?s=400&v=4',
+    personalPage: 'https://github.com/toxAndreev',
+    rating: 5,
   },
 };
 
@@ -408,7 +412,7 @@ export {
   icons,
   colors,
   contactsLinks,
-  commentsAuthorsLinks,
+  commentsAuthorsData,
   numberConstants,
   screenResolutions,
   mediaQueries,
