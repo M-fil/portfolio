@@ -1,22 +1,21 @@
 import React from 'react';
-import { Button, Avatar, Tooltip } from 'antd';
+import { Button, Avatar, Tooltip, Skeleton } from 'antd';
 import { useTranslation } from 'react-i18next';
 
 import {
   getLinkIconByName,
   getToolIconByName,
+  getNAmountOfElement,
 } from '../../utils/getters';
 import {
   IProjectObject,
   LinksKeyType,
   ITeammate,
 } from '../../interfaces/interfaces';
-import {
-  getAllProjectCollaborators,
-} from '../../service/service';
+import { getAllProjectCollaborators } from '../../service/service';
 import { personalData, colors } from '../../constants/constants';
-import useCallbackEffect from '../../custom-hooks/useCallbackEffect';
 import BadgeStyle from './styled/BadgeStyle';
+import useDataWithReducer from '../../custom-hooks/useDataWithReducer';
 
 const {
   toolIconBackground,
@@ -84,20 +83,21 @@ const ToolsBadges: React.FC<IBadge> = ({
 const TeammatesBadges: React.FC<IBadge> = ({
   project,
 }) => {
-  const allCollaborators = useCallbackEffect(
-    [], getAllProjectCollaborators, ['rslang'],
-  )?.data as ITeammate[];
-  const personalGithub = allCollaborators && allCollaborators.find(
+  const { state } = useDataWithReducer(getAllProjectCollaborators.bind(null, 'rslang'));
+  const teammates = state.data && state.data.data as ITeammate[];
+  const personalGithub = teammates && teammates.length && teammates.find(
     (person: ITeammate) => person.login === personalData.GITHUB_LOGIN,
   ) as ITeammate;
   const resultCollabs = project.isMoreThanOneCollaborator
-    ? allCollaborators
-    : [personalGithub];
+    ? teammates
+    : [personalGithub] as ITeammate[];
 
   return (
     <BadgeStyle childrenCount={resultCollabs?.length || 0}>
       <Avatar.Group>
-        {allCollaborators && allCollaborators.length
+        {state.isLoading ? getNAmountOfElement(
+          <Skeleton.Avatar className="skeleton" active size="large" />, 10
+        ) : teammates && teammates.length
         && (
         <div className="project__teammates project__badges">
           {resultCollabs.map((teammate) => (

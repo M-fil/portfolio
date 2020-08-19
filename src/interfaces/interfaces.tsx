@@ -1,3 +1,5 @@
+import actions from '../reducer/actions';
+
 export type ToolType = 'JavaScript' | 'React' | 'Redux'
   | 'TypeScript' | 'CSS' | 'SCSS' | 'HTML' |
   'React Testing Library & Jest' | 'English: B1 (Intermediate)';
@@ -24,12 +26,6 @@ export interface IProjectObject {
   images: string[];
   isMoreThanOneCollaborator: boolean;
   video?: string;
-}
-
-export interface IDefaultState {
-  isLoading: boolean;
-  isError: boolean;
-  errorMessage?: string;
 }
 
 export interface ISideBlockStyles {
@@ -61,4 +57,16 @@ export interface IScreenResolution {
 export interface IPieChartStyle {
   width: number,
   strokeWidth: number,
+};
+
+export interface IState {
+  isLoading: boolean;
+  isError: boolean;
+  errorMessage: string;
+  data: any;
+}
+
+export interface IActionPayload {
+  type: keyof typeof actions;
+  payload?: any;
 }

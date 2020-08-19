@@ -1,4 +1,5 @@
 import React from 'react';
+import { JsxElement } from 'typescript';
 
 import {
   icons,
@@ -109,10 +110,15 @@ const getBoolArrayWithOneTrueValue = (
   return boolArray;
 };
 
+const getNAmountOfElement = (element: any, times: number) => Array
+  .from({ length: times })
+  .map((_) => element);
+
 export {
   getToolIconByName,
   getLinkIconByName,
   getIconColorByName,
   getRandomInteger,
   getBoolArrayWithOneTrueValue,
+  getNAmountOfElement,
 };

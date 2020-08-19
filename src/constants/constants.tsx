@@ -4,7 +4,6 @@ import {
   ToolType,
   IContactLink,
   IScreenResolution,
-  IPieChartStyle,
 } from '../interfaces/interfaces';
 
 import PERSON_IMAGE_1_URL from '../assets/images/person/person-1.png';
@@ -18,10 +17,10 @@ import REACT_TESTING_LIBRARY from '../assets/images/tools/react-testing-library.
 const urls: {
   [propName: string]: string,
 } = {
+  PROJECT_URL: 'https://raw.githubusercontent.com/M-fil/data-storage/master/my-portfolio/projects/projects.json',
   PERSON_IMAGE_1_URL,
   PERSON_IMAGE_2_URL,
   CV_LINK_URL: 'https://drive.google.com/file/d/1G0xogM0rIs7q5GnWM7rIlALGv7tVEfbe/view?usp=sharing',
-  RS_LANG_PATH_TO_PROJECTS: 'https://raw.githubusercontent.com/M-fil/data-storage/master/my-portfolio/projects/',
   PERSONAL_GITHUB_URL: 'https://api.github.com/users/M-fil',
   RS_LOGO,
   EPAM_LOGO,
@@ -163,161 +162,6 @@ const skillChartConstants: {
   DEFAULT_INNER_COLOR: '#F0F0F0',
 };
 
-const projects: {
-  [propName: string]: IProjectObject,
-} = {
-  RS_LANG: {
-    name: 'RS Lang',
-    key: 'rslang',
-    links: {
-      github: 'https://github.com/M-fil/rslang',
-      demo: 'https://rslang-team18-m-fil.netlify.app/',
-      youtube: 'https://youtu.be/XDqg_2ExX4E',
-    },
-    tools: ['HTML', 'SCSS', 'JavaScript'],
-    images: [
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_1.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_2.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_3.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_4.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_5.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_6.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_7.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/rslang/rslang_8.png`,
-    ],
-    isMoreThanOneCollaborator: true,
-    video: 'https://www.youtube.com/embed/XDqg_2ExX4E',
-  },
-  ENGLISH_FOR_KIDS: {
-    name: 'English for Kids',
-    key: 'english-for-kids',
-    links: {
-      demo: 'https://m-fil-english-for-kids.netlify.app/',
-    },
-    tools: ['HTML', 'SCSS', 'JavaScript'],
-    images: [
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/english-for-kids/english-for-kids-1.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/english-for-kids/english-for-kids-2.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/english-for-kids/english-for-kids-3.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/english-for-kids/english-for-kids-4.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/english-for-kids/english-for-kids-5.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/english-for-kids/english-for-kids-6.png`,
-    ],
-    isMoreThanOneCollaborator: false,
-  },
-  FANCY_WEATHER: {
-    name: 'FancyWeather',
-    key: 'fancy-weather',
-    links: {
-      demo: 'https://m-fil-english-for-kids.netlify.app/',
-    },
-    tools: ['HTML', 'SCSS', 'React', 'React Testing Library & Jest'],
-    images: [
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/fancy-weather/fancy-weather-1.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/fancy-weather/fancy-weather-2.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/fancy-weather/fancy-weather-3.png`,
-    ],
-    isMoreThanOneCollaborator: false,
-  },
-  SINGOLO: {
-    name: 'Singolo',
-    key: 'singolo',
-    links: {
-      github: 'https://github.com/M-fil/singolo',
-      demo: 'https://m-fil-singolo.netlify.app/',
-    },
-    tools: ['HTML', 'CSS', 'JavaScript'],
-    images: [
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/singolo/singolo-1.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/singolo/singolo-2.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/singolo/singolo-3.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/singolo/singolo-4.png`,
-    ],
-    isMoreThanOneCollaborator: false,
-  },
-  MOVIE_SEARCH: {
-    name: 'Movie Search',
-    key: 'movie-search',
-    links: {
-      demo: 'https://m-fil-movie-search.netlify.app/',
-    },
-    tools: ['HTML', 'SCSS', 'JavaScript'],
-    images: [
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/movie-search/movie-search-1.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/movie-search/movie-search-2.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/movie-search/movie-search-3.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/movie-search/movie-search-4.png`,
-    ],
-    isMoreThanOneCollaborator: false,
-  },
-  SONGBIRD: {
-    name: 'Songbird',
-    key: 'songbird',
-    links: {
-      github: 'https://github.com/M-fil/songbird/tree/develop',
-      demo: 'https://m-fil-songbird.netlify.app/',
-    },
-    tools: ['HTML', 'SCSS', 'React'],
-    images: [
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/songbird/songbird-1.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/songbird/songbird-2.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/songbird/songbird-3.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/songbird/songbird-4.png`,
-    ],
-    isMoreThanOneCollaborator: false,
-  },
-  TODO_APP: {
-    name: 'ToDo',
-    key: 'todo',
-    links: {
-      github: 'https://github.com/M-fil/React-ToDo-App',
-      demo: 'http://m-fil.github.io/React-ToDo-App',
-    },
-    tools: ['HTML', 'CSS', 'React', 'Redux'],
-    images: [
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/todo/todo-1.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/todo/todo-2.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/todo/todo-3.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/todo/todo-4.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/todo/todo-5.png`,
-    ],
-    isMoreThanOneCollaborator: false,
-  },
-  VIRTUAL_KEYBOARD: {
-    name: 'Virtual Keyboard',
-    key: 'virtual-keyboard',
-    links: {
-      github: 'https://github.com/M-fil/Virtual-Keyboard/tree/develop',
-      demo: 'https://m-fil-virtual-keyboard.netlify.app/',
-    },
-    tools: ['HTML', 'CSS', 'JavaScript'],
-    images: [
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/virtual-keyboard/virtual-keyboard-1.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/virtual-keyboard/virtual-keyboard-2.png`,
-    ],
-    isMoreThanOneCollaborator: false,
-  },
-  SCRUM_VIDE: {
-    name: 'Scrum Presentation',
-    key: 'scrum-video',
-    links: {
-      github: 'https://github.com/M-fil/Scrum-RevealJS-Presentation',
-      demo: 'https://m-fil-scrum-presentation.netlify.app/#/',
-      youtube: 'https://youtu.be/JJ1CcnEH-Ig',
-    },
-    tools: ['HTML', 'CSS', 'JavaScript'],
-    images: [
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/scrum-video/scrum-video-1.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/scrum-video/scrum-video-2.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/scrum-video/scrum-video-3.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/scrum-video/scrum-video-4.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/scrum-video/scrum-video-5.png`,
-      `${urls.RS_LANG_PATH_TO_PROJECTS}images/scrum-video/scrum-video-6.png`,
-    ],
-    isMoreThanOneCollaborator: false,
-  },
-};
-
 const contactsLinks: {
   [propName: string]: IContactLink;
 } = {
@@ -408,7 +252,6 @@ export {
   urls,
   skills,
   skillChartConstants,
-  projects,
   icons,
   colors,
   contactsLinks,

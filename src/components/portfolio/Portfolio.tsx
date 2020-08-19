@@ -3,21 +3,24 @@ import React, {
   useEffect,
   MouseEvent,
 } from 'react';
+import { Spin } from 'antd';
 
 import Project from './Project';
 import ProjectModal from './ProjectModal';
 import PortfolioStyle from './styled/PortfolioStyle';
-import { projects } from '../../constants/constants';
 import { IProjectObject } from '../../interfaces/interfaces';
+import { getProjects } from '../../service/service';
+import useDataWithReducer from '../../custom-hooks/useDataWithReducer';
 
 const Portfolio: React.FC = () => {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
   const [clickedProjectId, setClickedProjectId] = useState<string | null>(null);
   const [clickedProjectObject, setClickedProjectObject] = useState<IProjectObject | null>(null);
+  const { state } = useDataWithReducer(getProjects);
 
   useEffect(() => {
     if (clickedProjectId) {
-      setClickedProjectObject(projects[clickedProjectId]);
+      setClickedProjectObject(state.data[clickedProjectId]);
     } else {
       setClickedProjectObject(null);
     }
@@ -35,7 +38,7 @@ const Portfolio: React.FC = () => {
     }
   };
 
-  const onCloseModal = (event: MouseEvent<HTMLElement>) => {
+  const onCloseModal = () => {
     setIsModalVisible(false);
     setClickedProjectId(null);
   };
@@ -48,14 +51,23 @@ const Portfolio: React.FC = () => {
           isVisible={isModalVisible}
           onCancel={onCloseModal}
         />
-        {Object.entries(projects).map((project, index) => (
-          <Project
-            key={project[0]}
-            index={index}
-            project={project[1]}
-            projectId={project[0]}
-          />
-        ))}
+        {/* eslint-disable-next-line no-nested-ternary */}
+        {state.isLoading ? (
+          <div className="projects__preloader">
+            <Spin size="large" />
+          </div>
+        )
+          : state.isError ? 'Error'
+            : (state.data && Object.entries(
+                state.data as { [propName: string]: IProjectObject },
+            ).map((project, index) => (
+              <Project
+                key={project[0]}
+                index={index}
+                project={project[1]}
+                projectId={project[0]}
+              />
+            )))}
       </div>
     </PortfolioStyle>
   );

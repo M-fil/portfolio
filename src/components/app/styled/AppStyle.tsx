@@ -41,6 +41,7 @@ const AppStyle = styled('div')<ISideBlockStyles>`
   }
 
   #right-side {
+    position: relative;
     transition: 0.6s ease-in;
     background: ${lightSideBackground};
     width: ${(props) => props.rightBlockWidth};

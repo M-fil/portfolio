@@ -96,6 +96,10 @@ const BadgeStyle = styled('div')<IBadgeStyle>`
     width: 60px;
     height: 60px;
   }
+
+  .skeleton {
+    margin: 5px;
+  }
 `;
 
 export default BadgeStyle;
