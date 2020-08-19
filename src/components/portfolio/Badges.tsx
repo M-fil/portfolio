@@ -60,14 +60,14 @@ const ToolsBadges: React.FC<IBadge> = ({
     <div className="project__tools project__badges">
       <Avatar.Group>
         {project.tools.map((badge) => {
-          const isNoIconInDB = badge === 'Redux' || badge === 'TypeScript';
+          const icon = getToolIconByName(badge);
           return (
             <Tooltip key={badge} title={badge} placement="top">
               <Avatar
                 className="project__tool project__badge"
                 alt={badge}
-                src={isNoIconInDB ? getToolIconByName(badge) as string : ''}
-                icon={!isNoIconInDB && getToolIconByName(badge)}
+                src={typeof icon === 'string' ? icon : ''}
+                icon={typeof icon !== 'string' && icon}
                 style={{
                   background: toolIconBackground,
                   border: `2px solid ${toolIconBorderColor}`,

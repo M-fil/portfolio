@@ -7,7 +7,6 @@ const getAllProjectCollaborators = async (projectName?: string) => {
     owner: 'M-fil',
     repo: projectName,
   });
-  console.log('data', data);
 
   return data;
 };
