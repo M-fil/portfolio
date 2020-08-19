@@ -50,9 +50,6 @@ const Project: React.FC<IProject> = ({
             </a>
         )}
         >
-          <div className="project__description">
-            {project.description}
-          </div>
           <LinksBadges project={project} />
           <ToolsBadges project={project} />
         </Card>

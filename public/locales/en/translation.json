@@ -28,6 +28,30 @@
     "projects": {
       "rslang": {
         "description": "The goal of the project was to create a web-app for learning English which will be similar to the site Lingualeo. It should have included 6 mini-games, 1 main game, Vocabulary, Statistics, and Settings. To achieve such a goal we put together a team of 6 people (including me). I was a team leader of the project. We use Trello to track project Progress, Git for organizing teammate code and conduct a code review, ChartJS library for graphs on the Statistics page, etc. The project was developed for 1 month and the goal was achieved. The result of it you can see here." 
+      },
+      "english-for-kids": {
+        "description": "The goal of the project was to create a web-app that allows kids to learn English using images and sounds. It should have included 8 categories of word and Statistics page.\nTo make the page more beautiful and pleasant for the kid's eye I used the designer help, who creates the layout in Figma.\nUsing Figma layout I developed PC and Mobile styles of the page so that children can learn English using any device.\nIn order to create functionality, I used audio API and Native JS. After clicking on the card the child hears the sound of the word. Also, there is a Play mode where children can guess cards by hearing their sounds.The project was developed in 3 weeks and all main criteria were completed. Young sister and brothers, children of my friends tested the app and said that their kids were happy to learn English with this web-app."
+      },
+      "fancy-weather": {
+        "description": "The goal of the project was to create an app that allows users to check the weather almost in any place of the world, listen to audio forecast, control the app with the voice, change the background image, change the language of the app (en, ru, by).\n\nFancyWeather was developed with the usage of side APIs. For example:\n- Mapbox GJ JS for the map;\n- Open Weather for weather forecasts;\n- IP Info for getting user geolocation data;\n- SpeechRecognition API for voice control;\n\nExtra Libraries used in the app:\n- react-i18next library was used for internationalization. There are 3 languages: English, Russian, Belarussian;\n- Moment.JS for time formats;\n\nAlso, there are animated icons for the attractiveness of the application.\nAfter the finishing of the app development, I sent it to my friend in order to check it for bugs. All my friends were happy with it. They said that the app looks attractive for the user and provides all the necessary features to check the weather. But there was one problem with used IP Info API. It sometimes showed the wrong places for small localities.But the feedback was positive"
+      },
+      "singolo": {
+        "description": "The goal of the project was to create a responsive landing page with slider/swiper, anchor navigation, and the submit form.\n\nIn order to develop it, I use CSS for styles and JavaScript for the main functionality (anchors, slider).\n\nThe project was created in 3 weeks and the client was happy with the developed landing. "
+      },
+      "movie-search": {
+        "description": "The goal of the project was to develop a web-page which allows user to find his favorite movies, check their IMDb rates and all other info, embed virtual keyboard for users who has problems with the real keyboard.\n\nTo achieve the project goal I use Native JavaScript for functionality and SCSS for styles and Webpack for binding all the code. \n\nAll main requirements were completed in 2.5 weeks. This made the client very happy."
+      },
+      "songbird": {
+        "description": ""
+      },
+      "todo": {
+        "description": "The objective of the project was to create a ToDo app with the following functionality:\n\n- Create and delete tasks;\n- Sort tasks by deadlines;\n- Change the view of the app (4 squares or a single list);\n- Change the theme and the background image;\n\nIn order to develop this web-app, I used such modern libraries as React and Redux. Also, there is SCSS for styles.\n\nAt the end of the project, the main requirements were successfully completed"
+      },
+      "virtual-keyboard": {
+        "description": ""
+      },
+      "scrum-video": {
+        "description": ""
       }
     }
   },

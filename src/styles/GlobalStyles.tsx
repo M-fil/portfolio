@@ -54,7 +54,7 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .project-modal {
-    width: 70vw !important;
+    width: 60vw !important;
 
     @media ${mediaLaptop} {
       width: 80vw !important;

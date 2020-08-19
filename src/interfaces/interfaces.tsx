@@ -17,7 +17,6 @@ export interface ITeammate {
 export interface IProjectObject {
   name: string;
   key: string;
-  description: string;
   links: {
     [propName: string]: string;
   };

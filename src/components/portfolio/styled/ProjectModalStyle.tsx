@@ -22,6 +22,7 @@ const ProjectModalStyle = styled('div')`
 
   .project-modal__description {
     font-size: 1.3rem;
+    white-space: pre-line;
 
     @media ${mediaTablet} {
       font-size: 1rem;
