@@ -21,7 +21,7 @@ const getPersonalGithubData = async () => {
 const getProjects = async () => {
   const response = await fetch(urls.PROJECT_URL);
   const data = await response.json();
-  
+
   return data;
 };
 

@@ -12,15 +12,23 @@ const {
   FETCH_SUCCESS,
 } = actions;
 
-function useDataWithReducer(getData: () => any) {
+function useDataWithReducer(getData: () => any, localStorageName: string) {
   const [state, dispatch] = useReducer(reducer, defaultState);
+  const dataFromLocalStorage = localStorage.getItem(localStorageName);
+  const isLocalStorageExists = dataFromLocalStorage && dataFromLocalStorage?.length;
 
   useEffect(() => {
     let didCancel = false;
     const fetchData = async () => {
       try {
-        dispatch({ type: FETCH_LOADING });
-        const data = await getData();
+        let data = null;
+        if (!isLocalStorageExists) {
+          dispatch({ type: FETCH_LOADING });
+          data = await getData();
+          localStorage.setItem(localStorageName, JSON.stringify(data));
+        } else {
+          data = JSON.parse(dataFromLocalStorage || '');
+        }
         if (!didCancel) {
           dispatch({ type: FETCH_SUCCESS, payload: data });
         }

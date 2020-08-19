@@ -16,7 +16,7 @@ const Portfolio: React.FC = () => {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
   const [clickedProjectId, setClickedProjectId] = useState<string | null>(null);
   const [clickedProjectObject, setClickedProjectObject] = useState<IProjectObject | null>(null);
-  const { state } = useDataWithReducer(getProjects);
+  const { state } = useDataWithReducer(getProjects, 'projects');
 
   useEffect(() => {
     if (clickedProjectId) {

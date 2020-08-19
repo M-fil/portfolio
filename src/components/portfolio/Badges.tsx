@@ -83,7 +83,9 @@ const ToolsBadges: React.FC<IBadge> = ({
 const TeammatesBadges: React.FC<IBadge> = ({
   project,
 }) => {
-  const { state } = useDataWithReducer(getAllProjectCollaborators.bind(null, 'rslang'));
+  const { state } = useDataWithReducer(
+    getAllProjectCollaborators.bind(null, 'rslang'), 'teammates',
+  );
   const teammates = state.data && state.data.data as ITeammate[];
   const personalGithub = teammates && teammates.length && teammates.find(
     (person: ITeammate) => person.login === personalData.GITHUB_LOGIN,
