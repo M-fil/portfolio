@@ -7,6 +7,7 @@ import { contactsLinks } from '../../constants/constants';
 import Contact from './Contact';
 
 const Slide = require('react-reveal/Slide');
+
 const { Title } = Typography;
 
 const Contacts: React.FC = () => {

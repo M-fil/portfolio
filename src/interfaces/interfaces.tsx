@@ -41,14 +41,14 @@ export interface ISideBlockStyles {
 export interface ICommentAuthor {
   image: string;
   personalPage: string;
-};
+}
 
 export interface IContactLink {
   link: string;
   name: string;
   iconClassName: string;
   color: string;
-};
+}
 
 export interface IScreenResolution {
   labptopL: string;
@@ -56,9 +56,9 @@ export interface IScreenResolution {
   mediaTablet: string;
   mediaMobile: string;
   mediaMobileSmall: string;
-};
+}
 
 export interface IPieChartStyle {
   width: number,
   strokeWidth: number,
-};
+}

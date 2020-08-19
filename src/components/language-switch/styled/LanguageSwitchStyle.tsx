@@ -20,12 +20,12 @@ const LanguageSwitchStyle = styled('div')<ILanguageSwitchStyle>`
   margin-bottom: 50px;
 
   & button {
-    background: url(${(props) => props.language === en
-      ? ENGLAND_FLAG
-      : props.language === ru
+    background: url(${(props) => (props.language === en
+    ? ENGLAND_FLAG
+    : props.language === ru
       ? RUSSIA_FLAG
-      : RUSSIA_FLAG
-    });
+      : RUSSIA_FLAG)
+});
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

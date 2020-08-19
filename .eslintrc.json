@@ -14,7 +14,8 @@
     "parser": "@typescript-eslint/parser",
     "parserOptions": {
         "ecmaFeatures": {
-            "jsx": true
+            "jsx": true,
+            "tsx": true
         },
         "ecmaVersion": 2018,
         "sourceType": "module"
@@ -23,9 +24,26 @@
         "react",
         "@typescript-eslint"
     ],
+    "overrides": [
+        {
+            "files": ["*.tsx"],
+            "rules": {
+                "import/no-unused-modules": [
+                    "error",
+                    {
+                        "src": ["**/*.tsx"],
+                        "missingExports": false,
+                        "unusedExports": true
+                    }
+                ]
+            }
+        }
+    ],
     "rules": {
         "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
         "@typescript-eslint/interface-name-prefix" : "off",
-        "react/jsx-props-no-spreading" : "off"
+        "react/jsx-props-no-spreading" : "off",
+        "import/no-unresolved": ["error", {"commonjs": true, "caseSensitive": true}],
+        "import/no-unused-modules": [1, {"unusedExports": true}]
       }
 }

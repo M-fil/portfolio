@@ -118,28 +118,20 @@ const AppStyle = styled('div')<ISideBlockStyles>`
   #person-image {
     transition: 0.6s ease-in;
     position: absolute;
-    right: -40%;
+    right: -25%;
     bottom: 0;
     z-index: 1000;
 
     margin: 0 auto;
-    width: 550px;
-    height: 600px;
-
-    @media ${mediaLaptop} {
-      width: 450px;
-      height: 500px;
-    }
+    width: 450px;
+    height: 500px;
 
     @media ${mediaTablet} {
       width: 350px;
       height: 400px;
-      right: -25%;
     }
 
     @media ${mediaMobile} {
-      right: -25%;
-
       width: 250px;
       height: 300px;
     }

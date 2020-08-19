@@ -25,7 +25,7 @@ interface IProject {
 }
 
 const Project: React.FC<IProject> = ({
-  project, projectId, index
+  project, projectId, index,
 }) => {
   const [t] = useTranslation();
 

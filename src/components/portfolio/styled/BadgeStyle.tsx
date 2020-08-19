@@ -46,15 +46,16 @@ const BadgeStyle = styled('div')<IBadgeStyle>`
   }
 
   .project__link {
-    font-size: 1.5rem;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
     flex-grow: 1;
-    width: 100%;
+
+    font-size: 1.5rem;
+    padding: 0;
 
     @media ${mediaTablet} {
-      display: flex;
-      flex-direction: row-reverse;
-      align-items: center;
-
       font-size: 1.2rem;
 
       & span {
@@ -64,14 +65,13 @@ const BadgeStyle = styled('div')<IBadgeStyle>`
     }
 
     & span {
-      width: 100%;
       overflow: hidden;
       text-overflow: ellipsis;
       text-align: left;
     }
 
     & i {
-      margin-left: 10px;
+      margin-right: 10px;
     }
   }
 

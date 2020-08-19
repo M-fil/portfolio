@@ -54,14 +54,14 @@ const GlobalStyles = createGlobalStyle`
   }
 
   .project-modal {
-    width: 70vw;
+    width: 70vw !important;
 
     @media ${mediaLaptop} {
-      width: 80vw;
+      width: 80vw !important;
     }
 
     @media ${mediaTablet} {
-      width: 90vw;
+      width: 90vw !important;
     }
   }
 `;

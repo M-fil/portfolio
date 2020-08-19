@@ -9,26 +9,25 @@ const useCallbackEffect = (
 
   useEffect(() => {
     let didCancel = false;
-  
+
     const fetchData = async () => {
       try {
-        const data = await asyncCallback.apply(null, asyncCallbackArgs || [])
+        const data = await asyncCallback.apply(null, asyncCallbackArgs || []);
         if (!didCancel) {
           setData(data);
         }
       } catch (error) {
         console.log(error.message);
       }
-    }
+    };
 
     fetchData();
     return () => {
       didCancel = true;
-    }
+    };
   }, []);
 
   return data;
-}
+};
 
 export default useCallbackEffect;
-

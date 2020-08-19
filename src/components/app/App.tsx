@@ -10,7 +10,6 @@ import {
   MenuFoldOutlined,
 } from '@ant-design/icons';
 
-
 import Navigation from '../navigation/Navigation';
 import About from '../about/About';
 import Main from '../main/Main';
@@ -39,7 +38,7 @@ const App: React.FC = () => {
 
   const closeMenu = (event: MouseEvent<HTMLDivElement>) => {
     setIsMenuOpened(false);
-  }
+  };
 
   return (
     <>

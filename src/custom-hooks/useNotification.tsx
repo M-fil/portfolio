@@ -48,7 +48,7 @@ const useNotification: IUseNotificatoin = (
         >
           {buttonText}
         </Button>
-      </OfferPopUpStyle>),
+                    </OfferPopUpStyle>),
       className: 'offer-pop-up',
       duration: null,
       onClose: () => {
