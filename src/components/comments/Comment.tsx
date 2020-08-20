@@ -16,7 +16,7 @@ const CommentItem: React.FC<{
   const [t] = useTranslation();
 
   return (
-    <Slide left={index % 2} right={!(index % 2)}>
+    <Slide left={index % 2 === 0} right={index % 2 !== 0}>
       <Comment
         className="comment"
         author={t(`comments.commentators.${personKey}.name`)}

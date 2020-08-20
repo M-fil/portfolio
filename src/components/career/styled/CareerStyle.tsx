@@ -8,11 +8,8 @@ const {
 } = colors.portfolio;
 
 const {
-  labptopL,
   mediaLaptop,
   mediaTablet,
-  mediaMobile,
-  mediaMobileSmall,
 } = mediaQueries;
 
 const CareerStyle = styled('div')`

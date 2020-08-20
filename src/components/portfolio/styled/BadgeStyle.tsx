@@ -2,13 +2,7 @@ import styled from 'styled-components';
 
 import { mediaQueries } from '../../../constants/constants';
 
-const {
-  labptopL,
-  mediaLaptop,
-  mediaTablet,
-  mediaMobile,
-  mediaMobileSmall,
-} = mediaQueries;
+const { mediaTablet } = mediaQueries;
 
 interface IBadgeStyle {
   childrenCount?: number;

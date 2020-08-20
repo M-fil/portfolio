@@ -8,9 +8,7 @@ import {
 import {
   ToolType,
   LinksKeyType,
-  IState,
 } from '../interfaces/interfaces';
-import Preloader from '../components/preloader/Preloader';
 
 const {
   javascriptIconColor,
@@ -97,7 +95,7 @@ const getRandomInteger = (min: number, max: number): number => {
 };
 
 const getBoolArrayWithOneTrueValue = (
-  arrayLength: number = BOOL_ARRAY_LENGTH_FOR_CONTACST_ANIMATION,
+  arrayLength: number = BOOL_ARRAY_LENGTH_FOR_CONTACST_ANIMATION as number,
 ): boolean[] => {
   const randomInteger: number = getRandomInteger(0, arrayLength - 1);
   const boolArray: boolean[] = Array.from({

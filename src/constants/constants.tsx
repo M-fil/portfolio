@@ -1,7 +1,6 @@
-import { IScreenResolution } from '../interfaces/interfaces';
+import { IScreenResolution, TitleLevelType } from '../interfaces/interfaces';
 
 import PERSON_IMAGE_1_URL from '../assets/images/person/person-1.png';
-import PERSON_IMAGE_2_URL from '../assets/images/person/person-2.png';
 import REDUX from '../assets/images/tools/redux.svg';
 import TYPESCRIPT from '../assets/images/tools/typescript.svg';
 import RS_LOGO from '../assets/images/steps/rs-logo.png';
@@ -17,7 +16,6 @@ const urls: {
   CONTACTS_URL: 'https://raw.githubusercontent.com/M-fil/data-storage/master/my-portfolio/contacts/contacts.json',
   COMMENTS_URL: 'https://raw.githubusercontent.com/M-fil/data-storage/master/my-portfolio/comments/comments.json',
   PERSON_IMAGE_1_URL,
-  PERSON_IMAGE_2_URL,
   CV_LINK_URL: 'https://drive.google.com/file/d/1G0xogM0rIs7q5GnWM7rIlALGv7tVEfbe/view?usp=sharing',
   PERSONAL_GITHUB_URL: 'https://api.github.com/users/M-fil',
   RS_LOGO,
@@ -26,6 +24,7 @@ const urls: {
   RUSSIA_FLAG: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg',
   ENGLAND_FLAG: 'https://images-na.ssl-images-amazon.com/images/I/2102hNwuHyL._AC_.jpg',
   PERSONAL_TELEGRAM_LINK: '"https://t.me/Filan0vichMaxim',
+  GITHUB_GET_TEAMMATES_QUERY: 'GET /repos/{owner}/{repo}/collaborators',
 };
 
 const colors: {
@@ -106,15 +105,18 @@ const dateConstants: {
 };
 
 const numberConstants: {
-  [propName: string]: number;
+  [propName: string]: number | TitleLevelType;
 } = {
   BOOL_ARRAY_LENGTH_FOR_CONTACST_ANIMATION: 4,
+  CONTACT_BLOCK_SIZE: 150,
+  CONTACT_TITLE_LEVEL: 2,
+  DEFAULT_SCALING: 1.5,
 };
 
 const skillChartConstants: {
-  [propName: string]: string,
+  [propName: string]: string | number,
 } = {
-  BORDER_WIDTH: '10px',
+  BORDER_WIDTH: 10,
   DEFAULT_BORDER_COLOR: '#16222E',
   DEFAULT_INNER_COLOR: '#F0F0F0',
 };

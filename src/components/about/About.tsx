@@ -14,7 +14,7 @@ import useDataWithReducer from '../../custom-hooks/useDataWithReducer';
 
 const Fade = require('react-reveal/Fade');
 
-const About: React.StatelessComponent = () => {
+const About: React.FC = () => {
   const [t] = useTranslation();
   const { state: skillsState } = useDataWithReducer(
     getDataByURL.bind(null, urls.SKILLS_URL), 'skills',

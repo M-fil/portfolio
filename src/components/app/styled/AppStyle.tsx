@@ -4,11 +4,9 @@ import { colors, mediaQueries } from '../../../constants/constants';
 import { ISideBlockStyles } from '../../../interfaces/interfaces';
 
 const {
-  labptopL,
   mediaLaptop,
   mediaTablet,
   mediaMobile,
-  mediaMobileSmall,
 } = mediaQueries;
 
 const {

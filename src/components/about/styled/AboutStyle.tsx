@@ -5,11 +5,9 @@ import { colors, mediaQueries } from '../../../constants/constants';
 const { about } = colors;
 
 const {
-  labptopL,
   mediaLaptop,
   mediaTablet,
   mediaMobile,
-  mediaMobileSmall,
 } = mediaQueries;
 
 const AboutStyle = styled('div')`

@@ -16,6 +16,7 @@ const {
 
 const calculateAge = (dateOfBirth = DATE_OF_BIRTH as string): number => {
   const differenceInDates = new Date().getTime() - new Date(dateOfBirth).getTime();
+
   return Math.floor((differenceInDates / MILISECONDS_PER_SECOND / SECONDS_PER_MINUTE)
     / SECONDS_PER_MINUTE / HOURS_PER_DAY / AVERARGE_DAYS_PER_YEAR);
 };

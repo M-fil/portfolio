@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Button, notification } from 'antd';
+
 import OfferPopUpStyle from '../components/offer-pop-up/styled/OfferPopUpStyle';
 import { urls } from '../constants/constants';
 
@@ -48,7 +49,7 @@ const useNotification: IUseNotificatoin = (
         >
           {buttonText}
         </Button>
-                    </OfferPopUpStyle>),
+      </OfferPopUpStyle>),
       className: 'offer-pop-up',
       duration: null,
       onClose: () => {

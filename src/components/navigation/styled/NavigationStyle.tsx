@@ -1,13 +1,7 @@
 import styled from 'styled-components';
 import { colors, mediaQueries } from '../../../constants/constants';
 
-const {
-  labptopL,
-  mediaLaptop,
-  mediaTablet,
-  mediaMobile,
-  mediaMobileSmall,
-} = mediaQueries;
+const { mediaTablet } = mediaQueries;
 
 const NavigationStyle = styled.div`
   display: flex;

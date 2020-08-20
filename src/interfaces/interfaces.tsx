@@ -8,6 +8,7 @@ export type ActionTypesType = 'loading' | 'error' | 'success';
 export type StepKeyType = 'php' | 'js-self-education' | 'rs-js-single-projects'
   | 'rs-js-team-projects' | 'rs-js-course-finish' | 'epam-fail' | 'rs-react';
 export type LanguageType = 'RU' | 'EN';
+export type TitleLevelType= 1 | 2 | 3 | 4 | undefined;
 
 export interface ITeammate {
   id: number;
@@ -57,7 +58,7 @@ export interface IScreenResolution {
 export interface IPieChartStyle {
   width: number,
   strokeWidth: number,
-};
+}
 
 export interface IState {
   isLoading: boolean;

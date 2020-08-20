@@ -1,10 +1,10 @@
-import React, { useState, MouseEvent } from 'react';
+import React, { useState } from 'react';
 import {
   BrowserRouter,
   Switch as RouteSwitch,
   Route,
 } from 'react-router-dom';
-import { Button, Menu } from 'antd';
+import { Button } from 'antd';
 import {
   MenuUnfoldOutlined,
   MenuFoldOutlined,
@@ -32,11 +32,11 @@ const App: React.FC = () => {
   });
   const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);
 
-  const toggleMenu = (event: MouseEvent<HTMLButtonElement>) => {
+  const toggleMenu = () => {
     setIsMenuOpened(!isMenuOpened);
   };
 
-  const closeMenu = (event: MouseEvent<HTMLDivElement>) => {
+  const closeMenu = () => {
     setIsMenuOpened(false);
   };
 

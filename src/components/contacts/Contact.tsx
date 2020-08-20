@@ -3,6 +3,7 @@ import { Avatar, Tooltip } from 'antd';
 
 import { IContactLink } from '../../interfaces/interfaces';
 import { getBoolArrayWithOneTrueValue } from '../../utils/getters';
+import { numberConstants } from "../../constants/constants";
 
 const Fade = require('react-reveal/Fade');
 
@@ -24,7 +25,7 @@ const Contact: React.FC<IContact> = ({
       <Tooltip title={contact.name} placement="top">
         <a href={contact.link} target="_blank">
           <Avatar
-            size={150}
+            size={numberConstants.CONTACT_BLOCK_SIZE}
             className="contacts__link"
             icon={<i className={contact.iconClassName} />}
             style={{ background: contact.color }}

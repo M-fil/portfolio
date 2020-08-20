@@ -5,6 +5,12 @@ import { useTranslation } from 'react-i18next';
 import CareerStyle from './styled/CareerStyle';
 import { urls, icons } from '../../constants/constants';
 import MultipleIcons from './MultipleIcons';
+import {
+  PHPIcon,
+  JSIcon,
+  ReactIcon,
+  ImageIcon,
+} from '../icons/Icons';
 
 const Slide = require('react-reveal/Slide');
 const withReveal = require('react-reveal/withReveal');
@@ -23,23 +29,15 @@ const Career: React.FC = () => {
           subTitle={t('career.steps.php.period')}
           description={t('career.steps.php.description')}
           status="finish"
-          icon={(
-            <MultipleIcons icons={[
-              { element: 'i', className: 'fab fa-php' },
-            ]}
-            />
-          )}
+          icon={<PHPIcon />}
         />
         <Steps.Step
           title={t('career.steps.js-self-education.title')}
           subTitle={t('career.steps.js-self-education.period')}
           description={t('career.steps.js-self-education.description')}
           icon={(
-            <MultipleIcons icons={[
-              { element: 'i', className: 'fab fa-js' },
-              { element: 'i', className: 'fab fa-react' },
-              { element: 'img', className: 'steps__svg-icon', src: icons.REDUX },
-            ]}
+            <MultipleIcons
+              icons={[<JSIcon />, <ReactIcon />, <ImageIcon src={icons.REDUX} classes={['steps__svg-icon']} />]}
             />
           )}
           status="finish"
@@ -49,36 +47,21 @@ const Career: React.FC = () => {
           subTitle={t('career.steps.rs-js-single-projects.period')}
           description={t('career.steps.rs-js-single-projects.description')}
           status="finish"
-          icon={(
-            <MultipleIcons icons={[
-              { element: 'img', className: 'steps__logo', src: urls.RS_LOGO },
-            ]}
-            />
-          )}
+          icon={<ImageIcon src={urls.RS_LOGO} classes={['steps__logo']} />}
         />
         <Steps.Step
           title={t('career.steps.rs-js-team-projects.title')}
           subTitle={t('career.steps.rs-js-team-projects.period')}
           description={t('career.steps.rs-js-team-projects.description')}
           status="finish"
-          icon={(
-            <MultipleIcons icons={[
-              { element: 'img', className: 'steps__logo', src: urls.RS_LOGO },
-            ]}
-            />
-          )}
+          icon={<ImageIcon src={urls.RS_LOGO} classes={['steps__logo']} />}
         />
         <Steps.Step
           title={t('career.steps.epam-fail.title')}
           subTitle={t('career.steps.epam-fail.period')}
           description={t('career.steps.epam-fail.description')}
           status="finish"
-          icon={(
-            <MultipleIcons icons={[
-              { element: 'img', className: 'steps__logo', src: urls.EPAM_LOGO },
-            ]}
-            />
-          )}
+          icon={<ImageIcon src={urls.EPAM_LOGO} classes={['steps__logo']} />}
         />
         <Steps.Step
           title={t('career.steps.rs-react.title')}
@@ -87,8 +70,8 @@ const Career: React.FC = () => {
           status="finish"
           icon={(
             <MultipleIcons icons={[
-              { element: 'i', className: 'fab fa-react' },
-              { element: 'img', className: 'steps__logo steps__second-logo', src: urls.RS_LOGO },
+              <ReactIcon />,
+              <ImageIcon src={urls.RS_LOGO} classes={['steps__logo', 'steps__second-logo']} />,
             ]}
             />
           )}
@@ -98,12 +81,7 @@ const Career: React.FC = () => {
           subTitle={t('career.steps.internship.period')}
           description={t('career.steps.internship.description')}
           status="finish"
-          icon={(
-            <MultipleIcons icons={[
-              { element: 'img', className: 'steps__logo steps__square-logo', src: urls.INNOWISE_GROUP_LOGO },
-            ]}
-            />
-          )}
+          icon={<ImageIcon src={urls.INNOWISE_GROUP_LOGO} classes={['steps__logo', 'steps__square-logo']} />}
         />
       </Steps>
     </CareerStyle>

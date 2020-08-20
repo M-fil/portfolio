@@ -1,6 +1,4 @@
-import {
-  useEffect, useReducer,
-} from 'react';
+import { useEffect, useReducer } from 'react';
 
 import defaultState from '../reducer/defaultState';
 import reducer from '../reducer/reducer';
@@ -50,6 +48,6 @@ function useDataWithReducer(getData: () => any, localStorageName: string) {
     state,
     dispatch,
   };
-};
+}
 
 export default useDataWithReducer;
