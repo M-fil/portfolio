@@ -59,7 +59,7 @@
     "steps": {
       "php": {
         "title": "Studied PHP on my own",
-        "description": "I didn't like it - I dropped it",
+        "description": "I didn't like it - I dropped it.",
         "period": "July-August 2019 (1.5 months)"
       },
       "js-self-education": {
@@ -84,7 +84,7 @@
       },
       "epam-fail": {
         "title": "Not included in EPAM due to the IT crisis COVID-19",
-        "description": "After completing the Rolling Scopes courses, some students from the TOP-100 in the ranking are selected for the EPAM JavaScript laboratory, where they can continue their studies and subsequently sign a contract. Since I took 15th place, I believe that I had great chances to get into this company.\nBut due to the coronavirus all over the world, and especially in Belarus, I had a change to get into EPAM. Many young IT specialists were fired because companies needed to somehow reduce their personnel costs. Due to the COVID-19 crisis, EPAM refused to recruit Rolling Scopes students.",
+        "description": "After completing the Rolling Scopes courses, some students from the TOP-100 in the ranking are selected for the EPAM JavaScript laboratory, where they can continue their studies and subsequently sign a contract. Since I took 15th place, I believe that I had great chances to get into this company.\nBut because of the coronavirus, a crisis has started all over the world, and especially in Belarus. Many young IT specialists were fired because companies needed to somehow reduce their personnel costs. Due to the COVID-19 crisis, EPAM refused to recruit Rolling Scopes students.",
         "period": "July 2020"
       },
       "rs-react": {

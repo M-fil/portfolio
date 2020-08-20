@@ -98,6 +98,7 @@ const CareerStyle = styled('div')`
 
   .ant-steps-item-description {
     font-size: 1.1rem;
+    white-space: pre-line;
 
     @media ${mediaLaptop} {
       font-size: 1.2rem;
