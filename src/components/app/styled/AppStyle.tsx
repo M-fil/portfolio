@@ -46,7 +46,7 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     background: ${lightSideBackground};
     width: ${(props) => props.rightBlockWidth};
     flex-grow: 1;
-    padding: 15px 15px 10px 170px;
+    padding: 15px 15px 10px 100px;
 
     @media ${mediaLaptop} {
       padding-left: 100px;
@@ -119,13 +119,13 @@ const AppStyle = styled('div')<ISideBlockStyles>`
   #person-image {
     transition: 0.6s ease-in;
     position: absolute;
-    right: -25%;
+    right: -20%;
     bottom: 0;
     z-index: 1000;
 
     margin: 0 auto;
-    width: 450px;
-    height: 500px;
+    width: 400px;
+    height: 450px;
 
     @media ${mediaTablet} {
       width: 350px;

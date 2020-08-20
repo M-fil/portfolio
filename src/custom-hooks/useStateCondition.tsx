@@ -4,12 +4,12 @@ import Preloader from '../components/preloader/Preloader';
 import { IState } from '../interfaces/interfaces';
 
 const useStateCondition = (
-  state: IState, finalElement: any,
+  state: IState, finalElement: any, preloader: any = <Preloader />,
 ): IState => {
   let data = null;
 
   if (state.isLoading) {
-    data = <Preloader />;
+    data = preloader;
   } else if (state.isError) {
     data = state.errorMessage;
   } else {

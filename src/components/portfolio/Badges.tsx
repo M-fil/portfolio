@@ -16,6 +16,7 @@ import { getAllProjectCollaborators } from '../../service/service';
 import { personalData, colors } from '../../constants/constants';
 import BadgeStyle from './styled/BadgeStyle';
 import useDataWithReducer from '../../custom-hooks/useDataWithReducer';
+import useStateCondition from '../../custom-hooks/useStateCondition';
 
 const {
   toolIconBackground,
@@ -94,27 +95,28 @@ const TeammatesBadges: React.FC<IBadge> = ({
     ? teammates
     : [personalGithub] as ITeammate[];
 
+  const teammatesData = useStateCondition(
+    state,
+    (resultCollabs.map((teammate) => (
+      <Tooltip key={teammate.id} title={teammate.login} placement="top">
+        <a href={teammate.html_url} target="_blank">
+          <Avatar
+            className="project__teammate project__badge"
+            src={teammate.avatar_url}
+            alt={teammate.login}
+          />
+        </a>
+      </Tooltip>
+    ))),
+    getNAmountOfElement(<Skeleton.Avatar className="skeleton" active size="large" />, 10)
+  );
+
   return (
     <BadgeStyle childrenCount={resultCollabs?.length || 0}>
       <Avatar.Group>
-        {state.isLoading ? getNAmountOfElement(
-          <Skeleton.Avatar className="skeleton" active size="large" />, 10
-        ) : teammates && teammates.length
-        && (
         <div className="project__teammates project__badges">
-          {resultCollabs.map((teammate) => (
-            <Tooltip key={teammate.id} title={teammate.login} placement="top">
-              <a href={teammate.html_url} target="_blank">
-                <Avatar
-                  className="project__teammate project__badge"
-                  src={teammate.avatar_url}
-                  alt={teammate.login}
-                />
-              </a>
-            </Tooltip>
-          ))}
+          {teammatesData}
         </div>
-        )}
       </Avatar.Group>
     </BadgeStyle>
   );

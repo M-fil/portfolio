@@ -43,7 +43,7 @@ const CareerStyle = styled('div')`
     }
   }
 
-  & .steps__logo {
+  .steps__logo {
     position: relative;
     left: -30px;
 
@@ -51,25 +51,31 @@ const CareerStyle = styled('div')`
     height: 40px;
   }
 
-  & .steps__second-logo {
+  .steps__square-logo {
+    width: 80px;
+    height: 80px;
+    left: -25px;
+  }
+
+  .steps__second-logo {
     top: 10px;
   }
 
-  & .steps__svg-icon {
+  .steps__svg-icon {
     transform: scale(1.5);
   }
 
-  & .steps__multiple-icons {
+  .steps__multiple-icons {
     & > * {
       margin-bottom: 20px;
     }
   }
 
-  & .ant-steps-item-content {
+  .ant-steps-item-content {
     padding-left: 10px;
   }
 
-  & .ant-steps-item-title {
+  .ant-steps-item-title {
     display: flex;
     flex-direction: column;
 
@@ -80,7 +86,7 @@ const CareerStyle = styled('div')`
     }
   }
 
-  & .ant-steps-item-subtitle {
+  .ant-steps-item-subtitle {
     font-size: 1.4rem;
     margin-left: 0;
     text-decoration: underline;
@@ -90,7 +96,7 @@ const CareerStyle = styled('div')`
     }
   }
 
-  & .ant-steps-item-description {
+  .ant-steps-item-description {
     font-size: 1.1rem;
 
     @media ${mediaLaptop} {
@@ -102,7 +108,7 @@ const CareerStyle = styled('div')`
     }
   }
 
-  & .fa-times-circle {
+  .fa-times-circle {
     color: ${colors.career.failColor};
   }
 `;

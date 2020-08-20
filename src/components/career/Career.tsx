@@ -100,11 +100,11 @@ const Career: React.FC = () => {
           status="finish"
           icon={(
             <MultipleIcons icons={[
-              { element: 'img', className: 'steps__logo', src: urls.INNOWISE_GROUP_LOGO },
+              { element: 'img', className: 'steps__logo steps__square-logo', src: urls.INNOWISE_GROUP_LOGO },
             ]}
-          />)}
-        >
-        </Steps.Step>
+            />
+          )}
+        />
       </Steps>
     </CareerStyle>
   );
