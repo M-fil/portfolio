@@ -3,7 +3,7 @@ import { Avatar, Tooltip } from 'antd';
 
 import { IContactLink } from '../../interfaces/interfaces';
 import { getBoolArrayWithOneTrueValue } from '../../utils/getters';
-import { numberConstants } from "../../constants/constants";
+import { numberConstants } from '../../constants/constants';
 
 const Fade = require('react-reveal/Fade');
 
