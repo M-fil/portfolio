@@ -70,3 +70,8 @@ export interface IActionPayload {
   type: keyof typeof actions;
   payload?: any;
 }
+
+export interface ISkill {
+  percentage: number;
+  text: ToolType;
+}

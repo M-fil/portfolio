@@ -1,16 +1,16 @@
 import React from 'react';
-import { JsxElement } from 'typescript';
 
 import {
   icons,
   colors,
-  contactsLinks,
   numberConstants,
 } from '../constants/constants';
 import {
   ToolType,
   LinksKeyType,
+  IState,
 } from '../interfaces/interfaces';
+import Preloader from '../components/preloader/Preloader';
 
 const {
   javascriptIconColor,
@@ -24,11 +24,8 @@ const {
   reactTestingLibraryIconColor,
   reduxIconColor,
   typescriptIconColor,
+  youtubeIconColor,
 } = colors.portfolio;
-
-const {
-  youtube,
-} = contactsLinks;
 
 const {
   BOOL_ARRAY_LENGTH_FOR_CONTACST_ANIMATION,
@@ -63,7 +60,7 @@ const getLinkIconByName = (linkIconName: LinksKeyType) => {
     case 'github':
       return (<i style={{ color: githubIconColor }} className="fab fa-github" />);
     case 'youtube':
-      return (<i style={{ color: youtube.color }} className="fab fa-youtube" />);
+      return (<i style={{ color: youtubeIconColor }} className="fab fa-youtube" />);
     case 'demo':
     default:
       return (<i style={{ color: demoIconColor }} className="fas fa-external-link-alt" />);

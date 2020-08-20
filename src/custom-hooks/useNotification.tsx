@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import { Button, notification } from 'antd';
 import OfferPopUpStyle from '../components/offer-pop-up/styled/OfferPopUpStyle';
-import { contactsLinks } from '../constants/constants';
+import { urls } from '../constants/constants';
 
 const {
-  telegram,
-} = contactsLinks;
+  PERSONAL_TELEGRAM_LINK,
+} = urls;
 
 type NotificationElementType = string | HTMLElement;
 
@@ -43,7 +43,7 @@ const useNotification: IUseNotificatoin = (
           type="primary"
           ghost
           icon={<i className={`${iconClassName} offer-pop-up__icon`} />}
-          href={telegram.link}
+          href={PERSONAL_TELEGRAM_LINK}
           target="_blank"
         >
           {buttonText}

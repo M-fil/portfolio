@@ -2,17 +2,12 @@ import React from 'react';
 import { Progress, Tooltip } from 'antd';
 
 import { getToolIconByName, getIconColorByName } from '../../utils/getters';
-import { ToolType } from '../../interfaces/interfaces';
-
-interface ISkill {
-  percentage: number;
-  name: ToolType;
-}
+import { ISkill } from '../../interfaces/interfaces';
 
 const Skill: React.FC<ISkill> = ({
-  percentage, name,
+  percentage, text,
 }) => {
-  const icon = getToolIconByName(name);
+  const icon = getToolIconByName(text);
 
   return (
     <div className="about__skill">
@@ -21,15 +16,15 @@ const Skill: React.FC<ISkill> = ({
           type="circle"
           className="skill__pie-chart"
           percent={percentage}
-          strokeColor={getIconColorByName(name)}
+          strokeColor={getIconColorByName(text)}
           strokeWidth={10}
         />
       </Tooltip>
       <div className="skill__name">
-        {name}
+        {text}
         <div className="skill__icon">
           {typeof icon === 'string'
-            ? <img className="skill__icon-image" src={icon} alt={name} />
+            ? <img className="skill__icon-image" src={icon} alt={text} />
             : icon}
         </div>
       </div>

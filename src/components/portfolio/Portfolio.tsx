@@ -3,20 +3,23 @@ import React, {
   useEffect,
   MouseEvent,
 } from 'react';
-import { Spin } from 'antd';
 
 import Project from './Project';
 import ProjectModal from './ProjectModal';
 import PortfolioStyle from './styled/PortfolioStyle';
 import { IProjectObject } from '../../interfaces/interfaces';
-import { getProjects } from '../../service/service';
+import { urls } from '../../constants/constants';
+import { getDataByURL } from '../../service/service';
 import useDataWithReducer from '../../custom-hooks/useDataWithReducer';
+import useStateCondition from '../../custom-hooks/useStateCondition';
 
 const Portfolio: React.FC = () => {
   const [isModalVisible, setIsModalVisible] = useState<boolean>(false);
   const [clickedProjectId, setClickedProjectId] = useState<string | null>(null);
   const [clickedProjectObject, setClickedProjectObject] = useState<IProjectObject | null>(null);
-  const { state } = useDataWithReducer(getProjects, 'projects');
+  const { state } = useDataWithReducer(
+    getDataByURL.bind(null, urls.PROJECT_URL), 'projects',
+  );
 
   useEffect(() => {
     if (clickedProjectId) {
@@ -43,6 +46,19 @@ const Portfolio: React.FC = () => {
     setClickedProjectId(null);
   };
 
+  const projectData = useStateCondition(state, (
+    state.data && Object
+      .entries(state.data as { [propName: string]: IProjectObject })
+      .map((project, index) => (
+        <Project
+          key={project[0]}
+          index={index}
+          project={project[1]}
+          projectId={project[0]}
+        />
+      ))
+  ));
+
   return (
     <PortfolioStyle>
       <div className="projects__list" onClick={onVisibleHandler}>
@@ -51,23 +67,7 @@ const Portfolio: React.FC = () => {
           isVisible={isModalVisible}
           onCancel={onCloseModal}
         />
-        {/* eslint-disable-next-line no-nested-ternary */}
-        {state.isLoading ? (
-          <div className="projects__preloader">
-            <Spin size="large" />
-          </div>
-        )
-          : state.isError ? 'Error'
-            : (state.data && Object.entries(
-                state.data as { [propName: string]: IProjectObject },
-            ).map((project, index) => (
-              <Project
-                key={project[0]}
-                index={index}
-                project={project[1]}
-                projectId={project[0]}
-              />
-            )))}
+        {projectData}
       </div>
     </PortfolioStyle>
   );

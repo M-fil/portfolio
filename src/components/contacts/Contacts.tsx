@@ -3,15 +3,27 @@ import { useTranslation } from 'react-i18next';
 import { Typography, Avatar } from 'antd';
 
 import ContactsStyle from './styled/ContactsStyle';
-import { contactsLinks } from '../../constants/constants';
+import { urls } from '../../constants/constants';
+import { IContactLink } from '../../interfaces/interfaces';
+import { getDataByURL } from '../../service/service';
 import Contact from './Contact';
-
-const Slide = require('react-reveal/Slide');
+import useDataWithReducer from '../../custom-hooks/useDataWithReducer';
+import useStateCondition from '../../custom-hooks/useStateCondition';
 
 const { Title } = Typography;
 
 const Contacts: React.FC = () => {
   const [t] = useTranslation();
+  const { state: contactsState } = useDataWithReducer(
+    getDataByURL.bind(null, urls.CONTACTS_URL), 'contacts',
+  );
+  const contactsData = useStateCondition(contactsState, (
+    contactsState.data && Object
+      .entries(contactsState.data as { [propName: string]: IContactLink })
+      .map((contact) => (
+        <Contact key={contact[0]} contact={contact[1]} />
+      ))
+  ));
 
   return (
     <ContactsStyle>
@@ -22,9 +34,7 @@ const Contacts: React.FC = () => {
         </Title>
       </div>
       <Avatar.Group className="constacts__links">
-        {Object.entries(contactsLinks).map((contact) => (
-          <Contact key={contact[0]} contact={contact[1]} />
-        ))}
+        {contactsData}
       </Avatar.Group>
     </ContactsStyle>
   );

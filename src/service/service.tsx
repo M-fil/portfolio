@@ -18,8 +18,8 @@ const getPersonalGithubData = async () => {
   return data;
 };
 
-const getProjects = async () => {
-  const response = await fetch(urls.PROJECT_URL);
+const getDataByURL = async (url: string) => {
+  const response = await fetch(url);
   const data = await response.json();
 
   return data;
@@ -28,5 +28,5 @@ const getProjects = async () => {
 export {
   getAllProjectCollaborators,
   getPersonalGithubData,
-  getProjects,
+  getDataByURL,
 };
