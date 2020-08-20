@@ -1,5 +1,4 @@
 import {
-  IProjectObject,
   ICommentAuthor,
   ToolType,
   IContactLink,
@@ -12,6 +11,7 @@ import REDUX from '../assets/images/tools/redux.svg';
 import TYPESCRIPT from '../assets/images/tools/typescript.svg';
 import RS_LOGO from '../assets/images/steps/rs-logo.png';
 import EPAM_LOGO from '../assets/images/steps/epam-logo.png';
+import INNOWISE_GROUP_LOGO from '../assets/images/steps/innowise-group.png';
 import REACT_TESTING_LIBRARY from '../assets/images/tools/react-testing-library.png';
 
 const urls: {
@@ -23,6 +23,7 @@ const urls: {
   CV_LINK_URL: 'https://drive.google.com/file/d/1G0xogM0rIs7q5GnWM7rIlALGv7tVEfbe/view?usp=sharing',
   PERSONAL_GITHUB_URL: 'https://api.github.com/users/M-fil',
   RS_LOGO,
+  INNOWISE_GROUP_LOGO,
   EPAM_LOGO,
   RUSSIA_FLAG: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg',
   ENGLAND_FLAG: 'https://images-na.ssl-images-amazon.com/images/I/2102hNwuHyL._AC_.jpg',
