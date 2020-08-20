@@ -56,6 +56,7 @@ const AboutStyle = styled('div')`
   .about__description {
     text-align: left;
     font-size: 1.3rem;
+    white-space: pre-line;
 
     margin-bottom: 20px;
 

@@ -1,5 +1,7 @@
 import React from 'react';
-import { Button, Avatar, Tooltip, Skeleton } from 'antd';
+import {
+  Button, Avatar, Tooltip, Skeleton,
+} from 'antd';
 import { useTranslation } from 'react-i18next';
 
 import {
@@ -89,7 +91,7 @@ const TeammatesBadges: React.FC<IBadge> = ({
   );
   const teammates = state.data && state.data.data as ITeammate[];
   const personalGithub = teammates && teammates.length && teammates.find(
-    (person: ITeammate) => person.login === personalData.GITHUB_LOGIN,
+    (person) => person.login === personalData.GITHUB_LOGIN,
   ) as ITeammate;
   const resultCollabs = project.isMoreThanOneCollaborator
     ? teammates
@@ -97,7 +99,8 @@ const TeammatesBadges: React.FC<IBadge> = ({
 
   const teammatesData = useStateCondition(
     state,
-    (resultCollabs.map((teammate) => (
+    (resultCollabs && resultCollabs && resultCollabs.map((teammate) => (
+      teammate && (
       <Tooltip key={teammate.id} title={teammate.login} placement="top">
         <a href={teammate.html_url} target="_blank">
           <Avatar
@@ -107,8 +110,9 @@ const TeammatesBadges: React.FC<IBadge> = ({
           />
         </a>
       </Tooltip>
+      )
     ))),
-    getNAmountOfElement(<Skeleton.Avatar className="skeleton" active size="large" />, 10)
+    getNAmountOfElement(<Skeleton.Avatar className="skeleton" active size="large" />, 10),
   );
 
   return (
