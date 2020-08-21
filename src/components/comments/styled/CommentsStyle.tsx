@@ -6,6 +6,7 @@ const { mediaTablet } = mediaQueries;
 const CommentsStyle = styled('div')`
   position: relative;
   width: 100%;
+  height: 100%;
   padding-bottom: 50px;
   padding-right: 30px;
 

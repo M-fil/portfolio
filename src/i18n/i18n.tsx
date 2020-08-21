@@ -11,8 +11,8 @@ i18n
   .use(initReactI18next)
   .init({
     initImmediate: false,
-    lng: locales.en,
-    fallbackLng: locales.en,
+    lng: locales.ru,
+    fallbackLng: locales.ru,
     react: {
       wait: true,
       useSuspense: false,

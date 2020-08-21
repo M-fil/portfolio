@@ -46,8 +46,9 @@ const Portfolio: React.FC = () => {
     setClickedProjectId(null);
   };
 
-  const projectData = useStateCondition(state, (
-    state.data && Object
+  const projectData = useStateCondition(
+    state,
+    (state.data && Object
       .entries(state.data as { [propName: string]: IProjectObject })
       .map((project, index) => (
         <Project
@@ -57,7 +58,8 @@ const Portfolio: React.FC = () => {
           projectId={project[0]}
         />
       ))
-  ));
+    ),
+  );
 
   return (
     <PortfolioStyle>

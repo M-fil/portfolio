@@ -27,6 +27,12 @@ const urls: {
   GITHUB_GET_TEAMMATES_QUERY: 'GET /repos/{owner}/{repo}/collaborators',
 };
 
+const tokens: {
+  [propName: string]: string;
+} = {
+  GITHUB_ACCESS_TOKEN: '530cd812ed4fb3b8a4277276384f4228d84537b9',
+};
+
 const colors: {
   [propName: string]: { [propName: string]: string };
 } = {
@@ -111,6 +117,8 @@ const numberConstants: {
   CONTACT_BLOCK_SIZE: 150,
   CONTACT_TITLE_LEVEL: 2,
   DEFAULT_SCALING: 1.5,
+  DEFAULT_AVATAR_SIZE: 70,
+  ERROR_TITLE_LEVEL: 2,
 };
 
 const skillChartConstants: {
@@ -138,7 +146,6 @@ const mediaQueries: {
   mediaMobile: `(max-width: ${screenResolutions.mediaMobile})`,
   mediaMobileSmall: `(max-width: ${screenResolutions.mediaMobileSmall})`,
 };
-
 export {
   personalData,
   dateConstants,
@@ -149,4 +156,5 @@ export {
   numberConstants,
   screenResolutions,
   mediaQueries,
+  tokens,
 };

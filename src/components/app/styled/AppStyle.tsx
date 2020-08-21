@@ -170,6 +170,7 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     top: 0;
     transform: translateX(100%);
 
+    display: none;
     opacity: 0;
     margin: auto;
     z-index: 900;
@@ -179,6 +180,10 @@ const AppStyle = styled('div')<ISideBlockStyles>`
       transform: translateX(0);
       opacity: 1;
     }
+
+    @media ${mediaTablet} {
+      display: block;
+    } 
   }
 `;
 

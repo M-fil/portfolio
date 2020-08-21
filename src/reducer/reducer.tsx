@@ -21,7 +21,7 @@ function reducer(
     case FETCH_ERROR:
       return {
         ...state,
-        isLoading: true,
+        isLoading: false,
         isError: true,
         errorMessage: action.payload,
       };

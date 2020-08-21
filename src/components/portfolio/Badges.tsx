@@ -3,6 +3,7 @@ import {
   Button, Avatar, Tooltip, Skeleton,
 } from 'antd';
 import { useTranslation } from 'react-i18next';
+import { AvatarLoadError } from '../errors/Errors';
 
 import {
   getLinkIconByName,
@@ -99,7 +100,7 @@ const TeammatesBadges: React.FC<IBadge> = ({
 
   const teammatesData = useStateCondition(
     state,
-    (resultCollabs && resultCollabs && resultCollabs.map((teammate) => (
+    (resultCollabs && (resultCollabs as ITeammate[]).map((teammate) => (
       teammate && (
       <Tooltip key={teammate.id} title={teammate.login} placement="top">
         <a href={teammate.html_url} target="_blank">
@@ -113,6 +114,7 @@ const TeammatesBadges: React.FC<IBadge> = ({
       )
     ))),
     getNAmountOfElement(<Skeleton.Avatar className="skeleton" active size="large" />, 10),
+    <AvatarLoadError />,
   );
 
   return (

@@ -1,7 +1,5 @@
 import React from 'react';
 
-type IconHTMLType = 'i' | 'img';
-
 interface IMultipleIcons {
   icons: Array<any>,
 }
