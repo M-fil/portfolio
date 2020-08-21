@@ -29,6 +29,7 @@ const App: React.FC = () => {
   const [sideBlockStyles, setSideBlockStyles] = useState<ISideBlockStyles>({
     rightBlockWidth: '50%',
     leftBlockWidth: '50%',
+    isMainPage: true,
   });
   const [isMenuOpened, setIsMenuOpened] = useState<boolean>(false);
 
@@ -46,6 +47,7 @@ const App: React.FC = () => {
       <AppStyle
         rightBlockWidth={sideBlockStyles.rightBlockWidth}
         leftBlockWidth={sideBlockStyles.leftBlockWidth}
+        isMainPage={sideBlockStyles.isMainPage}
       >
         <BrowserRouter>
           <main id="main">

@@ -29,11 +29,13 @@ const Navigation: React.FC<INavigation<ISideBlockStyles>> = ({
       setStyles({
         rightBlockWidth: '70%',
         leftBlockWidth: '30%',
+        isMainPage: false,
       });
     } else {
       setStyles({
         rightBlockWidth: '50%',
         leftBlockWidth: '50%',
+        isMainPage: true,
       });
     }
   }, [location]);
@@ -75,6 +77,9 @@ const Navigation: React.FC<INavigation<ISideBlockStyles>> = ({
           </NavLink>
         </Menu.Item>
       </Menu>
+      <h2 className="navigation__tool-text">
+        JS
+      </h2>
     </NavigationStyle>
   );
 };

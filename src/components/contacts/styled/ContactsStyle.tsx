@@ -11,18 +11,18 @@ const ContactsStyle = styled('div')`
   flex-direction: column;
   align-items: center;
 
-  & .contacts__title {
+  .contacts__title {
     display: flex;
     margin-bottom: 50px;
     text-align: center;
   }
 
-  & .contacts__title-icon {
+  .contacts__title-icon {
     font-size: 2.5rem;
     margin-left: 10px;
   }
 
-  & .constacts__links {
+  .constacts__links {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -50,6 +50,10 @@ const ContactsStyle = styled('div')`
       &::after {
         width: 130px;
         height: 130px;
+
+        @media ${mediaLaptop} {
+          display: none;
+        }
       }
     }
 
@@ -62,7 +66,7 @@ const ContactsStyle = styled('div')`
     }
   }
 
-  & .contacts__link {
+  .contacts__link {
     display: flex;
     align-items: center;
     justify-content: center;

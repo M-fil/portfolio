@@ -32,6 +32,7 @@ export interface IProjectObject {
 export interface ISideBlockStyles {
   rightBlockWidth: string;
   leftBlockWidth: string;
+  isMainPage: boolean;
 }
 
 export interface ICommentAuthor {

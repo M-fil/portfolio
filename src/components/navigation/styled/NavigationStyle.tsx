@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import { colors, mediaQueries } from '../../../constants/constants';
 
-const { mediaTablet } = mediaQueries;
+const { mediaTablet, mediaLaptop, mediaMobile } = mediaQueries;
 
 const NavigationStyle = styled.div`
   display: flex;
@@ -57,6 +57,25 @@ const NavigationStyle = styled.div`
     word-break: break-all;
     overflow: inherit;
     white-space: pre-wrap;
+  }
+
+  .navigation__tool-text {
+    color: ${colors.navigation.toolText};
+    font-size: 9rem;
+    margin: 0;
+
+    @media ${mediaLaptop} {
+      display: none;
+    }
+
+    @media ${mediaTablet} {
+      display: block;
+      font-size: 8rem;
+    }
+
+    @media ${mediaMobile} {
+      display: none;
+    }
   }
 `;
 

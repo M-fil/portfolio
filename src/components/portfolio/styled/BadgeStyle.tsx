@@ -47,14 +47,18 @@ const BadgeStyle = styled('div')<IBadgeStyle>`
     flex-grow: 1;
 
     font-size: 1.5rem;
-    padding: 0;
+    padding: 0 5px;
 
     @media ${mediaTablet} {
       font-size: 1.2rem;
+      height: fit-content;
 
       & span {
         font-size: 1rem;
+        line-height: 1.7rem;
+
         margin-left: 10px;
+        white-space: pre-line;
       }
     }
 

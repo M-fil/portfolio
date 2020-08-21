@@ -77,7 +77,7 @@ const AboutStyle = styled('div')`
     @media ${mediaLaptop} {
       flex-direction: column;
       justify-content: center;
-      padding-left: 15%;
+      padding-left: 10px;
     }
 
     @media ${mediaTablet} {

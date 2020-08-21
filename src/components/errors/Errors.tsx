@@ -1,5 +1,7 @@
 import React from 'react';
-import { Avatar, Tooltip, Card, Typography } from 'antd';
+import {
+  Avatar, Tooltip, Card, Typography,
+} from 'antd';
 import { UserOutlined } from '@ant-design/icons';
 import { useTranslation } from 'react-i18next';
 

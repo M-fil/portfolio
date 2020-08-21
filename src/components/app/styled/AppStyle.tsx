@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
-import { colors, mediaQueries } from '../../../constants/constants';
+import { colors, mediaQueries, screenResolutions } from '../../../constants/constants';
 import { ISideBlockStyles } from '../../../interfaces/interfaces';
 
 const {
@@ -86,6 +86,49 @@ const AppStyle = styled('div')<ISideBlockStyles>`
       word-break: break-word !important;
     }
 
+    & #person-image {
+      transition: 0.6s ease-in;
+      position: absolute;
+      bottom: 0;
+      z-index: 1000;
+      margin: 0 auto;
+
+      @media (min-width: ${screenResolutions.mediaTablet}) {
+        ${(props) => (props.isMainPage ? (css`
+          width: 400px;
+          height: 550px;
+          right: -20%;
+
+          @media ${mediaLaptop} {
+            width: 300px;
+            height: 450px;
+          }
+        `) : css`
+          width: 350px;
+          height: 450px;
+          right: -25%;
+
+          @media ${mediaLaptop} {
+            width: 250px;
+            height: 400px;
+            right: -40%;
+          }
+      `)}
+      }
+
+      @media ${mediaTablet} {
+        width: 300px;
+        height: 450px;
+        right: -10%;
+      }
+
+      @media ${mediaMobile} {
+        width: 250px;
+        height: 400px;
+        right: -10%;
+      }
+    }
+
     @media ${mediaTablet} {
       position: absolute;
       width: 80%;
@@ -111,28 +154,6 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     &::-webkit-scrollbar-thumb {
       background: ${colors.scrollBar.color};
       border-radius: 10px;
-    }
-  }
-
-  #person-image {
-    transition: 0.6s ease-in;
-    position: absolute;
-    right: -20%;
-    bottom: 0;
-    z-index: 1000;
-
-    margin: 0 auto;
-    width: 400px;
-    height: 450px;
-
-    @media ${mediaTablet} {
-      width: 350px;
-      height: 400px;
-    }
-
-    @media ${mediaMobile} {
-      width: 250px;
-      height: 300px;
     }
   }
 

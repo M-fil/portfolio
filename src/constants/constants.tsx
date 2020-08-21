@@ -1,6 +1,6 @@
 import { IScreenResolution, TitleLevelType } from '../interfaces/interfaces';
 
-import PERSON_IMAGE_1_URL from '../assets/images/person/person-1.png';
+import PERSON_IMAGE_1_URL from '../assets/images/person/person.png';
 import REDUX from '../assets/images/tools/redux.svg';
 import TYPESCRIPT from '../assets/images/tools/typescript.svg';
 import RS_LOGO from '../assets/images/steps/rs-logo.png';
@@ -58,6 +58,7 @@ const colors: {
   navigation: {
     textColor: '#EBEBEB',
     activityColor: '#254054',
+    toolText: '#324154',
   },
   mainPage: {
     darkSideBackground: '#1D242E',
