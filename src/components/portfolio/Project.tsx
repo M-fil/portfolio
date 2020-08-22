@@ -12,6 +12,7 @@ import { LinksBadges, ToolsBadges } from './Badges';
 import Slider from './Slider';
 
 const Fade = require('react-reveal/Fade');
+
 const { PROJECT_FADE_ANIMATION_DURATION } = numberConstants;
 
 const IconFont = createFromIconfontCN({
