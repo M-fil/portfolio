@@ -5,15 +5,13 @@ const {
   mediaLaptop,
   mediaTablet,
   mediaMobile,
+  mediaMobileSmall,
 } = mediaQueries;
 
 const MainStyle = styled('div')`
     word-break: break-word !important;
-
-    @media ${mediaTablet} {
-      padding-left: 50px;
-    }
-
+    padding-left: 50px;
+  
     @media ${mediaMobile} {
       padding-left: 5px;
     }
@@ -23,6 +21,7 @@ const MainStyle = styled('div')`
     line-height: 7rem;
     color: ${colors.mainPage.nameColor};
     margin-bottom: 0;
+    white-space: pre-line;
 
     @media ${mediaLaptop} {
       font-size: 3rem;
@@ -35,6 +34,11 @@ const MainStyle = styled('div')`
     }
 
     @media ${mediaMobile} {
+      font-size: 4rem;
+      line-height: 5rem;
+    }
+
+    @media ${mediaMobileSmall} {
       font-size: 3rem;
       line-height: 4rem;
     }

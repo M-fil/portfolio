@@ -1,10 +1,10 @@
-import { urls, personalData, tokens } from '../constants/constants';
+import { urls, personalData } from '../constants/constants';
 
 const { Octokit } = require('@octokit/rest');
 
 const getAllProjectCollaborators = async (projectName?: string) => {
   const octokit = new Octokit({
-    auth: tokens.GITHUB_ACCESS_TOKEN,
+    auth: process.env.REACT_APP_GITHUB_AUTH_KEY,
   });
   const data = await octokit.request(urls.GITHUB_GET_TEAMMATES_QUERY, {
     owner: personalData.GITHUB_LOGIN,

@@ -27,12 +27,6 @@ const urls: {
   GITHUB_GET_TEAMMATES_QUERY: 'GET /repos/{owner}/{repo}/collaborators',
 };
 
-const tokens: {
-  [propName: string]: string;
-} = {
-  GITHUB_ACCESS_TOKEN: '530cd812ed4fb3b8a4277276384f4228d84537b9',
-};
-
 const colors: {
   [propName: string]: { [propName: string]: string };
 } = {
@@ -159,5 +153,4 @@ export {
   numberConstants,
   screenResolutions,
   mediaQueries,
-  tokens,
 };
