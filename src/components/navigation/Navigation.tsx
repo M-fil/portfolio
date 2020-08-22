@@ -2,8 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { NavLink, useLocation } from 'react-router-dom';
 import { Menu } from 'antd';
+
 import NavigationStyle from './styled/NavigationStyle';
 import { ISideBlockStyles } from '../../interfaces/interfaces';
+import { personalData } from '../../constants/constants';
 
 const Fade = require('react-reveal/Fade');
 const withReveal = require('react-reveal/withReveal');
@@ -78,7 +80,7 @@ const Navigation: React.FC<INavigation<ISideBlockStyles>> = ({
         </Menu.Item>
       </Menu>
       <h2 className="navigation__tool-text">
-        JS
+        {personalData.PERSONAL_TOOL_TEXT}
       </h2>
     </NavigationStyle>
   );

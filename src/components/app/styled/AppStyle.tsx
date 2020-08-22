@@ -44,11 +44,7 @@ const AppStyle = styled('div')<ISideBlockStyles>`
     background: ${lightSideBackground};
     width: ${(props) => props.rightBlockWidth};
     flex-grow: 1;
-    padding: 15px 15px 10px 100px;
-
-    @media ${mediaLaptop} {
-      padding-left: 100px;
-    }
+    padding: 10px 20px;
 
     @media ${mediaTablet} {
       padding: 0;

@@ -61,20 +61,18 @@ const NavigationStyle = styled.div`
 
   .navigation__tool-text {
     color: ${colors.navigation.toolText};
-    font-size: 9rem;
+    font-size: 14rem;
+    letter-spacing: 0.5rem;
     margin: 0;
 
     @media ${mediaLaptop} {
-      display: none;
+      font-size: 10rem;
+      letter-spacing: initial;
+      text-align: center;
     }
 
     @media ${mediaTablet} {
-      display: block;
-      font-size: 8rem;
-    }
-
-    @media ${mediaMobile} {
-      display: none;
+      font-size: 12rem;
     }
   }
 `;

@@ -100,6 +100,7 @@ const personalData: {
   DATE_OF_BIRTH: '10-12-2001',
   FULL_NAME: 'Maxim Filanovich',
   GITHUB_LOGIN: 'M-fil',
+  PERSONAL_TOOL_TEXT: 'JS',
 };
 
 const dateConstants: {
@@ -120,6 +121,7 @@ const numberConstants: {
   DEFAULT_SCALING: 1.5,
   DEFAULT_AVATAR_SIZE: 70,
   ERROR_TITLE_LEVEL: 2,
+  PROJECT_FADE_ANIMATION_DURATION: 700,
 };
 
 const skillChartConstants: {

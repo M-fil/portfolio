@@ -6,11 +6,13 @@ import { createFromIconfontCN } from '@ant-design/icons';
 import {
   IProjectObject,
 } from '../../interfaces/interfaces';
+import { numberConstants } from '../../constants/constants';
 import ProjectStyle from './styled/ProjectStyle';
 import { LinksBadges, ToolsBadges } from './Badges';
 import Slider from './Slider';
 
 const Fade = require('react-reveal/Fade');
+const { PROJECT_FADE_ANIMATION_DURATION } = numberConstants;
 
 const IconFont = createFromIconfontCN({
   scriptUrl: [
@@ -30,7 +32,11 @@ const Project: React.FC<IProject> = ({
   const [t] = useTranslation();
 
   return (
-    <Fade left={index % 2 === 0} right={index % 2 !== 0} duration={700}>
+    <Fade
+      left={index % 2 === 0}
+      right={index % 2 !== 0}
+      duration={PROJECT_FADE_ANIMATION_DURATION}
+    >
       <ProjectStyle>
         <Card
           title={project.name}

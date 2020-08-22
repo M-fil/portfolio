@@ -66,11 +66,6 @@ const App: React.FC = () => {
                   icon={isMenuOpened ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
                   onClick={toggleMenu}
                 />
-                <img
-                  id="person-image"
-                  src={urls.PERSON_IMAGE_1_URL}
-                  alt={personalData.FULL_NAME as string}
-                />
                 <Navigation
                   setStyles={setSideBlockStyles}
                   setIsMenuOpened={setIsMenuOpened}
