@@ -1,0 +1,139 @@
+{
+  "navigation": {
+    "main": "Main",
+    "about": "About me",
+    "portfolio": "Portfolio (my projects)",
+    "career": "Career",
+    "comments": "Comments",
+    "contacts": "Contacts"
+  },
+  "main": {
+    "name": "Maxim\nFilanovich",
+    "activity": "Front-End developer"
+  },
+  "about": {
+    "name": "Maxim Filanovich",
+    "activity": "Front-End developer",
+    "years": "years",
+    "description": "Hello everyone! My name is Maxim, and I have been doing Front-end development for more than a year. Someone who is not versed in programming will ask: «What the hell is this Front-End?» Front-End is essentially what you see in a browser on any web page. Every button, every link, every cool animation is a Front-End developer's work.\nThis profession fascinates me a lot and I have a great desire to do this job.",
+    "skills": "Key skills",
+    "cv-download-text": "Download resume (CV)"
+  },
+  "portfolio": {
+    "more-button": "More",
+    "description-text": "Description",
+    "open-github-text": "Open gihub link",
+    "open-demo-text": "Open demo link",
+    "open-youtube-text": "Open YouTube promo-video link",
+    "projects": {
+      "rslang": {
+        "description": "The goal of the project was to create a web-app for learning English which will be similar to the site Lingualeo. It should have included 6 mini-games, 1 main game, Vocabulary, Statistics, and Settings. To achieve such a goal we put together a team of 6 people (including me). I was a team leader of the project. We use Trello to track project Progress, Git for organizing teammate code and conduct a code review, ChartJS library for graphs on the Statistics page, etc. The project has been developed in 1 month and the goal was achieved." 
+      },
+      "english-for-kids": {
+        "description": "The goal of the project was to create a web-app that allows kids to learn English using images and sounds. It should have included 8 categories of word and Statistics page.\nTo make the page more beautiful and pleasant for the kid's eye I used the designer help, who created the layout in Figma.\nUsing Figma layout I developed PC and Mobile styles of the page so that children can learn English using any device.\nIn order to create functionality, I used audio API and Native JS.\n\nAfter clicking on the card the child hears the sound of the word. Also, there is a Play mode where children can guess cards by hearing their sounds.The project was developed in 3 weeks and all main criteria were completed. Young sisters and brothers of my friends tested the app and said that their kids were happy to learn English with this web-app English for Kids."
+      },
+      "fancy-weather": {
+        "description": "The goal of the project was to create an app that allows users to check the weather almost in any place of the world, listen to audio forecast, control the app with the voice, change the background image, change the language of the app (en, ru, by).\n\nFancyWeather was developed with the usage of side APIs. For example:\n- Mapbox GJ JS for the map;\n- Open Weather for weather forecasts;\n- IP Info for getting user geolocation data;\n- SpeechRecognition API for voice control;\n\nExtra Libraries used in the app:\n- react-i18next library was used for internationalization. There are 3 languages: English, Russian, Belarusian;\n- Moment.JS for time formats;\n\nAlso, there are animated icons for the attractiveness of the application.\nAfter the finishing of the app development, I sent it to my friends in order to check it for bugs. All my friends were happy with it. They said that the app looks attractive for the user and provides all the necessary features to check the weather. But there was one problem with used IP Info API. It sometimes showed the wrong places for small localities. But the feedback was positive."
+      },
+      "singolo": {
+        "description": "The goal of the project was to create a responsive landing page with slider/swiper, anchor navigation, and the submit form.\nIn order to develop it, I used CSS for styles and JavaScript for the main functionality (anchors, slider).\nThe project was created in 3 weeks."
+      },
+      "movie-search": {
+        "description": "The goal of the project was to develop a web-page which allows user to find his favorite movies, check their IMDb rates and all other info. Also, it needed to embed virtual keyboard for users who have problems with the real keyboard.\n\nTo achieve the project goal I used Native JavaScript for functionality, SCSS for styles and Webpack for binding all the code. \n\nAll main requirements were completed in 2.5 weeks."
+      },
+      "songbird": {
+        "description": "Songbird is an app where you can check your knowledge of birds' voices.\n\nThere are 6 types of birds:\n- Different birds,\n- Swamp birds,\n- Desert Birds,\n-Tropical birds,\n-Domestic birds,\n-African birds.\n\nIf you guess all birds without any mistake you will get the certificate of expert on bird voices!"
+      },
+      "todo": {
+        "description": "The objective of the project was to create a ToDo app with the following functionality:\n\n- Create and delete tasks;\n- Sort tasks by deadlines;\n- Change the view of the app (4 squares or a single list);\n- Change the theme and the background image;\n\nIn order to develop this web-app, I used such modern libraries as React and Redux. Also, there was SCSS for styles.\n\nAt the end of the project, the main requirements were successfully completed."
+      },
+      "virtual-keyboard": {
+        "description": "Virtual Keyboard is a prototype of a real keyboard. It has such functions as: \n\n- Language switching;\n- Uppercase typing;\n- Effect of the button pressing;\n\nYou can embed it in your code and use it in your app! The link on the source code is above."
+      },
+      "scrum-video": {
+        "description": "The task of this project was to create a video on any topic from the specific list. I chose Scrum because this framework inspired me when I was reading Maxim Dorofeev's book 'Jedi techniques'."
+      }
+    }
+  },
+  "career": {
+    "steps": {
+      "php": {
+        "title": "Studied PHP on my own",
+        "description": "I didn't like it - I dropped it.",
+        "period": "July-August 2019 (1.5 months)"
+      },
+      "js-self-education": {
+        "title": "Started learning JS",
+        "description": "Learned JavaScript on my own and also worked with JavaScript frameworks like React and Redux.",
+        "period": "September 2019-February 2020 (6 months)"
+      },
+      "rs-js-single-projects": {
+        "title": "Enrolled in the Rolling Scopes JavaScript course from EPAM",
+        "description": "During this period, I developed 6 projects (5 were written in JavaScript, 1 - in React) and post 1 video on YouTube.",
+        "period": "February-May 2020 (5 months)"
+      },
+      "rs-js-team-projects": {
+        "title": "Was the team lead of the RS Lang project",
+        "description": "During the development of the project, I gained skills in project management, as I was the team leader of a development team of 5 people.\nThe developed project is similar to the well-known application for learning English Lingualeo. Our team project is called RS Lang. There are 7 games, long-term and short-term stats, and a dictionary for preserving English words in this app. This RS Lang project is the hardest task I have ever faced in application development and which my team and I have successfully completed.",
+        "period": "May-July 2020 (1 month)"
+      },
+      "rs-js-course-finish": {
+        "title": "Finished the Rolling Scopes courses in 15th place in the ranking among more than 800 students",
+        "description": "15th place in the Rolling Scopes rating is my first big achievement in Front-End development. Six months at RS school gave me a powerful start to developing in this direction.",
+        "period": "July 2020"
+      },
+      "epam-fail": {
+        "title": "Not included in EPAM due to the IT crisis COVID-19",
+        "description": "After completing the Rolling Scopes courses, some students from the TOP-100 in the ranking are selected for the EPAM JavaScript laboratory, where they can continue their studies and subsequently sign a contract. Since I took 15th place, I believe that I had great chances to get into this company.\nBut because of the coronavirus, a crisis has started all over the world, and especially in Belarus. Many young IT specialists were fired because companies needed to somehow reduce their personnel costs. Due to the COVID-19 crisis, EPAM refused to recruit Rolling Scopes students.",
+        "period": "July 2020"
+      },
+      "rs-react": {
+        "title": "Enrolled in Rolling Scopes React courses from EPAM",
+        "description": "In this course, I continue to study the most used library in Front-End development - React.",
+        "period": "July-August 2020"
+      }
+    }
+  },
+  "contacts": {
+    "title": "You can find and contact me in any way below",
+    "contact-number-text": "My phone number:"
+  },
+  "footer": {
+    "offer": "Do you want the similar web-page for you?",
+    "button-confirm-text": "Yes!"
+  },
+  "pop-up-offer": {
+    "title": "Do you Want a similar web page?",
+    "description": "Write to me and I will make you your personal page!",
+    "button-confirm-text": "Write"
+  },
+  "comments": {
+    "commentators": {
+      "ekaterina_latushkina": {
+          "name": "Ekaterina Latushkina",
+          "text": "I met Maxim recently when we started doing a team task in JavaScript together at the Roling Scopes School. That's when I was lucky enough to work with him. At the very beginning of the task, it was clear that this is the person who will help everyone with their mistakes and bugs, who will be able to assume the role of TeamLead and cope with it.\nON organized weekly meetings where each team member talked about the problems that had occurred during the week, about planning their work for the next week and about their progress, coordinated the team and listened to every idea that we implemented in the future in the project. Probably, thanks to him, our team and project were able to enter the top 5 among all the school's projects. at the end of the course, he entered the top 10 and I was proud that I worked for a month with this person. I learned a lot from him and still turn to him for help, knowing that his knowledge and experience will help me become a little bit as cool frontend programmer as he is.",
+          "date": "18.08.2020 10: 59"
+        },
+        "kirill_zdanov": {
+          "name": "Kirill Zhdanov",
+          "text": "Maxim is a person with a strong motivation in development,sometimes he can infect others with it) If there is a task, he tries to complete it as quickly as possible(sometimes it feels like he is doing something for the project). Tries to write code efficiently, adheres to standards. Overall, I rate you as a team developer with great motivation and excellent skills in writing JS code.",
+          "date": "19.08.2020 08: 49"
+        },
+        "alexander_treska": {
+          "name": "Alexander Treska",
+          "text": "Maxim is a person who is determined to achieve high results in front-end development. No difficulties : in code, in life, in health-do not prevent him from moving towards his goals. He uses his time as efficiently as possible, so he was able to develop both personal and work skills in just a short period of time!",
+          "date": "18.08.2020 20: 09"
+        },
+        "anton_andreev": {
+          "name": "Anton Andreev",
+          "text": "Maxim is a very responsible and initiative developer, ready to help always and everywhere. I admire the quality of his frontend development and the hard work with which he approaches a particular task.",
+          "date": "18.08.2020 10: 44"
+        }
+    }
+  },
+  "errors": {
+    "avatar": "Can not upload avatar",
+    "card-content": "Can not upload card content",
+    "default": "An error occured during data loading!"
+  }
+}
