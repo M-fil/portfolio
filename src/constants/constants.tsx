@@ -95,6 +95,8 @@ const personalData: {
   FULL_NAME: 'Maxim Filanovich',
   GITHUB_LOGIN: 'M-fil',
   PERSONAL_TOOL_TEXT: 'JS',
+  PHONE_NUMBER: '+375(44) 513-45-15',
+  PHONE_NUMBER_HREF: 'tel:+375445134515',
 };
 
 const dateConstants: {

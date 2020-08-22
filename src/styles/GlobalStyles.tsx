@@ -57,6 +57,10 @@ const GlobalStyles = createGlobalStyle`
       width: 90vw !important;
     }
   }
+
+  .ant-tooltip-inner {
+    font-size: 1.2rem;
+  }
 `;
 
 export default GlobalStyles;

@@ -4,6 +4,7 @@ import { mediaQueries } from '../../../constants/constants';
 const {
   mediaLaptop,
   mediaTablet,
+  mediaMobileSmall,
 } = mediaQueries;
 
 const ContactsStyle = styled('div')`
@@ -13,7 +14,6 @@ const ContactsStyle = styled('div')`
 
   .contacts__title {
     display: flex;
-    margin-bottom: 50px;
     text-align: center;
   }
 
@@ -82,6 +82,24 @@ const ContactsStyle = styled('div')`
       width: 130px !important;
       height: 130px !important;
       margin-bottom: 20px;
+    }
+  }
+
+  .contacts__phone-number {
+    font-size: 2rem;
+    margin-bottom: 50px;
+    text-align: center;
+
+    @media ${mediaLaptop} {
+      font-size: 1.5rem;
+    }
+
+    @media ${mediaTablet} {
+      font-size: 2rem;
+    }
+
+    @media ${mediaMobileSmall} {
+      font-size: 1.5rem;
     }
   }
 `;

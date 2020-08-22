@@ -95,7 +95,8 @@
     }
   },
   "contacts": {
-    "title": "You can find and contact me in any way below"
+    "title": "You can find and contact me in any way below",
+    "contact-number-text": "My phone number:"
   },
   "footer": {
     "offer": "Do you want the similar web-page for you?",

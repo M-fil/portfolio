@@ -10,6 +10,10 @@ const CommentsStyle = styled('div')`
   padding-bottom: 50px;
   padding-right: 30px;
 
+  @media ${mediaTablet} {
+    padding-right: 0;
+  }
+
   .comment:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -25,9 +29,11 @@ const CommentsStyle = styled('div')`
 
   .ant-comment-content-author-name {
     font-size: 2rem;
+    line-height: 2.5rem;
 
     @media ${mediaTablet} {
       font-size: 1.3rem;
+      line-height: 1.5rem;
     }
   }
 
