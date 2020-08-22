@@ -4,7 +4,7 @@ import { urls, numberConstants } from '../../../constants/constants';
 import { LanguageType } from '../../../interfaces/interfaces';
 
 const { ru, en } = locales;
-const { RUSSIA_FLAG, ENGLAND_FLAG } = urls;
+const { RUSSIA_FLAG, BRITAIN_FLAG } = urls;
 const { DEFAULT_SCALING } = numberConstants;
 
 interface ILanguageSwitchStyle {
@@ -24,7 +24,7 @@ const LanguageSwitchStyle = styled('div')<ILanguageSwitchStyle>`
     background: url(${(props) => {
     switch (props.language) {
       case en:
-        return ENGLAND_FLAG;
+        return BRITAIN_FLAG;
       case ru:
       default:
         return RUSSIA_FLAG;

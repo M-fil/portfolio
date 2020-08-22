@@ -22,7 +22,7 @@ const urls: {
   INNOWISE_GROUP_LOGO,
   EPAM_LOGO,
   RUSSIA_FLAG: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg',
-  ENGLAND_FLAG: 'https://images-na.ssl-images-amazon.com/images/I/2102hNwuHyL._AC_.jpg',
+  BRITAIN_FLAG: 'https://flagof.ru/wp-content/uploads/2018/10/flag_en_big.jpg',
   PERSONAL_TELEGRAM_LINK: '"https://t.me/Filan0vichMaxim',
   GITHUB_GET_TEAMMATES_QUERY: 'GET /repos/{owner}/{repo}/collaborators',
 };
