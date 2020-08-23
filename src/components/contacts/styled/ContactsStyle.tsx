@@ -35,10 +35,6 @@ const ContactsStyle = styled('div')`
       width: 100%;
       padding: 0 20px;
 
-      &::after {
-        display: none;
-      }
-
       @media ${mediaTablet} {
         padding: 0;
       }
@@ -46,23 +42,6 @@ const ContactsStyle = styled('div')`
 
     @media ${mediaTablet} {
       justify-content: space-between;
-
-      &::after {
-        width: 130px;
-        height: 130px;
-
-        @media ${mediaLaptop} {
-          display: none;
-        }
-      }
-    }
-
-    &::after {
-      content: "";
-
-      display: block;
-      width: 150px;
-      height: 150px;
     }
   }
 
