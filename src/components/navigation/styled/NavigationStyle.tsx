@@ -4,7 +4,7 @@ import { colors, mediaQueries } from '../../../constants/constants';
 const {
   mediaTablet,
   mediaLaptop,
-  mediaMobileSmall,
+  mediaMobile,
 } = mediaQueries;
 
 const NavigationStyle = styled.div`
@@ -26,7 +26,7 @@ const NavigationStyle = styled.div`
       line-height: 2rem;
     }
 
-    @media ${mediaMobileSmall} {
+    @media ${mediaMobile} {
       font-size: 1rem;
       line-height: 1.5rem;
     }
@@ -85,7 +85,7 @@ const NavigationStyle = styled.div`
       font-size: 12rem;
     }
 
-    @media ${mediaMobileSmall} {
+    @media ${mediaMobile} {
       display: none;
     }
   }

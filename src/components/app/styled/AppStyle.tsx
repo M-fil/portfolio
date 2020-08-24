@@ -7,7 +7,6 @@ const {
   mediaLaptop,
   mediaTablet,
   mediaMobile,
-  mediaMobileSmall,
 } = mediaQueries;
 
 const {
@@ -68,7 +67,7 @@ const AppStyle = styled('div')<ISideBlockStyles>`
       }
     }
 
-    @media ${mediaMobileSmall} {
+    @media ${mediaMobile} {
       &.closed {
         left: -60%;
       }
@@ -139,7 +138,7 @@ const AppStyle = styled('div')<ISideBlockStyles>`
       z-index: 1000;
     }
 
-    @media ${mediaMobileSmall} {
+    @media ${mediaMobile} {
       padding: 10px 0;
       width: 60%;
     }
