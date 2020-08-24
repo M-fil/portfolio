@@ -86,7 +86,7 @@ const NavigationStyle = styled.div`
     }
 
     @media ${mediaMobileSmall} {
-      font-size: 8rem;
+      display: none;
     }
   }
 `;
