@@ -43,13 +43,13 @@ const useNotification: IUseNotificatoin = (
           className="offer-pop-up__confirm-button"
           type="primary"
           ghost
-          icon={<i className={`${iconClassName} offer-pop-up__icon`} />}
           href={PERSONAL_TELEGRAM_LINK}
+          icon={<i className={`${iconClassName} offer-pop-up__icon`} />}
           target="_blank"
         >
           {buttonText}
         </Button>
-                    </OfferPopUpStyle>),
+      </OfferPopUpStyle>),
       className: 'offer-pop-up',
       duration: null,
       onClose: () => {

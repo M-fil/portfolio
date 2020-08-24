@@ -23,7 +23,7 @@ const urls: {
   EPAM_LOGO,
   RUSSIA_FLAG: 'https://upload.wikimedia.org/wikipedia/commons/f/f3/Flag_of_Russia.svg',
   BRITAIN_FLAG: 'https://flagof.ru/wp-content/uploads/2018/10/flag_en_big.jpg',
-  PERSONAL_TELEGRAM_LINK: '"https://t.me/Filan0vichMaxim',
+  PERSONAL_TELEGRAM_LINK: 'https://t.me/Filan0vichMaxim',
   GITHUB_GET_TEAMMATES_QUERY: 'GET /repos/{owner}/{repo}/collaborators',
 };
 
