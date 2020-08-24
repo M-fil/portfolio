@@ -1,7 +1,11 @@
 import styled from 'styled-components';
 import { colors, mediaQueries } from '../../../constants/constants';
 
-const { mediaTablet, mediaLaptop, mediaMobile } = mediaQueries;
+const {
+  mediaTablet,
+  mediaLaptop,
+  mediaMobileSmall,
+} = mediaQueries;
 
 const NavigationStyle = styled.div`
   display: flex;
@@ -20,6 +24,11 @@ const NavigationStyle = styled.div`
     @media ${mediaTablet} {
       font-size: 1.5rem;
       line-height: 2rem;
+    }
+
+    @media ${mediaMobileSmall} {
+      font-size: 1rem;
+      line-height: 1.5rem;
     }
 
     & a {
@@ -64,6 +73,7 @@ const NavigationStyle = styled.div`
     font-size: 14rem;
     letter-spacing: 0.5rem;
     margin: 0;
+    white-space: nowrap;
 
     @media ${mediaLaptop} {
       font-size: 10rem;
@@ -73,6 +83,10 @@ const NavigationStyle = styled.div`
 
     @media ${mediaTablet} {
       font-size: 12rem;
+    }
+
+    @media ${mediaMobileSmall} {
+      font-size: 8rem;
     }
   }
 `;

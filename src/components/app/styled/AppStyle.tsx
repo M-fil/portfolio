@@ -7,6 +7,7 @@ const {
   mediaLaptop,
   mediaTablet,
   mediaMobile,
+  mediaMobileSmall,
 } = mediaQueries;
 
 const {
@@ -64,6 +65,12 @@ const AppStyle = styled('div')<ISideBlockStyles>`
         & #person-image {
           visibility: hidden;
         }
+      }
+    }
+
+    @media ${mediaMobileSmall} {
+      &.closed {
+        left: -60%;
       }
     }
   }
@@ -130,6 +137,11 @@ const AppStyle = styled('div')<ISideBlockStyles>`
       width: 80%;
       height: 100%;
       z-index: 1000;
+    }
+
+    @media ${mediaMobileSmall} {
+      padding: 10px 0;
+      width: 60%;
     }
   }
 
