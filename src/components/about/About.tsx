@@ -5,7 +5,7 @@ import { DownloadOutlined } from '@ant-design/icons';
 
 import { calculateAge } from '../../utils/calculations';
 import useStateCondition from '../../custom-hooks/useStateCondition';
-import { urls } from '../../constants/constants';
+import { urls, personalData } from '../../constants/constants';
 import { getDataByURL } from '../../service/service';
 import { ISkill } from '../../interfaces/interfaces';
 import AboutStyle from './styled/AboutStyle';
@@ -53,7 +53,7 @@ const About: React.FC = () => {
             </Button>
           </h2>
           <div className="about__short-info">
-            {`${calculateAge()} ${t('about.years')}, ${t('about.activity')}`}
+            {`${calculateAge() || personalData.AGE} ${t('about.years')}, ${t('about.activity')}`}
           </div>
         </div>
       </Fade>

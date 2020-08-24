@@ -22,7 +22,6 @@ import LanguageSwitch from '../language-switch/LanguageSwitch';
 
 import AppStyle from './styled/AppStyle';
 import { ISideBlockStyles } from '../../interfaces/interfaces';
-import { personalData, urls } from '../../constants/constants';
 import GlobalStyles from '../../styles/GlobalStyles';
 
 const App: React.FC = () => {

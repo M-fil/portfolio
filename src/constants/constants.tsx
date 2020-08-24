@@ -97,6 +97,7 @@ const personalData: {
   PERSONAL_TOOL_TEXT: 'JS',
   PHONE_NUMBER: '+375(44) 513-45-15',
   PHONE_NUMBER_HREF: 'tel:+375445134515',
+  AGE: 18,
 };
 
 const dateConstants: {
