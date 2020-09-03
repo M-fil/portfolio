@@ -76,6 +76,13 @@ const Career: React.FC = () => {
             />
           )}
         />
+        <Steps.Step
+          title={t('career.steps.internship.title')}
+          subTitle={t('career.steps.internship.period')}
+          description={t('career.steps.internship.description')}
+          status="finish"
+          icon={<ImageIcon src={urls.INNOWISE_GROUP_LOGO} classes={['steps__square-logo', 'steps__logo']} />}
+        />
       </Steps>
     </CareerStyle>
   );

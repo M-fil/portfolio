@@ -91,6 +91,11 @@
         "title": "Enrolled in Rolling Scopes React courses from EPAM",
         "description": "In this course, I continue to study the most used library in Front-End development - React.",
         "period": "July-August 2020"
+      },
+      "internship": {
+        "title": "Became an Innowise Group trainee",
+        "description": "I was recently contacted by the HR of Innowise Group and offered me an interview for a paid internship as a software engineer (JS). I successfully passed the interview and they made an offer for me!\nNow I am a trainee at Innowise Group and I am sure that I can fulfill my potential in this company.",
+        "period": "August 2020-Now..."
       }
     }
   },
