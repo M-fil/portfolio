@@ -16,7 +16,7 @@ const urls: {
   CONTACTS_URL: 'https://raw.githubusercontent.com/M-fil/data-storage/master/my-portfolio/contacts/contacts.json',
   COMMENTS_URL: 'https://raw.githubusercontent.com/M-fil/data-storage/master/my-portfolio/comments/comments.json',
   PERSON_IMAGE_1_URL,
-  CV_LINK_URL: 'https://drive.google.com/file/d/1G0xogM0rIs7q5GnWM7rIlALGv7tVEfbe/view?usp=sharing',
+  CV_LINK_URL: 'https://pinsk.jobs.tut.by/resume/78d34bc9ff082512290039ed1f414b68667a56',
   PERSONAL_GITHUB_URL: 'https://api.github.com/users/M-fil',
   RS_LOGO,
   INNOWISE_GROUP_LOGO,

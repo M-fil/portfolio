@@ -25,43 +25,18 @@ const Career: React.FC = () => {
         status="wait"
       >
         <Steps.Step
-          title={t('career.steps.php.title')}
-          subTitle={t('career.steps.php.period')}
-          description={t('career.steps.php.description')}
+          title={t('career.steps.innowise-junior.title')}
+          subTitle={t('career.steps.innowise-junior.period')}
+          description={t('career.steps.innowise-junior.description')}
           status="finish"
-          icon={<PHPIcon />}
+          icon={<ImageIcon src={urls.INNOWISE_GROUP_LOGO} classes={['steps__square-logo', 'steps__logo']} />}
         />
         <Steps.Step
-          title={t('career.steps.js-self-education.title')}
-          subTitle={t('career.steps.js-self-education.period')}
-          description={t('career.steps.js-self-education.description')}
-          icon={(
-            <MultipleIcons
-              icons={[<JSIcon />, <ReactIcon />, <ImageIcon src={icons.REDUX} classes={['steps__svg-icon']} />]}
-            />
-          )}
+          title={t('career.steps.internship.title')}
+          subTitle={t('career.steps.internship.period')}
+          description={t('career.steps.internship.description')}
           status="finish"
-        />
-        <Steps.Step
-          title={t('career.steps.rs-js-single-projects.title')}
-          subTitle={t('career.steps.rs-js-single-projects.period')}
-          description={t('career.steps.rs-js-single-projects.description')}
-          status="finish"
-          icon={<ImageIcon src={urls.RS_LOGO} classes={['steps__logo']} />}
-        />
-        <Steps.Step
-          title={t('career.steps.rs-js-team-projects.title')}
-          subTitle={t('career.steps.rs-js-team-projects.period')}
-          description={t('career.steps.rs-js-team-projects.description')}
-          status="finish"
-          icon={<ImageIcon src={urls.RS_LOGO} classes={['steps__logo']} />}
-        />
-        <Steps.Step
-          title={t('career.steps.epam-fail.title')}
-          subTitle={t('career.steps.epam-fail.period')}
-          description={t('career.steps.epam-fail.description')}
-          status="finish"
-          icon={<ImageIcon src={urls.EPAM_LOGO} classes={['steps__logo']} />}
+          icon={<ImageIcon src={urls.INNOWISE_GROUP_LOGO} classes={['steps__square-logo', 'steps__logo']} />}
         />
         <Steps.Step
           title={t('career.steps.rs-react.title')}
@@ -77,11 +52,43 @@ const Career: React.FC = () => {
           )}
         />
         <Steps.Step
-          title={t('career.steps.internship.title')}
-          subTitle={t('career.steps.internship.period')}
-          description={t('career.steps.internship.description')}
+          title={t('career.steps.epam-fail.title')}
+          subTitle={t('career.steps.epam-fail.period')}
+          description={t('career.steps.epam-fail.description')}
           status="finish"
-          icon={<ImageIcon src={urls.INNOWISE_GROUP_LOGO} classes={['steps__square-logo', 'steps__logo']} />}
+          icon={<ImageIcon src={urls.EPAM_LOGO} classes={['steps__logo']} />}
+        />
+        <Steps.Step
+          title={t('career.steps.rs-js-team-projects.title')}
+          subTitle={t('career.steps.rs-js-team-projects.period')}
+          description={t('career.steps.rs-js-team-projects.description')}
+          status="finish"
+          icon={<ImageIcon src={urls.RS_LOGO} classes={['steps__logo']} />}
+        />
+        <Steps.Step
+          title={t('career.steps.rs-js-single-projects.title')}
+          subTitle={t('career.steps.rs-js-single-projects.period')}
+          description={t('career.steps.rs-js-single-projects.description')}
+          status="finish"
+          icon={<ImageIcon src={urls.RS_LOGO} classes={['steps__logo']} />}
+        />
+        <Steps.Step
+          title={t('career.steps.js-self-education.title')}
+          subTitle={t('career.steps.js-self-education.period')}
+          description={t('career.steps.js-self-education.description')}
+          icon={(
+            <MultipleIcons
+              icons={[<JSIcon />, <ReactIcon />, <ImageIcon src={icons.REDUX} classes={['steps__svg-icon']} />]}
+            />
+          )}
+          status="finish"
+        />
+        <Steps.Step
+          title={t('career.steps.php.title')}
+          subTitle={t('career.steps.php.period')}
+          description={t('career.steps.php.description')}
+          status="finish"
+          icon={<PHPIcon />}
         />
       </Steps>
     </CareerStyle>
